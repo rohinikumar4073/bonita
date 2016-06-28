@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/directives/pbModel.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">js/directives/</a> pbModel.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">26.67% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>4/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.29% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">26.67% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/15</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+(function () {
+  'use strict';
+&nbsp;
+  angular.module('bonitasoft.ui.directives').directive('pbModel', <span class="fstat-no" title="function not covered" >function ($parse, modelFactory, bindingsFactory, dataModelFactory, modelPropertiesFactory, bindingContextFactory) {</span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function PbModelCtrl() {</span>}
+<span class="cstat-no" title="statement not covered" >    PbModelCtrl.prototype.fill = <span class="fstat-no" title="function not covered" >function (rawData) {</span></span>
+<span class="cstat-no" title="statement not covered" >      var model = modelFactory.create(rawData);</span>
+<span class="cstat-no" title="statement not covered" >      this.createGateway = model.createGateway;</span>
+<span class="cstat-no" title="statement not covered" >      this.getModel = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        return model;</span>
+      };
+    };
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function pbModelCompile(tElement, tAttributes) {</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
+        pre: <span class="fstat-no" title="function not covered" >function (scope, element, attrs, pbModelCtrl) {</span>
+<span class="cstat-no" title="statement not covered" >          pbModelCtrl.fill(dataModelFactory.get(tAttributes.pbModel));</span>
+<span class="cstat-no" title="statement not covered" >          var pbModelProperties = modelPropertiesFactory.get(tAttributes.pbModelProperties);</span>
+<span class="cstat-no" title="statement not covered" >          if (pbModelProperties &amp;&amp; scope.$parent.pbModelCtrl) {</span>
+<span class="cstat-no" title="statement not covered" >            bindingsFactory.create(pbModelProperties, bindingContextFactory.create(scope.$parent.pbModelCtrl, scope), pbModelCtrl.getModel());</span>
+          }
+        }
+      };
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      restrict: 'A',
+      controller: PbModelCtrl,
+      // Expose controller to the scope to mask parent one.
+      // Every time a model is created then it mask its parent
+      // model allowing nested model
+      controllerAs: 'pbModelCtrl',
+      // This is why we use a new scope. To avoid overriding parent modelCtrl.
+      scope: true,
+      compile: pbModelCompile
+    };
+  });
+})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBiTW9kZWwuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxDQUFDLFlBQVc7QUFDVjs7QUFFQSxVQUFRLE1BQVIsQ0FBZSwwQkFBZixFQUNHLFNBREgsQ0FDYSxTQURiLEVBQ3dCLFVBQVMsTUFBVCxFQUFpQixZQUFqQixFQUErQixlQUEvQixFQUFnRCxnQkFBaEQsRUFBa0Usc0JBQWxFLEVBQTBGLHFCQUExRixFQUFpSDs7QUFFckksYUFBUyxXQUFULEdBQXVCLENBQUU7QUFDekIsZ0JBQVksU0FBWixDQUFzQixJQUF0QixHQUE2QixVQUFTLE9BQVQsRUFBa0I7QUFDN0MsVUFBSSxRQUFRLGFBQWEsTUFBYixDQUFvQixPQUFwQixDQUFaO0FBQ0EsV0FBSyxhQUFMLEdBQXFCLE1BQU0sYUFBM0I7QUFDQSxXQUFLLFFBQUwsR0FBZ0IsWUFBVztBQUN6QixlQUFPLEtBQVA7QUFDRCxPQUZEO0FBR0QsS0FORDs7QUFRQSxhQUFTLGNBQVQsQ0FBd0IsUUFBeEIsRUFBa0MsV0FBbEMsRUFBK0M7QUFDN0MsYUFBTztBQUNMLGFBQUssVUFBUyxLQUFULEVBQWdCLE9BQWhCLEVBQXlCLEtBQXpCLEVBQWdDLFdBQWhDLEVBQTZDO0FBQ2hELHNCQUFZLElBQVosQ0FBaUIsaUJBQWlCLEdBQWpCLENBQXFCLFlBQVksT0FBakMsQ0FBakI7QUFDQSxjQUFJLG9CQUFvQix1QkFBdUIsR0FBdkIsQ0FBMkIsWUFBWSxpQkFBdkMsQ0FBeEI7QUFDQSxjQUFJLHFCQUFxQixNQUFNLE9BQU4sQ0FBYyxXQUF2QyxFQUFvRDtBQUNsRCw0QkFBZ0IsTUFBaEIsQ0FDRSxpQkFERixFQUVFLHNCQUFzQixNQUF0QixDQUE2QixNQUFNLE9BQU4sQ0FBYyxXQUEzQyxFQUF3RCxLQUF4RCxDQUZGLEVBR0UsWUFBWSxRQUFaLEVBSEY7QUFJRDtBQUNGO0FBVkksT0FBUDtBQVlEOztBQUVELFdBQU87QUFDTCxnQkFBVSxHQURMO0FBRUwsa0JBQVksV0FGUDs7OztBQU1MLG9CQUFjLGFBTlQ7O0FBUUwsYUFBTyxJQVJGO0FBU0wsZUFBUztBQVRKLEtBQVA7QUFXRCxHQXRDSDtBQXVDRCxDQTFDRCIsImZpbGUiOiJwYk1vZGVsLmpzIiwic291cmNlc0NvbnRlbnQiOlsiKGZ1bmN0aW9uKCkge1xuICAndXNlIHN0cmljdCc7XG5cbiAgYW5ndWxhci5tb2R1bGUoJ2Jvbml0YXNvZnQudWkuZGlyZWN0aXZlcycpXG4gICAgLmRpcmVjdGl2ZSgncGJNb2RlbCcsIGZ1bmN0aW9uKCRwYXJzZSwgbW9kZWxGYWN0b3J5LCBiaW5kaW5nc0ZhY3RvcnksIGRhdGFNb2RlbEZhY3RvcnksIG1vZGVsUHJvcGVydGllc0ZhY3RvcnksIGJpbmRpbmdDb250ZXh0RmFjdG9yeSkge1xuXG4gICAgICBmdW5jdGlvbiBQYk1vZGVsQ3RybCgpIHt9XG4gICAgICBQYk1vZGVsQ3RybC5wcm90b3R5cGUuZmlsbCA9IGZ1bmN0aW9uKHJhd0RhdGEpIHtcbiAgICAgICAgdmFyIG1vZGVsID0gbW9kZWxGYWN0b3J5LmNyZWF0ZShyYXdEYXRhKTtcbiAgICAgICAgdGhpcy5jcmVhdGVHYXRld2F5ID0gbW9kZWwuY3JlYXRlR2F0ZXdheTtcbiAgICAgICAgdGhpcy5nZXRNb2RlbCA9IGZ1bmN0aW9uKCkge1xuICAgICAgICAgIHJldHVybiBtb2RlbDtcbiAgICAgICAgfTtcbiAgICAgIH07XG5cbiAgICAgIGZ1bmN0aW9uIHBiTW9kZWxDb21waWxlKHRFbGVtZW50LCB0QXR0cmlidXRlcykge1xuICAgICAgICByZXR1cm4ge1xuICAgICAgICAgIHByZTogZnVuY3Rpb24oc2NvcGUsIGVsZW1lbnQsIGF0dHJzLCBwYk1vZGVsQ3RybCkge1xuICAgICAgICAgICAgcGJNb2RlbEN0cmwuZmlsbChkYXRhTW9kZWxGYWN0b3J5LmdldCh0QXR0cmlidXRlcy5wYk1vZGVsKSk7XG4gICAgICAgICAgICB2YXIgcGJNb2RlbFByb3BlcnRpZXMgPSBtb2RlbFByb3BlcnRpZXNGYWN0b3J5LmdldCh0QXR0cmlidXRlcy5wYk1vZGVsUHJvcGVydGllcyk7XG4gICAgICAgICAgICBpZiAocGJNb2RlbFByb3BlcnRpZXMgJiYgc2NvcGUuJHBhcmVudC5wYk1vZGVsQ3RybCkge1xuICAgICAgICAgICAgICBiaW5kaW5nc0ZhY3RvcnkuY3JlYXRlKFxuICAgICAgICAgICAgICAgIHBiTW9kZWxQcm9wZXJ0aWVzLFxuICAgICAgICAgICAgICAgIGJpbmRpbmdDb250ZXh0RmFjdG9yeS5jcmVhdGUoc2NvcGUuJHBhcmVudC5wYk1vZGVsQ3RybCwgc2NvcGUpLFxuICAgICAgICAgICAgICAgIHBiTW9kZWxDdHJsLmdldE1vZGVsKCkpO1xuICAgICAgICAgICAgfVxuICAgICAgICAgIH1cbiAgICAgICAgfTtcbiAgICAgIH1cblxuICAgICAgcmV0dXJuIHtcbiAgICAgICAgcmVzdHJpY3Q6ICdBJyxcbiAgICAgICAgY29udHJvbGxlcjogUGJNb2RlbEN0cmwsXG4gICAgICAgIC8vIEV4cG9zZSBjb250cm9sbGVyIHRvIHRoZSBzY29wZSB0byBtYXNrIHBhcmVudCBvbmUuXG4gICAgICAgIC8vIEV2ZXJ5IHRpbWUgYSBtb2RlbCBpcyBjcmVhdGVkIHRoZW4gaXQgbWFzayBpdHMgcGFyZW50XG4gICAgICAgIC8vIG1vZGVsIGFsbG93aW5nIG5lc3RlZCBtb2RlbFxuICAgICAgICBjb250cm9sbGVyQXM6ICdwYk1vZGVsQ3RybCcsXG4gICAgICAgIC8vIFRoaXMgaXMgd2h5IHdlIHVzZSBhIG5ldyBzY29wZS4gVG8gYXZvaWQgb3ZlcnJpZGluZyBwYXJlbnQgbW9kZWxDdHJsLlxuICAgICAgICBzY29wZTogdHJ1ZSxcbiAgICAgICAgY29tcGlsZTogcGJNb2RlbENvbXBpbGVcbiAgICAgIH07XG4gICAgfSk7XG59KSgpO1xuIl19</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 08:00:19 GMT+0530 (ICT)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
