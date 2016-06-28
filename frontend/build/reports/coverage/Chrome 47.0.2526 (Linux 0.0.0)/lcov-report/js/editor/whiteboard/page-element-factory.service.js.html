@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/editor/whiteboard/page-element-factory.service.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/editor/whiteboard/page-element-factory.service.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(22 / 22)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">75% <small>(3 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(9 / 9)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(22 / 22)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/editor/whiteboard/</a> &#187; page-element-factory.service.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">62</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';(function () {
+&nbsp;
+  'use strict';
+&nbsp;
+  angular.
+  module('bonitasoft.designer.editor.whiteboard').
+  service('pageElementFactory', pageElementFactory);
+&nbsp;
+  function pageElementFactory(resolutions, properties) {
+&nbsp;
+    return { 
+      createWidgetElement: createWidgetElement, 
+      createContainerElement: createContainerElement, 
+      createTabsContainerElement: createTabsContainerElement, 
+      createFormContainerElement: createFormContainerElement, 
+      createTabElement: createTabElement };
+&nbsp;
+&nbsp;
+    function createElement(type, definition) {
+      return { 
+        type: type, 
+        dimension: resolutions.getDefaultDimension(), 
+        propertyValues: properties.computeValues(definition.properties) };}
+&nbsp;
+&nbsp;
+&nbsp;
+    /**
+     * Create a new page element from a widget definition
+     * @param  {Object} widget    Widget configuration
+     * @param  {Array} parentRow  parent row container
+     * @return {Object}           New component to add to the whiteboard
+     */
+    function createWidgetElement(widget) {
+      var element = createElement(getType(widget), widget);
+      return angular.extend(element, { 
+        id: widget.id });}
+&nbsp;
+&nbsp;
+&nbsp;
+    function getType(component) {
+      // for now, page widget elements have type 'component'
+      return !component.type || component.type === 'widget' ? 'component' : <span class="branch-1 cbranch-no" title="branch not covered" >component.type;</span>}
+&nbsp;
+&nbsp;
+    function createContainerElement(container) {
+      var element = createElement('container', container);
+      return angular.extend(element, { 
+        rows: [
+        []] });}
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+    function createTabsContainerElement(tabsContainer) {
+      var element = createElement('tabsContainer', tabsContainer);
+      return angular.extend(element, { 
+        tabs: ['Tab 1', 'Tab 2'].map(createTabElement) });}
+&nbsp;
+&nbsp;
+&nbsp;
+    /**
+     * Creates a new tab for the given tabs container, with the given title
+     */
+    function createTabElement(title) {
+      return { 
+        title: title, 
+        container: { 
+          type: 'container', 
+          rows: [
+          []] } };}
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+    function createFormContainerElement(formContainer) {
+      var element = createElement('formContainer', formContainer);
+      return angular.extend(element, { 
+        container: { 
+          type: 'container', 
+          rows: [
+          []] } });}}})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2UtZWxlbWVudC1mYWN0b3J5LnNlcnZpY2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6ImFBQUEsQ0FBQyxZQUFXOztBQUVWOztBQUVBO0FBQ0csUUFESCxDQUNVLHVDQURWO0FBRUcsU0FGSCxDQUVXLG9CQUZYLEVBRWlDLGtCQUZqQzs7QUFJQSxXQUFTLGtCQUFULENBQTRCLFdBQTVCLEVBQXlDLFVBQXpDLEVBQXFEOztBQUVuRCxXQUFPO0FBQ0wsMkJBQXFCLG1CQURoQjtBQUVMLDhCQUF3QixzQkFGbkI7QUFHTCxrQ0FBNEIsMEJBSHZCO0FBSUwsa0NBQTRCLDBCQUp2QjtBQUtMLHdCQUFrQixnQkFMYixFQUFQOzs7QUFRQSxhQUFTLGFBQVQsQ0FBdUIsSUFBdkIsRUFBNkIsVUFBN0IsRUFBeUM7QUFDdkMsYUFBTztBQUNMLGNBQU0sSUFERDtBQUVMLG1CQUFXLFlBQVksbUJBQVosRUFGTjtBQUdMLHdCQUFnQixXQUFXLGFBQVgsQ0FBeUIsV0FBVyxVQUFwQyxDQUhYLEVBQVAsQ0FLRDs7Ozs7Ozs7OztBQVFELGFBQVMsbUJBQVQsQ0FBNkIsTUFBN0IsRUFBcUM7QUFDbkMsVUFBSSxVQUFVLGNBQWMsUUFBUSxNQUFSLENBQWQsRUFBK0IsTUFBL0IsQ0FBZDtBQUNBLGFBQU8sUUFBUSxNQUFSLENBQWUsT0FBZixFQUF3QjtBQUM3QixZQUFJLE9BQU8sRUFEa0IsRUFBeEIsQ0FBUCxDQUdEOzs7O0FBRUQsYUFBUyxPQUFULENBQWlCLFNBQWpCLEVBQTRCOztBQUUxQixhQUFPLENBQUMsVUFBVSxJQUFYLElBQW1CLFVBQVUsSUFBVixLQUFtQixRQUF0QyxHQUFpRCxXQUFqRCxHQUErRCxVQUFVLElBQWhGLENBQ0Q7OztBQUVELGFBQVMsc0JBQVQsQ0FBZ0MsU0FBaEMsRUFBMkM7QUFDekMsVUFBSSxVQUFVLGNBQWMsV0FBZCxFQUEyQixTQUEzQixDQUFkO0FBQ0EsYUFBTyxRQUFRLE1BQVIsQ0FBZSxPQUFmLEVBQXdCO0FBQzdCLGNBQU07QUFDSixVQURJLENBRHVCLEVBQXhCLENBQVAsQ0FLRDs7Ozs7QUFFRCxhQUFTLDBCQUFULENBQW9DLGFBQXBDLEVBQW1EO0FBQ2pELFVBQUksVUFBVSxjQUFjLGVBQWQsRUFBK0IsYUFBL0IsQ0FBZDtBQUNBLGFBQU8sUUFBUSxNQUFSLENBQWUsT0FBZixFQUF3QjtBQUM3QixjQUFNLENBQUMsT0FBRCxFQUFVLE9BQVYsRUFBbUIsR0FBbkIsQ0FBdUIsZ0JBQXZCLENBRHVCLEVBQXhCLENBQVAsQ0FHRDs7Ozs7OztBQUtELGFBQVMsZ0JBQVQsQ0FBMEIsS0FBMUIsRUFBaUM7QUFDL0IsYUFBTztBQUNMLGVBQU8sS0FERjtBQUVMLG1CQUFXO0FBQ1QsZ0JBQU0sV0FERztBQUVULGdCQUFNO0FBQ0osWUFESSxDQUZHLEVBRk4sRUFBUCxDQVNEOzs7Ozs7QUFFRCxhQUFTLDBCQUFULENBQW9DLGFBQXBDLEVBQW1EO0FBQ2pELFVBQUksVUFBVSxjQUFjLGVBQWQsRUFBK0IsYUFBL0IsQ0FBZDtBQUNBLGFBQU8sUUFBUSxNQUFSLENBQWUsT0FBZixFQUF3QjtBQUM3QixtQkFBVztBQUNULGdCQUFNLFdBREc7QUFFVCxnQkFBTTtBQUNKLFlBREksQ0FGRyxFQURrQixFQUF4QixDQUFQLENBUUQsQ0FFRixDQUNGLENBeEZEIiwiZmlsZSI6InBhZ2UtZWxlbWVudC1mYWN0b3J5LnNlcnZpY2UuanMiLCJzb3VyY2VzQ29udGVudCI6WyIoZnVuY3Rpb24oKSB7XG5cbiAgJ3VzZSBzdHJpY3QnO1xuXG4gIGFuZ3VsYXJcbiAgICAubW9kdWxlKCdib25pdGFzb2Z0LmRlc2lnbmVyLmVkaXRvci53aGl0ZWJvYXJkJylcbiAgICAuc2VydmljZSgncGFnZUVsZW1lbnRGYWN0b3J5JywgcGFnZUVsZW1lbnRGYWN0b3J5KTtcblxuICBmdW5jdGlvbiBwYWdlRWxlbWVudEZhY3RvcnkocmVzb2x1dGlvbnMsIHByb3BlcnRpZXMpIHtcblxuICAgIHJldHVybiB7XG4gICAgICBjcmVhdGVXaWRnZXRFbGVtZW50OiBjcmVhdGVXaWRnZXRFbGVtZW50LFxuICAgICAgY3JlYXRlQ29udGFpbmVyRWxlbWVudDogY3JlYXRlQ29udGFpbmVyRWxlbWVudCxcbiAgICAgIGNyZWF0ZVRhYnNDb250YWluZXJFbGVtZW50OiBjcmVhdGVUYWJzQ29udGFpbmVyRWxlbWVudCxcbiAgICAgIGNyZWF0ZUZvcm1Db250YWluZXJFbGVtZW50OiBjcmVhdGVGb3JtQ29udGFpbmVyRWxlbWVudCxcbiAgICAgIGNyZWF0ZVRhYkVsZW1lbnQ6IGNyZWF0ZVRhYkVsZW1lbnRcbiAgICB9O1xuXG4gICAgZnVuY3Rpb24gY3JlYXRlRWxlbWVudCh0eXBlLCBkZWZpbml0aW9uKSB7XG4gICAgICByZXR1cm4ge1xuICAgICAgICB0eXBlOiB0eXBlLFxuICAgICAgICBkaW1lbnNpb246IHJlc29sdXRpb25zLmdldERlZmF1bHREaW1lbnNpb24oKSxcbiAgICAgICAgcHJvcGVydHlWYWx1ZXM6IHByb3BlcnRpZXMuY29tcHV0ZVZhbHVlcyhkZWZpbml0aW9uLnByb3BlcnRpZXMpXG4gICAgICB9O1xuICAgIH1cblxuICAgIC8qKlxuICAgICAqIENyZWF0ZSBhIG5ldyBwYWdlIGVsZW1lbnQgZnJvbSBhIHdpZGdldCBkZWZpbml0aW9uXG4gICAgICogQHBhcmFtICB7T2JqZWN0fSB3aWRnZXQgICAgV2lkZ2V0IGNvbmZpZ3VyYXRpb25cbiAgICAgKiBAcGFyYW0gIHtBcnJheX0gcGFyZW50Um93ICBwYXJlbnQgcm93IGNvbnRhaW5lclxuICAgICAqIEByZXR1cm4ge09iamVjdH0gICAgICAgICAgIE5ldyBjb21wb25lbnQgdG8gYWRkIHRvIHRoZSB3aGl0ZWJvYXJkXG4gICAgICovXG4gICAgZnVuY3Rpb24gY3JlYXRlV2lkZ2V0RWxlbWVudCh3aWRnZXQpIHtcbiAgICAgIHZhciBlbGVtZW50ID0gY3JlYXRlRWxlbWVudChnZXRUeXBlKHdpZGdldCksIHdpZGdldCk7XG4gICAgICByZXR1cm4gYW5ndWxhci5leHRlbmQoZWxlbWVudCwge1xuICAgICAgICBpZDogd2lkZ2V0LmlkXG4gICAgICB9KTtcbiAgICB9XG5cbiAgICBmdW5jdGlvbiBnZXRUeXBlKGNvbXBvbmVudCkge1xuICAgICAgLy8gZm9yIG5vdywgcGFnZSB3aWRnZXQgZWxlbWVudHMgaGF2ZSB0eXBlICdjb21wb25lbnQnXG4gICAgICByZXR1cm4gIWNvbXBvbmVudC50eXBlIHx8wqBjb21wb25lbnQudHlwZSA9PT0gJ3dpZGdldCcgPyAnY29tcG9uZW50JyA6IGNvbXBvbmVudC50eXBlO1xuICAgIH1cblxuICAgIGZ1bmN0aW9uIGNyZWF0ZUNvbnRhaW5lckVsZW1lbnQoY29udGFpbmVyKSB7XG4gICAgICB2YXIgZWxlbWVudCA9IGNyZWF0ZUVsZW1lbnQoJ2NvbnRhaW5lcicsIGNvbnRhaW5lcik7XG4gICAgICByZXR1cm4gYW5ndWxhci5leHRlbmQoZWxlbWVudCwge1xuICAgICAgICByb3dzOiBbXG4gICAgICAgICAgW11cbiAgICAgICAgXVxuICAgICAgfSk7XG4gICAgfVxuXG4gICAgZnVuY3Rpb24gY3JlYXRlVGFic0NvbnRhaW5lckVsZW1lbnQodGFic0NvbnRhaW5lcikge1xuICAgICAgdmFyIGVsZW1lbnQgPSBjcmVhdGVFbGVtZW50KCd0YWJzQ29udGFpbmVyJywgdGFic0NvbnRhaW5lcik7XG4gICAgICByZXR1cm4gYW5ndWxhci5leHRlbmQoZWxlbWVudCwge1xuICAgICAgICB0YWJzOiBbJ1RhYiAxJywgJ1RhYiAyJ10ubWFwKGNyZWF0ZVRhYkVsZW1lbnQpXG4gICAgICB9KTtcbiAgICB9XG5cbiAgICAvKipcbiAgICAgKiBDcmVhdGVzIGEgbmV3IHRhYiBmb3IgdGhlIGdpdmVuIHRhYnMgY29udGFpbmVyLCB3aXRoIHRoZSBnaXZlbiB0aXRsZVxuICAgICAqL1xuICAgIGZ1bmN0aW9uIGNyZWF0ZVRhYkVsZW1lbnQodGl0bGUpIHtcbiAgICAgIHJldHVybiB7XG4gICAgICAgIHRpdGxlOiB0aXRsZSxcbiAgICAgICAgY29udGFpbmVyOiB7XG4gICAgICAgICAgdHlwZTogJ2NvbnRhaW5lcicsXG4gICAgICAgICAgcm93czogW1xuICAgICAgICAgICAgW11cbiAgICAgICAgICBdXG4gICAgICAgIH1cbiAgICAgIH07XG4gICAgfVxuXG4gICAgZnVuY3Rpb24gY3JlYXRlRm9ybUNvbnRhaW5lckVsZW1lbnQoZm9ybUNvbnRhaW5lcikge1xuICAgICAgdmFyIGVsZW1lbnQgPSBjcmVhdGVFbGVtZW50KCdmb3JtQ29udGFpbmVyJywgZm9ybUNvbnRhaW5lcik7XG4gICAgICByZXR1cm4gYW5ndWxhci5leHRlbmQoZWxlbWVudCwge1xuICAgICAgICBjb250YWluZXI6IHtcbiAgICAgICAgICB0eXBlOiAnY29udGFpbmVyJyxcbiAgICAgICAgICByb3dzOiBbXG4gICAgICAgICAgICBbXVxuICAgICAgICAgIF1cbiAgICAgICAgfVxuICAgICAgfSk7XG4gICAgfVxuXG4gIH1cbn0pKCk7XG4iXX0=</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

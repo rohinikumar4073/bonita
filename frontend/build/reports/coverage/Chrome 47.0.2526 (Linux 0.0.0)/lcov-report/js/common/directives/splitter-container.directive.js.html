@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/common/directives/splitter-container.directive.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/common/directives/splitter-container.directive.js</span></h1>
+    <h2>
+        Statements: <span class="metric">90% <small>(18 / 20)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">75% <small>(3 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">71.43% <small>(5 / 7)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">90% <small>(18 / 20)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/common/directives/</a> &#187; splitter-container.directive.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+/**
+ * Copyright (C) 2015 Bonitasoft S.A.
+ * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2.0 of the License, or
+ * (at your option) any later version.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ */
+/**
+ * A wrapper container to ease communitation between splitter-toggle and
+ * splitter-horizontal
+ */
+&nbsp;
+angular.
+module('bonitasoft.designer.common.directives').
+controller('SplitterContainerCtrl', function ($scope, $state) {
+  var splitter;
+  var isOpen = true;
+&nbsp;
+  this.isActive = function (stateName) {
+    return $state.current.name === stateName;};
+&nbsp;
+&nbsp;
+  this.isOpen = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >    return isOpen;}</span>;
+&nbsp;
+&nbsp;
+  this.register = function (controller) {
+    splitter = controller;};
+&nbsp;
+&nbsp;
+  this.toggle = function (stateName) {
+    if (!isOpen) {
+      splitter.openBottom();
+      isOpen = true;} else 
+    <span class="missing-if-branch" title="else path not taken" >E</span>if ($state.current.name === stateName) {
+      splitter.closeBottom();
+      isOpen = false;}
+&nbsp;
+&nbsp;
+    $state.go(stateName, undefined, { location: false });};
+&nbsp;
+&nbsp;
+  $scope.$on('$destroy', <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >    splitter = undefined;}</span>);}).
+&nbsp;
+&nbsp;
+directive('splitterContainer', function () {
+  return { 
+    controller: 'SplitterContainerCtrl', 
+    controllerAs: 'splitterContainer' };});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNwbGl0dGVyLWNvbnRhaW5lci5kaXJlY3RpdmUuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFvQkE7QUFDRyxNQURILENBQ1UsdUNBRFY7QUFFRyxVQUZILENBRWMsdUJBRmQsRUFFdUMsVUFBUyxNQUFULEVBQWlCLE1BQWpCLEVBQXlCO0FBQzVELE1BQUksUUFBSjtBQUNBLE1BQUksU0FBUyxJQUFiOztBQUVBLE9BQUssUUFBTCxHQUFnQixVQUFTLFNBQVQsRUFBb0I7QUFDbEMsV0FBTyxPQUFPLE9BQVAsQ0FBZSxJQUFmLEtBQXdCLFNBQS9CLENBQ0QsQ0FGRDs7O0FBSUEsT0FBSyxNQUFMLEdBQWMsWUFBVztBQUN2QixXQUFPLE1BQVAsQ0FDRCxDQUZEOzs7QUFJQSxPQUFLLFFBQUwsR0FBZ0IsVUFBUyxVQUFULEVBQXFCO0FBQ25DLGVBQVcsVUFBWCxDQUNELENBRkQ7OztBQUlBLE9BQUssTUFBTCxHQUFjLFVBQVMsU0FBVCxFQUFvQjtBQUNoQyxRQUFJLENBQUMsTUFBTCxFQUFhO0FBQ1gsZUFBUyxVQUFUO0FBQ0EsZUFBUyxJQUFULENBQ0QsQ0FIRDtBQUdPLFFBQUksT0FBTyxPQUFQLENBQWUsSUFBZixLQUF3QixTQUE1QixFQUF1QztBQUM1QyxlQUFTLFdBQVQ7QUFDQSxlQUFTLEtBQVQsQ0FDRDs7O0FBRUQsV0FBTyxFQUFQLENBQVUsU0FBVixFQUFxQixTQUFyQixFQUFnQyxFQUFFLFVBQVUsS0FBWixFQUFoQyxFQUNELENBVkQ7OztBQVlBLFNBQU8sR0FBUCxDQUFXLFVBQVgsRUFBdUIsWUFBVztBQUNoQyxlQUFXLFNBQVgsQ0FDRCxDQUZELEVBR0QsQ0FqQ0g7OztBQWtDRyxTQWxDSCxDQWtDYSxtQkFsQ2IsRUFrQ2tDLFlBQVc7QUFDekMsU0FBTztBQUNMLGdCQUFZLHVCQURQO0FBRUwsa0JBQWMsbUJBRlQsRUFBUCxDQUlELENBdkNIIiwiZmlsZSI6InNwbGl0dGVyLWNvbnRhaW5lci5kaXJlY3RpdmUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbi8qKlxuICogQ29weXJpZ2h0IChDKSAyMDE1IEJvbml0YXNvZnQgUy5BLlxuICogQm9uaXRhc29mdCwgMzIgcnVlIEd1c3RhdmUgRWlmZmVsIC0gMzgwMDAgR3Jlbm9ibGVcbiAqIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOiB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5XG4gKiBpdCB1bmRlciB0aGUgdGVybXMgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGFzIHB1Ymxpc2hlZCBieVxuICogdGhlIEZyZWUgU29mdHdhcmUgRm91bmRhdGlvbiwgZWl0aGVyIHZlcnNpb24gMi4wIG9mIHRoZSBMaWNlbnNlLCBvclxuICogKGF0IHlvdXIgb3B0aW9uKSBhbnkgbGF0ZXIgdmVyc2lvbi5cbiAqIFRoaXMgcHJvZ3JhbSBpcyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUgdXNlZnVsLFxuICogYnV0IFdJVEhPVVQgQU5ZIFdBUlJBTlRZOyB3aXRob3V0IGV2ZW4gdGhlIGltcGxpZWQgd2FycmFudHkgb2ZcbiAqIE1FUkNIQU5UQUJJTElUWSBvciBGSVRORVNTIEZPUiBBIFBBUlRJQ1VMQVIgUFVSUE9TRS4gU2VlIHRoZVxuICogR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgZm9yIG1vcmUgZGV0YWlscy5cbiAqIFlvdSBzaG91bGQgaGF2ZSByZWNlaXZlZCBhIGNvcHkgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlXG4gKiBhbG9uZyB3aXRoIHRoaXMgcHJvZ3JhbS4gSWYgbm90LCBzZWUgPGh0dHA6Ly93d3cuZ251Lm9yZy9saWNlbnNlcy8+LlxuICovXG4vKipcbiAqIEEgd3JhcHBlciBjb250YWluZXIgdG8gZWFzZSBjb21tdW5pdGF0aW9uIGJldHdlZW4gc3BsaXR0ZXItdG9nZ2xlIGFuZFxuICogc3BsaXR0ZXItaG9yaXpvbnRhbFxuICovXG5cbmFuZ3VsYXJcbiAgLm1vZHVsZSgnYm9uaXRhc29mdC5kZXNpZ25lci5jb21tb24uZGlyZWN0aXZlcycpXG4gIC5jb250cm9sbGVyKCdTcGxpdHRlckNvbnRhaW5lckN0cmwnLCBmdW5jdGlvbigkc2NvcGUsICRzdGF0ZSkge1xuICAgIHZhciBzcGxpdHRlcjtcbiAgICB2YXIgaXNPcGVuID0gdHJ1ZTtcblxuICAgIHRoaXMuaXNBY3RpdmUgPSBmdW5jdGlvbihzdGF0ZU5hbWUpIHtcbiAgICAgIHJldHVybiAkc3RhdGUuY3VycmVudC5uYW1lID09PSBzdGF0ZU5hbWU7XG4gICAgfTtcblxuICAgIHRoaXMuaXNPcGVuID0gZnVuY3Rpb24oKSB7XG4gICAgICByZXR1cm4gaXNPcGVuO1xuICAgIH07XG5cbiAgICB0aGlzLnJlZ2lzdGVyID0gZnVuY3Rpb24oY29udHJvbGxlcikge1xuICAgICAgc3BsaXR0ZXIgPSBjb250cm9sbGVyO1xuICAgIH07XG5cbiAgICB0aGlzLnRvZ2dsZSA9IGZ1bmN0aW9uKHN0YXRlTmFtZSkge1xuICAgICAgaWYgKCFpc09wZW4pIHtcbiAgICAgICAgc3BsaXR0ZXIub3BlbkJvdHRvbSgpO1xuICAgICAgICBpc09wZW4gPSB0cnVlO1xuICAgICAgfSBlbHNlIGlmICgkc3RhdGUuY3VycmVudC5uYW1lID09PSBzdGF0ZU5hbWUpIHtcbiAgICAgICAgc3BsaXR0ZXIuY2xvc2VCb3R0b20oKTtcbiAgICAgICAgaXNPcGVuID0gZmFsc2U7XG4gICAgICB9XG5cbiAgICAgICRzdGF0ZS5nbyhzdGF0ZU5hbWUsIHVuZGVmaW5lZCwgeyBsb2NhdGlvbjogZmFsc2UgfSk7XG4gICAgfTtcblxuICAgICRzY29wZS4kb24oJyRkZXN0cm95JywgZnVuY3Rpb24oKSB7XG4gICAgICBzcGxpdHRlciA9IHVuZGVmaW5lZDtcbiAgICB9KTtcbiAgfSlcbiAgLmRpcmVjdGl2ZSgnc3BsaXR0ZXJDb250YWluZXInLCBmdW5jdGlvbigpIHtcbiAgICByZXR1cm4ge1xuICAgICAgY29udHJvbGxlcjogJ1NwbGl0dGVyQ29udGFpbmVyQ3RybCcsXG4gICAgICBjb250cm9sbGVyQXM6ICdzcGxpdHRlckNvbnRhaW5lcicsXG4gICAgfTtcbiAgfSk7XG4iXX0=</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

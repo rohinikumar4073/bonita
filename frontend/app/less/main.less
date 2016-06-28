@@ -1,0 +1,201 @@
+@import "../../bower_components/bootstrap/less/bootstrap";
+@import "../../bower_components/bootstrap/less/responsive-utilities";
+@import "../../bower_components/bootstrap/less/glyphicons.less";
+@import "../../bower_components/font-awesome/less/font-awesome.less";
+
+@import "variables";
+@import "theme-colour";
+
+@import "../js/home/home";
+@import "forms";
+@import "sidebar";
+@import "palette";
+@import "bottom-panel";
+@import "widget";
+@import "preview";
+@import "workspace";
+@import "drop-zone";
+@import "drop-row";
+@import "alerts";
+@import "modal";
+@import "../js/editor/editor";
+@import "../js/editor/properties-panel/properties-panel";
+@import "../js/editor/header/header";
+@import "file-upload";
+@import "splitter";
+@import "widget-editor";
+@import "data";
+@import "assets";
+@import "help";
+@import "popover";
+@import "tooltip";
+@import "../js/common/directives/search/search";
+@import "../js/home/import/import";
+@import "../js/home/create/create";
+
+
+@fa-font-path: "../../bower_components/font-awesome/fonts";
+
+/****************************************************************************************************************************/
+/*                                                BOOTSTRAP FIX                                                             */
+/****************************************************************************************************************************/
+/* Fixes https://github.com/twbs/bootstrap/issues/8959                                                                      */
+/* Can be removed when using bootstrap > v3.3.x                                                                            */
+/****************************************************************************************************************************/
+
+.container {
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+/****************************************************************************************************************************/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-width: 1024px;
+}
+
+// forcing container width for low screen size
+// => UI Designer min-width 1024
+.container {
+  @media (max-width: @screen-md-min) {
+    min-width: @container-md;
+    width: @container-md;
+  }
+}
+
+#menubar #resolutions .navbar-btn {
+  margin-bottom: 0;
+  margin-top: 2px
+}
+
+.bo-drag-action {
+  user-select: none;
+}
+
+.shadow-on-focus() {
+  @color-rgba: rgba(red(#555555), green(#555555), blue(#555555), .8);
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 12px @color-rgba;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.ace_editor {
+  height: 120px;
+  min-width: 400px;
+  border: 1px solid @table-border-color;
+  border-radius: @border-radius-base;
+}
+
+[bo-draggable] img {
+  pointer-events: none;
+}
+
+.@{fa-css-prefix}-alias-import:before {
+  content: @fa-var-download;
+}
+
+.@{fa-css-prefix}-alias-export:before {
+  content: @fa-var-upload;
+}
+
+.ui-icon {
+  &.ui-variable{
+    .fa-icon();
+    &:before{
+      content: @fa-var-link;
+    }
+  }
+  &.ui-interpolation{
+    .fa-icon();
+    &:before{
+      content: @fa-var-paragraph;
+    }
+  }
+  &.ui-import{
+    font-family: 'Glyphicons Halflings';
+    .glyphicon-import;
+    position: relative;
+    top: -.5px;
+    font-size: 85%;
+
+  }
+  &.ui-export{
+    font-family: 'Glyphicons Halflings';
+    .glyphicon-export;
+    position: relative;
+    top: -.5px;
+    font-size: 85%;
+
+  }
+}
+
+.fa[tooltip] {
+  cursor: default;
+}
+
+.tip {
+  font-weight: bold;
+  &:before {
+    .fa-icon();
+    content: "@{fa-var-lightbulb-o}\00a0";
+  }
+}
+
+.key {
+  background-color: #fcfcfc;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 -1px 0 #bbb inset;
+  color: #555;
+  display: inline-block;
+  font: 11px/10px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+/****************************************************************************************************************************/
+/*                                                HELPER CLASSES                                                            */
+/****************************************************************************************************************************/
+.table.table-text-ellipsis td {
+  max-width: 100px; // hack to make ellipsis work... no matter the specified size
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// btn-group with no border and light :hover effect
+.btn-group {
+
+  &.link-group {
+    .btn {
+      border: none;
+      background-color: transparent;
+      color: @text-muted;
+
+      &:hover {
+        color: @btn-default-color;
+      }
+    }
+  }
+}
+
+.control-label--required:after {
+  content: " *";
+  color: @state-danger-text;
+}
+
+::-ms-clear
+{
+    display: none;
+}

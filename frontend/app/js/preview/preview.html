@@ -1,0 +1,10 @@
+<div class="Preview">
+    <div class="Preview-header">
+        <span class="Preview-title" translate>Preview - {{pageName}}</span>
+        <div class="navbar-right">
+            <language-picker on-change="refreshIframe()" class="navbar-text"></language-picker>
+            <resolutions-bar id="resolutions" class="btn-group btn-group-lg navbar-text"></resolutions-bar>
+        </div>
+    </div>
+    <iframe preview-localized-iframe class="Preview-viewport" ng-src="{{iframe.src}}" width="{{iframeWidth()}}" ></iframe>
+</div>

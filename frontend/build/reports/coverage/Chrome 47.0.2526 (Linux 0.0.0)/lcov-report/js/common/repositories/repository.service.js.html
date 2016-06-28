@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/common/repositories/repository.service.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">js/common/repositories/repository.service.js</span></h1>
+    <h2>
+        Statements: <span class="metric">64.44% <small>(29 / 45)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">16.67% <small>(2 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">76.19% <small>(16 / 21)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">91.67% <small>(22 / 24)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/common/repositories/</a> &#187; repository.service.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">115</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">163</span>
+<span class="cline-any cline-yes">163</span>
+<span class="cline-any cline-yes">163</span>
+<span class="cline-any cline-yes">163</span>
+<span class="cline-any cline-yes">163</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">115</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">115</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';var _createClass = function () {<span class="fstat-no" title="function not covered" >function defineProperties(target, props) {<span class="cstat-no" title="statement not covered" ></span>for (var i = 0; i &lt; props.length; i++) {<span class="cstat-no" title="statement not covered" >var descriptor = props[i];<span class="cstat-no" title="statement not covered" >d</span>escriptor.enumerable = descriptor.enumerable || false;<span class="cstat-no" title="statement not covered" >d</span>escriptor.configurable = true;<span class="cstat-no" title="statement not covered" >i</span>f ("value" in descriptor) <span class="cstat-no" title="statement not covered" >descriptor.writable = true;<span class="cstat-no" title="statement not covered" >O</span></span>bject.defineProperty(target, descriptor.key, descriptor);}</span>}</span>return <span class="fstat-no" title="function not covered" >function (Constructor, protoProps, staticProps) {<span class="cstat-no" title="statement not covered" ></span>if (protoProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor.prototype, protoProps);<span class="cstat-no" title="statement not covered" >i</span></span>f (staticProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor, staticProps);<span class="cstat-no" title="statement not covered" >r</span></span>eturn Constructor;}</span>;}();<span class="fstat-no" title="function not covered" >function _classCallCheck(instance, Constructor) {<span class="cstat-no" title="statement not covered" ></span>if (!(instance instanceof Constructor)) {<span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function");}</span>}</span> /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * Copyright (C) 2015 Bonitasoft S.A.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * This program is free software: you can redistribute it and/or modify
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * it under the terms of the GNU General Public License as published by
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * the Free Software Foundation, either version 2.0 of the License, or
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * (at your option) any later version.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * This program is distributed in the hope that it will be useful,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * but WITHOUT ANY WARRANTY; without even the implied warranty of
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * GNU General Public License for more details.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * You should have received a copy of the GNU General Public License
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
+(function () {
+&nbsp;
+  'use strict';
+&nbsp;
+  angular.
+  module('bonitasoft.designer.common.repositories').
+  factory('Repository', repositoryService);
+&nbsp;
+  function repositoryService($http) {var 
+&nbsp;
+    Repository = function () {
+      function Repository(type, baseUrl) {_classCallCheck(this, Repository);
+        this.type = type;
+        this.baseUrl = baseUrl;
+        this.lastSavedState = {};
+        this.$http = $http;}_createClass(Repository, [{ key: 'save', value: function save(
+&nbsp;
+&nbsp;
+        artifact) {var _this = this;
+          return this.$http.put(this.baseUrl + '/' + artifact.id, artifact).
+          success(function () {
+            _this.lastSavedState = artifact;});}
+&nbsp;
+&nbsp;
+&nbsp;
+        /**
+         * Initialise lastSavedState to track update from editor
+         * @param  {Object} artifact  the current artifact being edited
+         */ }, { key: 'initLastSavedState', value: <span class="fstat-no" title="function not covered" >function initLastSavedState(</span>
+        artifact) {
+<span class="cstat-no" title="statement not covered" >          this.lastSavedState = angular.copy(artifact);}</span>
+&nbsp;
+&nbsp;
+        /**
+         * Utility function to track if a artifact being updated, need to be saved
+         * @param  {Object} artifact the artifact being updated
+         * @return {Boolean}
+         */ }, { key: 'needSave', value: <span class="fstat-no" title="function not covered" >function needSave(</span>
+        artifact) {
+<span class="cstat-no" title="statement not covered" >          return !angular.equals(artifact, this.lastSavedState);}</span> }, { key: 'delete', value: function _delete(
+&nbsp;
+&nbsp;
+        id) {
+          return this.$http.delete(this.baseUrl + '/' + id);} }, { key: 'create', value: function create(
+&nbsp;
+&nbsp;
+        artifact, sourceArtifactId) {
+          return this.$http.post(this.baseUrl + (sourceArtifactId ? '?duplicata=' + sourceArtifactId : ''), artifact).
+          then(function (response) {return response.data;});} }, { key: 'load', value: function load(
+&nbsp;
+&nbsp;
+        id) {
+          return this.$http.get(this.baseUrl + '/' + id);} }, { key: 'all', value: function all() 
+&nbsp;
+&nbsp;
+        {
+          return this.$http.get(this.baseUrl).
+          then(function (response) {return response.data;});}
+&nbsp;
+&nbsp;
+        /**
+         * Return export url of a artifact
+         * @param artifact - the artifact to be exported
+         */ }, { key: 'exportUrl', value: function exportUrl(
+        artifact) {
+          return 'export/' + this.type + '/' + artifact.id;} }, { key: 'markAsFavorite', value: function markAsFavorite(
+&nbsp;
+&nbsp;
+        artifactId) {
+          return this.$http.put(this.baseUrl + '/' + artifactId + '/favorite', true);} }, { key: 'unmarkAsFavorite', value: function unmarkAsFavorite(
+&nbsp;
+&nbsp;
+        artifactId) {
+          return this.$http.put(this.baseUrl + '/' + artifactId + '/favorite', false);} }]);return Repository;}();
+&nbsp;
+&nbsp;
+&nbsp;
+    return Repository;}})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlcG9zaXRvcnkuc2VydmljZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7OztBQWNBLENBQUMsWUFBVzs7QUFFVjs7QUFFQTtBQUNHLFFBREgsQ0FDVSx5Q0FEVjtBQUVHLFNBRkgsQ0FFVyxZQUZYLEVBRXlCLGlCQUZ6Qjs7QUFJQSxXQUFTLGlCQUFULENBQTJCLEtBQTNCLEVBQWtDOztBQUUxQixjQUYwQjtBQUc5QixlQURJLFVBQ0osQ0FBWSxJQUFaLEVBQWtCLE9BQWxCLEVBQTJCLHVCQUR2QixVQUN1QjtBQUN6QixhQUFLLElBQUwsR0FBWSxJQUFaO0FBQ0EsYUFBSyxPQUFMLEdBQWUsT0FBZjtBQUNBLGFBQUssY0FBTCxHQUFzQixFQUF0QjtBQUNBLGFBQUssS0FBTCxHQUFhLEtBQWIsQ0FDRCxDQVI2QixhQUUxQixVQUYwQjs7O0FBVXpCLGdCQVZ5QixFQVVmO0FBQ2IsaUJBQU8sS0FBSyxLQUFMLENBQVcsR0FBWCxDQUFrQixLQUFLLE9BQXZCLFNBQWtDLFNBQVMsRUFBM0MsRUFBaUQsUUFBakQ7QUFDSixpQkFESSxDQUNJLFlBQU07QUFDYixrQkFBSyxjQUFMLEdBQXNCLFFBQXRCLENBQ0QsQ0FISSxDQUFQLENBSUQ7Ozs7Ozs7V0FmNkI7QUFxQlgsZ0JBckJXLEVBcUJEO0FBQzNCLGVBQUssY0FBTCxHQUFzQixRQUFRLElBQVIsQ0FBYSxRQUFiLENBQXRCLENBQ0Q7Ozs7Ozs7V0F2QjZCO0FBOEJyQixnQkE5QnFCLEVBOEJYO0FBQ2pCLGlCQUFPLENBQUMsUUFBUSxNQUFSLENBQWUsUUFBZixFQUF5QixLQUFLLGNBQTlCLENBQVIsQ0FDRCxDQWhDNkI7OztBQWtDdkIsVUFsQ3VCLEVBa0NuQjtBQUNULGlCQUFPLEtBQUssS0FBTCxDQUFXLE1BQVgsQ0FBcUIsS0FBSyxPQUExQixTQUFxQyxFQUFyQyxDQUFQLENBQ0QsQ0FwQzZCOzs7QUFzQ3ZCLGdCQXRDdUIsRUFzQ2IsZ0JBdENhLEVBc0NLO0FBQ2pDLGlCQUFPLEtBQUssS0FBTCxDQUFXLElBQVgsQ0FBZ0IsS0FBSyxPQUFMLElBQWdCLG1CQUFtQixnQkFBZ0IsZ0JBQW5DLEdBQXNELEVBQXRFLENBQWhCLEVBQTJGLFFBQTNGO0FBQ0osY0FESSxDQUNDLFVBQUMsUUFBRCxVQUFjLFNBQVMsSUFBdkIsRUFERCxDQUFQLENBRUQsQ0F6QzZCOzs7QUEyQ3pCLFVBM0N5QixFQTJDckI7QUFDUCxpQkFBTyxLQUFLLEtBQUwsQ0FBVyxHQUFYLENBQWtCLEtBQUssT0FBdkIsU0FBa0MsRUFBbEMsQ0FBUCxDQUNELENBN0M2Qjs7O0FBK0N4QjtBQUNKLGlCQUFPLEtBQUssS0FBTCxDQUFXLEdBQVgsQ0FBZSxLQUFLLE9BQXBCO0FBQ0osY0FESSxDQUNDLFVBQUMsUUFBRCxVQUFjLFNBQVMsSUFBdkIsRUFERCxDQUFQLENBRUQ7Ozs7OztXQWxENkI7QUF3RHBCLGdCQXhEb0IsRUF3RFY7QUFDbEIsNkJBQWlCLEtBQUssSUFBdEIsU0FBOEIsU0FBUyxFQUF2QyxDQUNELENBMUQ2Qjs7O0FBNERmLGtCQTVEZSxFQTRESDtBQUN6QixpQkFBTyxLQUFLLEtBQUwsQ0FBVyxHQUFYLENBQWtCLEtBQUssT0FBdkIsU0FBa0MsVUFBbEMsZ0JBQXlELElBQXpELENBQVAsQ0FDRCxDQTlENkI7OztBQWdFYixrQkFoRWEsRUFnRUQ7QUFDM0IsaUJBQU8sS0FBSyxLQUFMLENBQVcsR0FBWCxDQUFrQixLQUFLLE9BQXZCLFNBQWtDLFVBQWxDLGdCQUF5RCxLQUF6RCxDQUFQLENBQ0QsQ0FsRTZCLFlBRTFCLFVBRjBCOzs7O0FBcUVoQyxXQUFPLFVBQVAsQ0FDRCxDQUVGLENBaEZEIiwiZmlsZSI6InJlcG9zaXRvcnkuc2VydmljZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQ29weXJpZ2h0IChDKSAyMDE1IEJvbml0YXNvZnQgUy5BLlxuICogQm9uaXRhc29mdCwgMzIgcnVlIEd1c3RhdmUgRWlmZmVsIC0gMzgwMDAgR3Jlbm9ibGVcbiAqIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOiB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5XG4gKiBpdCB1bmRlciB0aGUgdGVybXMgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGFzIHB1Ymxpc2hlZCBieVxuICogdGhlIEZyZWUgU29mdHdhcmUgRm91bmRhdGlvbiwgZWl0aGVyIHZlcnNpb24gMi4wIG9mIHRoZSBMaWNlbnNlLCBvclxuICogKGF0IHlvdXIgb3B0aW9uKSBhbnkgbGF0ZXIgdmVyc2lvbi5cbiAqIFRoaXMgcHJvZ3JhbSBpcyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUgdXNlZnVsLFxuICogYnV0IFdJVEhPVVQgQU5ZIFdBUlJBTlRZOyB3aXRob3V0IGV2ZW4gdGhlIGltcGxpZWQgd2FycmFudHkgb2ZcbiAqIE1FUkNIQU5UQUJJTElUWSBvciBGSVRORVNTIEZPUiBBIFBBUlRJQ1VMQVIgUFVSUE9TRS4gU2VlIHRoZVxuICogR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgZm9yIG1vcmUgZGV0YWlscy5cbiAqIFlvdSBzaG91bGQgaGF2ZSByZWNlaXZlZCBhIGNvcHkgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlXG4gKiBhbG9uZyB3aXRoIHRoaXMgcHJvZ3JhbS4gSWYgbm90LCBzZWUgPGh0dHA6Ly93d3cuZ251Lm9yZy9saWNlbnNlcy8+LlxuICovXG4oZnVuY3Rpb24oKSB7XG5cbiAgJ3VzZSBzdHJpY3QnO1xuXG4gIGFuZ3VsYXJcbiAgICAubW9kdWxlKCdib25pdGFzb2Z0LmRlc2lnbmVyLmNvbW1vbi5yZXBvc2l0b3JpZXMnKVxuICAgIC5mYWN0b3J5KCdSZXBvc2l0b3J5JywgcmVwb3NpdG9yeVNlcnZpY2UpO1xuXG4gIGZ1bmN0aW9uIHJlcG9zaXRvcnlTZXJ2aWNlKCRodHRwKSB7XG5cbiAgICBjbGFzcyBSZXBvc2l0b3J5IHtcbiAgICAgIGNvbnN0cnVjdG9yKHR5cGUsIGJhc2VVcmwpIHtcbiAgICAgICAgdGhpcy50eXBlID0gdHlwZTtcbiAgICAgICAgdGhpcy5iYXNlVXJsID0gYmFzZVVybDtcbiAgICAgICAgdGhpcy5sYXN0U2F2ZWRTdGF0ZSA9IHt9O1xuICAgICAgICB0aGlzLiRodHRwID0gJGh0dHA7XG4gICAgICB9XG5cbiAgICAgIHNhdmUoYXJ0aWZhY3QpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuJGh0dHAucHV0KGAke3RoaXMuYmFzZVVybH0vJHthcnRpZmFjdC5pZH1gLCBhcnRpZmFjdClcbiAgICAgICAgICAuc3VjY2VzcygoKSA9PiB7XG4gICAgICAgICAgICB0aGlzLmxhc3RTYXZlZFN0YXRlID0gYXJ0aWZhY3Q7XG4gICAgICAgICAgfSk7XG4gICAgICB9XG5cbiAgICAgIC8qKlxuICAgICAgICogSW5pdGlhbGlzZSBsYXN0U2F2ZWRTdGF0ZSB0byB0cmFjayB1cGRhdGUgZnJvbSBlZGl0b3JcbiAgICAgICAqIEBwYXJhbSAge09iamVjdH0gYXJ0aWZhY3QgIHRoZSBjdXJyZW50IGFydGlmYWN0IGJlaW5nIGVkaXRlZFxuICAgICAgICovXG4gICAgICBpbml0TGFzdFNhdmVkU3RhdGUoYXJ0aWZhY3QpIHtcbiAgICAgICAgdGhpcy5sYXN0U2F2ZWRTdGF0ZSA9IGFuZ3VsYXIuY29weShhcnRpZmFjdCk7XG4gICAgICB9XG5cbiAgICAgIC8qKlxuICAgICAgICogVXRpbGl0eSBmdW5jdGlvbiB0byB0cmFjayBpZiBhIGFydGlmYWN0IGJlaW5nIHVwZGF0ZWQsIG5lZWQgdG8gYmUgc2F2ZWRcbiAgICAgICAqIEBwYXJhbSAge09iamVjdH0gYXJ0aWZhY3QgdGhlIGFydGlmYWN0IGJlaW5nIHVwZGF0ZWRcbiAgICAgICAqIEByZXR1cm4ge0Jvb2xlYW59XG4gICAgICAgKi9cbiAgICAgIG5lZWRTYXZlKGFydGlmYWN0KSB7XG4gICAgICAgIHJldHVybiAhYW5ndWxhci5lcXVhbHMoYXJ0aWZhY3QsIHRoaXMubGFzdFNhdmVkU3RhdGUpO1xuICAgICAgfVxuXG4gICAgICBkZWxldGUoaWQpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuJGh0dHAuZGVsZXRlKGAke3RoaXMuYmFzZVVybH0vJHtpZH1gKTtcbiAgICAgIH1cblxuICAgICAgY3JlYXRlKGFydGlmYWN0LCBzb3VyY2VBcnRpZmFjdElkKSB7XG4gICAgICAgIHJldHVybiB0aGlzLiRodHRwLnBvc3QodGhpcy5iYXNlVXJsICsgKHNvdXJjZUFydGlmYWN0SWQgPyAnP2R1cGxpY2F0YT0nICsgc291cmNlQXJ0aWZhY3RJZCA6ICcnKSwgYXJ0aWZhY3QpXG4gICAgICAgICAgLnRoZW4oKHJlc3BvbnNlKSA9PiByZXNwb25zZS5kYXRhKTtcbiAgICAgIH1cblxuICAgICAgbG9hZChpZCkge1xuICAgICAgICByZXR1cm4gdGhpcy4kaHR0cC5nZXQoYCR7dGhpcy5iYXNlVXJsfS8ke2lkfWApO1xuICAgICAgfVxuXG4gICAgICBhbGwoKSB7XG4gICAgICAgIHJldHVybiB0aGlzLiRodHRwLmdldCh0aGlzLmJhc2VVcmwpXG4gICAgICAgICAgLnRoZW4oKHJlc3BvbnNlKSA9PiByZXNwb25zZS5kYXRhKTtcbiAgICAgIH1cblxuICAgICAgLyoqXG4gICAgICAgKiBSZXR1cm4gZXhwb3J0IHVybCBvZiBhIGFydGlmYWN0XG4gICAgICAgKiBAcGFyYW0gYXJ0aWZhY3QgLSB0aGUgYXJ0aWZhY3QgdG8gYmUgZXhwb3J0ZWRcbiAgICAgICAqL1xuICAgICAgZXhwb3J0VXJsKGFydGlmYWN0KSB7XG4gICAgICAgIHJldHVybiBgZXhwb3J0LyR7dGhpcy50eXBlfS8ke2FydGlmYWN0LmlkfWA7XG4gICAgICB9XG5cbiAgICAgIG1hcmtBc0Zhdm9yaXRlKGFydGlmYWN0SWQpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuJGh0dHAucHV0KGAke3RoaXMuYmFzZVVybH0vJHthcnRpZmFjdElkfS9mYXZvcml0ZWAsIHRydWUpO1xuICAgICAgfVxuXG4gICAgICB1bm1hcmtBc0Zhdm9yaXRlKGFydGlmYWN0SWQpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuJGh0dHAucHV0KGAke3RoaXMuYmFzZVVybH0vJHthcnRpZmFjdElkfS9mYXZvcml0ZWAsIGZhbHNlKTtcbiAgICAgIH1cbiAgICB9XG5cbiAgICByZXR1cm4gUmVwb3NpdG9yeTtcbiAgfVxuXG59KSgpO1xuIl19</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

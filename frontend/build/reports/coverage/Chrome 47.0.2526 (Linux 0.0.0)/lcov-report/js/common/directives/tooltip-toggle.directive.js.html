@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/common/directives/tooltip-toggle.directive.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/common/directives/tooltip-toggle.directive.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(9 / 9)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(2 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(5 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(9 / 9)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/common/directives/</a> &#187; tooltip-toggle.directive.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict'; /**
+               * Copyright (C) 2015 Bonitasoft S.A.
+               * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+               * This program is free software: you can redistribute it and/or modify
+               * it under the terms of the GNU General Public License as published by
+               * the Free Software Foundation, either version 2.0 of the License, or
+               * (at your option) any later version.
+               * This program is distributed in the hope that it will be useful,
+               * but WITHOUT ANY WARRANTY; without even the implied warranty of
+               * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+               * GNU General Public License for more details.
+               * You should have received a copy of the GNU General Public License
+               * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+               */
+/**
+ * Wrap ace directive according to page builder needs
+ */
+&nbsp;
+angular.module('bonitasoft.designer.common.directives').directive('tooltipToggle', function ($timeout) {
+  'use strict';
+&nbsp;
+  return { 
+    name: 'tooltipToggle', 
+    link: function (scope, element, attr) {
+      attr.tooltipTrigger = 'show-tooltip';
+&nbsp;
+      scope.$watch(attr.tooltipToggle, function (value) {
+        if (value) {
+          // tooltip provider will call scope.$apply, so need to get out of this digest cycle first
+          $timeout(function () {
+            element.triggerHandler('show-tooltip');});} else 
+&nbsp;
+        {
+          $timeout(function () {
+            element.triggerHandler('hide-tooltip');});}});} };});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRvb2x0aXAtdG9nZ2xlLmRpcmVjdGl2ZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFrQkEsUUFBUSxNQUFSLENBQWUsdUNBQWYsRUFBd0QsU0FBeEQsQ0FBa0UsZUFBbEUsRUFBbUYsVUFBUyxRQUFULEVBQW1CO0FBQ3BHOztBQUVBLFNBQU87QUFDTCxVQUFNLGVBREQ7QUFFTCxVQUFNLFVBQVMsS0FBVCxFQUFnQixPQUFoQixFQUF5QixJQUF6QixFQUErQjtBQUNuQyxXQUFLLGNBQUwsR0FBc0IsY0FBdEI7O0FBRUEsWUFBTSxNQUFOLENBQWEsS0FBSyxhQUFsQixFQUFpQyxVQUFTLEtBQVQsRUFBZ0I7QUFDL0MsWUFBSSxLQUFKLEVBQVc7O0FBRVQsbUJBQVMsWUFBVztBQUNsQixvQkFBUSxjQUFSLENBQXVCLGNBQXZCLEVBQ0QsQ0FGRCxFQUdELENBTEQ7O0FBS087QUFDTCxtQkFBUyxZQUFXO0FBQ2xCLG9CQUFRLGNBQVIsQ0FBdUIsY0FBdkIsRUFDRCxDQUZELEVBR0QsQ0FDRixDQVhELEVBWUQsQ0FqQkksRUFBUCxDQW1CRCxDQXRCRCIsImZpbGUiOiJ0b29sdGlwLXRvZ2dsZS5kaXJlY3RpdmUuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIENvcHlyaWdodCAoQykgMjAxNSBCb25pdGFzb2Z0IFMuQS5cbiAqIEJvbml0YXNvZnQsIDMyIHJ1ZSBHdXN0YXZlIEVpZmZlbCAtIDM4MDAwIEdyZW5vYmxlXG4gKiBUaGlzIHByb2dyYW0gaXMgZnJlZSBzb2Z0d2FyZTogeW91IGNhbiByZWRpc3RyaWJ1dGUgaXQgYW5kL29yIG1vZGlmeVxuICogaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBhcyBwdWJsaXNoZWQgYnlcbiAqIHRoZSBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb24sIGVpdGhlciB2ZXJzaW9uIDIuMCBvZiB0aGUgTGljZW5zZSwgb3JcbiAqIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uXG4gKiBUaGlzIHByb2dyYW0gaXMgZGlzdHJpYnV0ZWQgaW4gdGhlIGhvcGUgdGhhdCBpdCB3aWxsIGJlIHVzZWZ1bCxcbiAqIGJ1dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBpbXBsaWVkIHdhcnJhbnR5IG9mXG4gKiBNRVJDSEFOVEFCSUxJVFkgb3IgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UuIFNlZSB0aGVcbiAqIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGZvciBtb3JlIGRldGFpbHMuXG4gKiBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZVxuICogYWxvbmcgd2l0aCB0aGlzIHByb2dyYW0uIElmIG5vdCwgc2VlIDxodHRwOi8vd3d3LmdudS5vcmcvbGljZW5zZXMvPi5cbiAqL1xuLyoqXG4gKiBXcmFwIGFjZSBkaXJlY3RpdmUgYWNjb3JkaW5nIHRvIHBhZ2UgYnVpbGRlciBuZWVkc1xuICovXG5cbmFuZ3VsYXIubW9kdWxlKCdib25pdGFzb2Z0LmRlc2lnbmVyLmNvbW1vbi5kaXJlY3RpdmVzJykuZGlyZWN0aXZlKCd0b29sdGlwVG9nZ2xlJywgZnVuY3Rpb24oJHRpbWVvdXQpIHtcbiAgJ3VzZSBzdHJpY3QnO1xuXG4gIHJldHVybiB7XG4gICAgbmFtZTogJ3Rvb2x0aXBUb2dnbGUnLFxuICAgIGxpbms6IGZ1bmN0aW9uKHNjb3BlLCBlbGVtZW50LCBhdHRyKSB7XG4gICAgICBhdHRyLnRvb2x0aXBUcmlnZ2VyID0gJ3Nob3ctdG9vbHRpcCc7XG5cbiAgICAgIHNjb3BlLiR3YXRjaChhdHRyLnRvb2x0aXBUb2dnbGUsIGZ1bmN0aW9uKHZhbHVlKSB7XG4gICAgICAgIGlmICh2YWx1ZSkge1xuICAgICAgICAgIC8vIHRvb2x0aXAgcHJvdmlkZXIgd2lsbCBjYWxsIHNjb3BlLiRhcHBseSwgc28gbmVlZCB0byBnZXQgb3V0IG9mIHRoaXMgZGlnZXN0IGN5Y2xlIGZpcnN0XG4gICAgICAgICAgJHRpbWVvdXQoZnVuY3Rpb24oKSB7XG4gICAgICAgICAgICBlbGVtZW50LnRyaWdnZXJIYW5kbGVyKCdzaG93LXRvb2x0aXAnKTtcbiAgICAgICAgICB9KTtcbiAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICAkdGltZW91dChmdW5jdGlvbigpIHtcbiAgICAgICAgICAgIGVsZW1lbnQudHJpZ2dlckhhbmRsZXIoJ2hpZGUtdG9vbHRpcCcpO1xuICAgICAgICAgIH0pO1xuICAgICAgICB9XG4gICAgICB9KTtcbiAgICB9XG4gIH07XG59KTtcbiJdfQ==</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

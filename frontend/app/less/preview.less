@@ -1,0 +1,27 @@
+.Preview {
+  height: 100%;
+}
+
+.Preview-header {
+  background-color: @color-editor-header-bg;
+  color: @color-editor-header-text;
+  height: @nav-bar-height;
+  padding: 0 .75em;
+  display: table;
+  width: 100%;
+}
+
+.Preview-title {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+
+.Preview-viewport {
+  height: calc(~"100%" -  @nav-bar-height + 30);
+  box-sizing: content-box;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  display: block;
+  margin: 1em auto 0;
+}

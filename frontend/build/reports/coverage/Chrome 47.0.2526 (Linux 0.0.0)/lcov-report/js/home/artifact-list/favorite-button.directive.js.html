@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/home/artifact-list/favorite-button.directive.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/home/artifact-list/favorite-button.directive.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(13 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(2 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(5 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(13 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/home/artifact-list/</a> &#187; favorite-button.directive.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">12</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">19</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19</span>
+<span class="cline-any cline-yes">99</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';(function () {
+&nbsp;
+  'use strict';
+&nbsp;
+  angular.
+  module('bonitasoft.designer.home').
+  directive('favoriteButton', favoriteButton);
+&nbsp;
+  function favoriteButton() {
+    return { 
+      scope: { 
+        artifact: '=', 
+        repository: '=artifactRepository' }, 
+&nbsp;
+      controller: FavoriteButtonCtrl, 
+      controllerAs: 'vm', 
+      bindToController: true, 
+      replace: true, 
+      templateUrl: 'js/home/artifact-list/favorite-button.html' };}
+&nbsp;
+&nbsp;
+&nbsp;
+  function FavoriteButtonCtrl() {
+    var vm = this;
+&nbsp;
+    vm.toggleFavorite = function () {
+      if (vm.artifact.favorite) {
+        vm.repository.unmarkAsFavorite(vm.artifact.id);} else 
+      {
+        vm.repository.markAsFavorite(vm.artifact.id);}
+&nbsp;
+      vm.artifact.favorite = !vm.artifact.favorite;};
+&nbsp;
+&nbsp;
+    vm.isFavorite = function () {
+      return vm.artifact.favorite;};}})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZhdm9yaXRlLWJ1dHRvbi5kaXJlY3RpdmUuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6ImFBQUEsQ0FBQyxZQUFXOztBQUVWOztBQUVBO0FBQ0ssUUFETCxDQUNZLDBCQURaO0FBRUssV0FGTCxDQUVlLGdCQUZmLEVBRWlDLGNBRmpDOztBQUlBLFdBQVMsY0FBVCxHQUEwQjtBQUN4QixXQUFPO0FBQ0wsYUFBTztBQUNMLGtCQUFVLEdBREw7QUFFTCxvQkFBWSxxQkFGUCxFQURGOztBQUtMLGtCQUFZLGtCQUxQO0FBTUwsb0JBQWMsSUFOVDtBQU9MLHdCQUFrQixJQVBiO0FBUUwsZUFBUyxJQVJKO0FBU0wsbUJBQWEsNENBVFIsRUFBUCxDQVdEOzs7O0FBRUQsV0FBUyxrQkFBVCxHQUE4QjtBQUM1QixRQUFJLEtBQUssSUFBVDs7QUFFQSxPQUFHLGNBQUgsR0FBb0IsWUFBVztBQUM3QixVQUFJLEdBQUcsUUFBSCxDQUFZLFFBQWhCLEVBQTBCO0FBQ3hCLFdBQUcsVUFBSCxDQUFjLGdCQUFkLENBQStCLEdBQUcsUUFBSCxDQUFZLEVBQTNDLEVBQ0QsQ0FGRDtBQUVPO0FBQ0wsV0FBRyxVQUFILENBQWMsY0FBZCxDQUE2QixHQUFHLFFBQUgsQ0FBWSxFQUF6QyxFQUNEOztBQUNELFNBQUcsUUFBSCxDQUFZLFFBQVosR0FBdUIsQ0FBQyxHQUFHLFFBQUgsQ0FBWSxRQUFwQyxDQUNELENBUEQ7OztBQVNBLE9BQUcsVUFBSCxHQUFnQixZQUFXO0FBQ3pCLGFBQU8sR0FBRyxRQUFILENBQVksUUFBbkIsQ0FDRCxDQUZELENBR0QsQ0FFRixDQXZDRCIsImZpbGUiOiJmYXZvcml0ZS1idXR0b24uZGlyZWN0aXZlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiKGZ1bmN0aW9uKCkge1xuXG4gICd1c2Ugc3RyaWN0JztcblxuICBhbmd1bGFyXG4gICAgICAubW9kdWxlKCdib25pdGFzb2Z0LmRlc2lnbmVyLmhvbWUnKVxuICAgICAgLmRpcmVjdGl2ZSgnZmF2b3JpdGVCdXR0b24nLCBmYXZvcml0ZUJ1dHRvbik7XG5cbiAgZnVuY3Rpb24gZmF2b3JpdGVCdXR0b24oKSB7XG4gICAgcmV0dXJuIHtcbiAgICAgIHNjb3BlOiB7XG4gICAgICAgIGFydGlmYWN0OiAnPScsXG4gICAgICAgIHJlcG9zaXRvcnk6ICc9YXJ0aWZhY3RSZXBvc2l0b3J5J1xuICAgICAgfSxcbiAgICAgIGNvbnRyb2xsZXI6IEZhdm9yaXRlQnV0dG9uQ3RybCxcbiAgICAgIGNvbnRyb2xsZXJBczogJ3ZtJyxcbiAgICAgIGJpbmRUb0NvbnRyb2xsZXI6IHRydWUsXG4gICAgICByZXBsYWNlOiB0cnVlLFxuICAgICAgdGVtcGxhdGVVcmw6ICdqcy9ob21lL2FydGlmYWN0LWxpc3QvZmF2b3JpdGUtYnV0dG9uLmh0bWwnXG4gICAgfTtcbiAgfVxuXG4gIGZ1bmN0aW9uIEZhdm9yaXRlQnV0dG9uQ3RybCgpIHtcbiAgICB2YXIgdm0gPSB0aGlzO1xuXG4gICAgdm0udG9nZ2xlRmF2b3JpdGUgPSBmdW5jdGlvbigpIHtcbiAgICAgIGlmICh2bS5hcnRpZmFjdC5mYXZvcml0ZSkge1xuICAgICAgICB2bS5yZXBvc2l0b3J5LnVubWFya0FzRmF2b3JpdGUodm0uYXJ0aWZhY3QuaWQpO1xuICAgICAgfSBlbHNlIHtcbiAgICAgICAgdm0ucmVwb3NpdG9yeS5tYXJrQXNGYXZvcml0ZSh2bS5hcnRpZmFjdC5pZCk7XG4gICAgICB9XG4gICAgICB2bS5hcnRpZmFjdC5mYXZvcml0ZSA9ICF2bS5hcnRpZmFjdC5mYXZvcml0ZTtcbiAgICB9O1xuXG4gICAgdm0uaXNGYXZvcml0ZSA9IGZ1bmN0aW9uKCkge1xuICAgICAgcmV0dXJuIHZtLmFydGlmYWN0LmZhdm9yaXRlO1xuICAgIH07XG4gIH1cblxufSkoKTtcbiJdfQ==</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

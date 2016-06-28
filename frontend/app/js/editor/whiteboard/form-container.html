@@ -1,0 +1,6 @@
+<div class="widget-wrapper">
+    <component-mover component="formContainer" on-delete="editor.removeCurrentComponent()" ng-if="editor.isCurrentComponent(formContainer)"></component-mover>
+    <form name="form-{{ id }}">
+        <container container="formContainer.container" editor="editor"></container>
+    </form>
+</div>

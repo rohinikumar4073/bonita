@@ -1,0 +1,227 @@
+@import "artifact-list/artifact-list";
+
+body {
+  background-color: #fcfcfc;
+}
+
+.HomeHeader {
+  width: 100%;
+  height: @nav-bar-height;
+  background-color: @color-header-home-bg;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.HomeHeader:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 100%;
+}
+
+.HomeHeader-logo {
+  position: absolute;
+  top: 50%;
+  left: 3.6em;
+  transform: translate(0, -50%);
+  width: 150px;
+
+  > img {
+    width: 100%;
+  }
+}
+
+.HomeHeader-title {
+  color: @color-header-home-title;
+  font-weight: normal;
+  letter-spacing: .2em;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.4em;
+  max-width: 50%;
+}
+
+.HomeHeader-help {
+  position: absolute;
+  top: 50%;
+  right: 3.6em;
+  transform: translate(0, -50%);
+}
+
+.container--Home {
+  height: calc(~"100% - 100px");
+  padding: 1.5em;
+}
+
+.row--Home, .col--Home {
+  height: 70%;
+  margin-top: 20px;
+}
+
+.Panel {
+  height: 100%;
+  border: 1px solid @color-primary-panel-border;
+  position: relative;
+  overflow: auto;
+}
+
+.Panel-heading {
+  color: @color-default-panel-header-title;
+  background-color: @color-default-panel-header-bg;
+  display: table;
+  width: 100%;
+  font-size: 1.1em
+}
+
+.Panel-heading--primary {
+  color: @color-primary-panel-header-title;
+  background-color: @color-primary-panel-header-bg;
+}
+
+.Panel-icon {
+  margin-right: .5em;
+}
+
+.Panel-title {
+  margin: 0;
+  padding: .8em;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  font-weight: normal;
+  display: table-cell;
+}
+
+/**
+ * <div class="Panel-actions">
+ *     <button class="PanelButton PanelButton--primary"></button>
+ * </div>
+ */
+.Panel-actions {
+  display: table-cell;
+  line-height: 1.3em;
+  text-align: right;
+  padding-right: 1em;
+  vertical-align: middle;
+}
+
+.PanelButton {
+  border: none;
+  background: none;
+  padding: .5em .7em;
+  font-size: .9em;
+  line-height: 1em;
+  background-color: @color-default-panel-header-button-bg;
+}
+
+.PanelButton:hover,
+.PanelButton:active {
+  background-color: saturate(lighten(@color-default-panel-header-button-bg, 10%), 10%);
+}
+
+.PanelButton--primary {
+  background-color: @color-primary-panel-header-button-bg;
+}
+
+.PanelButton--primary:hover,
+.PanelButton--primary:active {
+  background-color: saturate(lighten(@color-primary-panel-header-button-bg, 10%), 10%);
+}
+
+.Artifact-form {
+  padding: .49em;
+}
+
+.CreateArtifact {
+  margin: .5em 2em;
+}
+
+.CreateArtifact-form {
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.CreateArtifact-error {
+  padding: 0 1em;
+  display: block;
+}
+
+.CreateArtifact-label {
+  color: @color-default-panel-create;
+  position: relative;
+  border: none;
+  font-size: 1.2em;
+}
+
+.CreateArtifact-label--primary {
+  color: @color-primary-panel-create;
+}
+
+.CreateArtifact-label::after {
+  content: "";
+  position: absolute;
+  width: 115px;
+  height: 2px;
+  bottom: -0.4em;
+  left: 0;
+  background-color: @color-default-panel-create;
+}
+
+.CreateArtifact-label--primary::after {
+  background-color: @color-primary-panel-create;
+}
+
+.ExportArtifact {
+  position: fixed;
+  display: none;
+  top: -1px;
+  left: -1px;
+}
+
+.Home-search {
+  margin: 0 auto;
+  width: 35%;
+}
+
+.Home-search .radio label {
+  padding-left: 8px;
+}
+
+.Home-buttons {
+  float: left;
+}
+
+.Artifact-section {
+  .nav-tabs {
+    font-size: 0.9em;
+    li > a {
+      text-decoration: none;
+      color: #333333;
+      padding: 10px;
+    }
+    .ArtifactSection-badge {
+      margin-top: -2px;
+      color: #777;
+      background-color: #EEE;
+    }
+
+    .ArtifactSection-badge--hasResults {
+      color: #fff;
+      background-color: @color-primary-panel-item-action-icon;
+    }
+  }
+}
+
+.Home-toolbar {
+  margin: 1em 0 2.5em 0;
+}
+
+.Favorite-section {
+  min-height: 180px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 10px;
+}

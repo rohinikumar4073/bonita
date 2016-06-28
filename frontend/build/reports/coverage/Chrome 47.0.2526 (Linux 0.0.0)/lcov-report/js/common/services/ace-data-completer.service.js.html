@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/common/services/ace-data-completer.service.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/common/services/ace-data-completer.service.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(10 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(6 / 6)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(10 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/common/services/</a> &#187; ace-data-completer.service.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict'; /**
+               * Copyright (C) 2015 Bonitasoft S.A.
+               * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+               * This program is free software: you can redistribute it and/or modify
+               * it under the terms of the GNU General Public License as published by
+               * the Free Software Foundation, either version 2.0 of the License, or
+               * (at your option) any later version.
+               * This program is distributed in the hope that it will be useful,
+               * but WITHOUT ANY WARRANTY; without even the implied warranty of
+               * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+               * GNU General Public License for more details.
+               * You should have received a copy of the GNU General Public License
+               * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+               */
+angular.module('bonitasoft.designer.common.services').service('aceDataCompleter', function () {
+  return function (data) {
+    return { 
+      getCompletions: function (editor, session, pos, prefix, callback) {
+&nbsp;
+        function getPrefixedKeys(key) {
+          return '$data.' + key;}
+&nbsp;
+&nbsp;
+        function filterKeys(match, key) {
+          return key.indexOf(match) === 0;}
+&nbsp;
+&nbsp;
+        var completions = Object.keys(data).
+        map(getPrefixedKeys).
+        filter(filterKeys.bind(null, prefix)).
+        map(function (data) {
+          return { 
+            name: data, 
+            value: data, 
+            score: 2, // increase score to show suggestion on top of the list
+            meta: 'data' // the suggestion's category
+          };});
+&nbsp;
+        callback(null, completions);} };};});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFjZS1kYXRhLWNvbXBsZXRlci5zZXJ2aWNlLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O0FBY0EsUUFBUSxNQUFSLENBQWUscUNBQWYsRUFBc0QsT0FBdEQsQ0FBOEQsa0JBQTlELEVBQWtGLFlBQVc7QUFDM0YsU0FBTyxVQUFTLElBQVQsRUFBZTtBQUNwQixXQUFPO0FBQ0wsc0JBQWdCLFVBQVMsTUFBVCxFQUFpQixPQUFqQixFQUEwQixHQUExQixFQUErQixNQUEvQixFQUF1QyxRQUF2QyxFQUFpRDs7QUFFL0QsaUJBQVMsZUFBVCxDQUF5QixHQUF6QixFQUE4QjtBQUM1QixpQkFBTyxXQUFXLEdBQWxCLENBQ0Q7OztBQUVELGlCQUFTLFVBQVQsQ0FBb0IsS0FBcEIsRUFBMkIsR0FBM0IsRUFBZ0M7QUFDOUIsaUJBQU8sSUFBSSxPQUFKLENBQVksS0FBWixNQUF1QixDQUE5QixDQUNEOzs7QUFFRCxZQUFJLGNBQWMsT0FBTyxJQUFQLENBQVksSUFBWjtBQUNmLFdBRGUsQ0FDWCxlQURXO0FBRWYsY0FGZSxDQUVSLFdBQVcsSUFBWCxDQUFnQixJQUFoQixFQUFzQixNQUF0QixDQUZRO0FBR2YsV0FIZSxDQUdYLFVBQVMsSUFBVCxFQUFlO0FBQ2xCLGlCQUFPO0FBQ0wsa0JBQU0sSUFERDtBQUVMLG1CQUFPLElBRkY7QUFHTCxtQkFBTyxDQUhGLEU7QUFJTCxrQkFBTSxNO0FBSkQsV0FBUCxDQU1ELENBVmUsQ0FBbEI7O0FBV0EsaUJBQVMsSUFBVCxFQUFlLFdBQWYsRUFDRCxDQXZCSSxFQUFQLENBeUJELENBMUJELENBMkJELENBNUJEIiwiZmlsZSI6ImFjZS1kYXRhLWNvbXBsZXRlci5zZXJ2aWNlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBDb3B5cmlnaHQgKEMpIDIwMTUgQm9uaXRhc29mdCBTLkEuXG4gKiBCb25pdGFzb2Z0LCAzMiBydWUgR3VzdGF2ZSBFaWZmZWwgLSAzODAwMCBHcmVub2JsZVxuICogVGhpcyBwcm9ncmFtIGlzIGZyZWUgc29mdHdhcmU6IHlvdSBjYW4gcmVkaXN0cmlidXRlIGl0IGFuZC9vciBtb2RpZnlcbiAqIGl0IHVuZGVyIHRoZSB0ZXJtcyBvZiB0aGUgR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgYXMgcHVibGlzaGVkIGJ5XG4gKiB0aGUgRnJlZSBTb2Z0d2FyZSBGb3VuZGF0aW9uLCBlaXRoZXIgdmVyc2lvbiAyLjAgb2YgdGhlIExpY2Vuc2UsIG9yXG4gKiAoYXQgeW91ciBvcHRpb24pIGFueSBsYXRlciB2ZXJzaW9uLlxuICogVGhpcyBwcm9ncmFtIGlzIGRpc3RyaWJ1dGVkIGluIHRoZSBob3BlIHRoYXQgaXQgd2lsbCBiZSB1c2VmdWwsXG4gKiBidXQgV0lUSE9VVCBBTlkgV0FSUkFOVFk7IHdpdGhvdXQgZXZlbiB0aGUgaW1wbGllZCB3YXJyYW50eSBvZlxuICogTUVSQ0hBTlRBQklMSVRZIG9yIEZJVE5FU1MgRk9SIEEgUEFSVElDVUxBUiBQVVJQT1NFLiBTZWUgdGhlXG4gKiBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBmb3IgbW9yZSBkZXRhaWxzLlxuICogWW91IHNob3VsZCBoYXZlIHJlY2VpdmVkIGEgY29weSBvZiB0aGUgR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2VcbiAqIGFsb25nIHdpdGggdGhpcyBwcm9ncmFtLiBJZiBub3QsIHNlZSA8aHR0cDovL3d3dy5nbnUub3JnL2xpY2Vuc2VzLz4uXG4gKi9cbmFuZ3VsYXIubW9kdWxlKCdib25pdGFzb2Z0LmRlc2lnbmVyLmNvbW1vbi5zZXJ2aWNlcycpLnNlcnZpY2UoJ2FjZURhdGFDb21wbGV0ZXInLCBmdW5jdGlvbigpIHtcbiAgcmV0dXJuIGZ1bmN0aW9uKGRhdGEpIHtcbiAgICByZXR1cm4ge1xuICAgICAgZ2V0Q29tcGxldGlvbnM6IGZ1bmN0aW9uKGVkaXRvciwgc2Vzc2lvbiwgcG9zLCBwcmVmaXgsIGNhbGxiYWNrKSB7XG5cbiAgICAgICAgZnVuY3Rpb24gZ2V0UHJlZml4ZWRLZXlzKGtleSkge1xuICAgICAgICAgIHJldHVybiAnJGRhdGEuJyArIGtleTtcbiAgICAgICAgfVxuXG4gICAgICAgIGZ1bmN0aW9uIGZpbHRlcktleXMobWF0Y2gsIGtleSkge1xuICAgICAgICAgIHJldHVybiBrZXkuaW5kZXhPZihtYXRjaCkgPT09IDA7XG4gICAgICAgIH1cblxuICAgICAgICB2YXIgY29tcGxldGlvbnMgPSBPYmplY3Qua2V5cyhkYXRhKVxuICAgICAgICAgIC5tYXAoZ2V0UHJlZml4ZWRLZXlzKVxuICAgICAgICAgIC5maWx0ZXIoZmlsdGVyS2V5cy5iaW5kKG51bGwsIHByZWZpeCkpXG4gICAgICAgICAgLm1hcChmdW5jdGlvbihkYXRhKSB7XG4gICAgICAgICAgICByZXR1cm4ge1xuICAgICAgICAgICAgICBuYW1lOiBkYXRhLFxuICAgICAgICAgICAgICB2YWx1ZTogZGF0YSxcbiAgICAgICAgICAgICAgc2NvcmU6IDIsIC8vIGluY3JlYXNlIHNjb3JlIHRvIHNob3cgc3VnZ2VzdGlvbiBvbiB0b3Agb2YgdGhlIGxpc3RcbiAgICAgICAgICAgICAgbWV0YTogJ2RhdGEnIC8vIHRoZSBzdWdnZXN0aW9uJ3MgY2F0ZWdvcnlcbiAgICAgICAgICAgIH07XG4gICAgICAgICAgfSk7XG4gICAgICAgIGNhbGxiYWNrKG51bGwsIGNvbXBsZXRpb25zKTtcbiAgICAgIH1cbiAgICB9O1xuICB9O1xufSk7XG4iXX0=</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

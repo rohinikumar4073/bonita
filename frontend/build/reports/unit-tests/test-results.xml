@@ -1,0 +1,571 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 47.0.2526 (Linux 0.0.0)" package="JavaScript unit tests" timestamp="2016-06-28T02:15:28" id="0" hostname="vishnu-HP-Pavilion-g6-Notebook-PC" tests="554" errors="0" failures="0" time="9.282">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"/>
+    </properties>
+    <testcase name="should close modal" time="0.089" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should diplay error and close modal when response contains error after form submit" time="0.025" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should display a specific error while uploading a malformed json file for json asset" time="0.024" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should send external data to the caller when user want to save it" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should not save a non external asset" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should expose asset types to the scope" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should expose only widget asset types to the scope when in widget mode" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should validate url" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should expose form templates to the scope" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should tell that an asset on current scope already exists" time="0.02" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should reset new asset name when new asset source change" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should get a warning message for image asset" time="0.021" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should get a warning message for other asset" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPopupCtrl"/>
+    <testcase name="should close modal" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPreviewPopupCtrl"/>
+    <testcase name="should get url for widget mode" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPreviewPopupCtrl"/>
+    <testcase name="should get url for widget asset in page mode" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPreviewPopupCtrl"/>
+    <testcase name="should get page asset url" time="0.023" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetPreviewPopupCtrl"/>
+    <testcase name="should return &quot;JavaScript&quot; when given js" time="0.028" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).assetType filter"/>
+    <testcase name="should return &quot;CSS&quot; when given css" time="0.045" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).assetType filter"/>
+    <testcase name="should return &quot;Images&quot; when given img" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).assetType filter"/>
+    <testcase name="should return &quot;&quot; when given undefined" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).assetType filter"/>
+    <testcase name="should return &quot;&quot; when given unknown" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).assetType filter"/>
+    <testcase name="should expose filters" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetCtrl Page editor"/>
+    <testcase name="should open a data popup for asset preview" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetCtrl Page editor"/>
+    <testcase name="should open a data popup for asset management" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetCtrl Page editor"/>
+    <testcase name="should delete an asset" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetCtrl Page editor"/>
+    <testcase name="should get url for widget asset in page mode" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetCtrl Page editor"/>
+    <testcase name="should get page asset url" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetCtrl Page editor"/>
+    <testcase name="should open a data popup for asset preview" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetCtrl Widget editor"/>
+    <testcase name="should open a data popup for asset management" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetCtrl Widget editor"/>
+    <testcase name="should open a data popup for asset preview" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetCtrl Widget editor"/>
+    <testcase name="should get url for widget mode" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).AssetCtrl Widget editor"/>
+    <testcase name="should not filter when no arg filters" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).assetType filter"/>
+    <testcase name="should not filter when filtering items are true" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).assetType filter"/>
+    <testcase name="should exlude css" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).assetType filter"/>
+    <testcase name="should exlude img" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).assetType filter"/>
+    <testcase name="should exlude js" time="0.024" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).assetType filter"/>
+    <testcase name="should allow registering new data types" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils provider"/>
+    <testcase name="getSources should return a table containing Local and External" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils data"/>
+    <testcase name="getTypes should return a table with all the types " time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils data"/>
+    <testcase name="should return an object with default value for type and source" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils assetToForm"/>
+    <testcase name="should return an object with external asset value " time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils assetToForm"/>
+    <testcase name="should return an object with local asset value " time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils assetToForm"/>
+    <testcase name="should return an asset" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils formToAsset"/>
+    <testcase name="should add widget asset before page assets if not already added" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils"/>
+    <testcase name="should not add widget asset to page if already added" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils"/>
+    <testcase name="should populate asset scope and componentId if not set while adding asset to page" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils"/>
+    <testcase name="should remove widget assets from page" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils"/>
+    <testcase name="should get a specific type" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils"/>
+    <testcase name="should give default options and pass the wanted mode to ui-ace directive " time="0.102" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ace-editor directive"/>
+    <testcase name="should hide print margin of ace editor when loaded" time="0.034" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ace-editor directive"/>
+    <testcase name="should enable auto-complete if auto-completion data object is provided" time="0.033" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ace-editor directive"/>
+    <testcase name="should display alert html content" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alert-content directive"/>
+    <testcase name="should display alert html content from template url" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alert-content directive"/>
+    <testcase name="should display an error message" time="0.037" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts"/>
+    <testcase name="should display an error object with html content" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts"/>
+    <testcase name="should display a success message" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts"/>
+    <testcase name="should display a success object with html content" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts"/>
+    <testcase name="should display a warning message" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts"/>
+    <testcase name="should display a warning object with html content" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts"/>
+    <testcase name="should disappear" time="0.032" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts"/>
+    <testcase name="should be closable" time="0.018" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts"/>
+    <testcase name="should display nothing when name is valid" time="0.043" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifact name vaildation"/>
+    <testcase name="should display an error message in tooltip when name contain space" time="0.031" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifact name vaildation"/>
+    <testcase name="should display an error message in tooltip when name contain special characters" time="0.032" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifact name vaildation"/>
+    <testcase name="should display an error message in tooltip when name has more than 240 characters" time="0.036" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifact name vaildation"/>
+    <testcase name="should display tooltip on top left by default" time="0.034" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifact name vaildation"/>
+    <testcase name="should display tootlip on provided placement" time="0.046" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifact name vaildation"/>
+    <testcase name="should register extra validation messages" time="0.056" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifact name vaildation"/>
+    <testcase name="should set focus on the input" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).directive autofocus"/>
+    <testcase name="should set the focus on an input after a watch" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).directive autofocus"/>
+    <testcase name="should set the focus on an ace-editor" time="0.024" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).directive autofocus"/>
+    <testcase name="should download expected url" time="0.023" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).fileDownload directive"/>
+    <testcase name="should intercept error if bad url" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).fileDownload directive"/>
+    <testcase name="should unregister event on element when scope is destroyed" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).fileDownload directive"/>
+    <testcase name="should show an base 64 image" time="0.024" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).IdenticonDirective"/>
+    <testcase name="should have background color passed" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).IdenticonDirective options"/>
+    <testcase name="should have foreground color passed" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).IdenticonDirective options"/>
+    <testcase name="should replace ng-include tag with template" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).directive includeReplace"/>
+    <testcase name="should update value" time="0.029" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Search directive"/>
+    <testcase name="should clear value when clicking on clear button" time="0.034" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Search directive"/>
+    <testcase name="should display a placeholder" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Search directive"/>
+    <testcase name="should return if a given state is active" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter container directive controller"/>
+    <testcase name="should register a splitter-horizontal" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter container directive controller"/>
+    <testcase name="should toggle a splitter-horizontal" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter container directive controller"/>
+    <testcase name="should add an extra splitter div before content" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter horizontal directive"/>
+    <testcase name="should add class names to top and bottom elements" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter horizontal directive"/>
+    <testcase name="should resize left and right elements and add classes when splitter is clicked" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter horizontal directive"/>
+    <testcase name="should close bottom sidebar" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter horizontal directive controller"/>
+    <testcase name="should open bottom sidebar" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter horizontal directive controller"/>
+    <testcase name="should not resize bottom pane to a height less than min" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter horizontal directive controller"/>
+    <testcase name="should not resize right pane to a width greater than max" time="0" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter horizontal directive controller">
+      <skipped/>
+    </testcase>
+    <testcase name="should add an extra splitter div before content" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive"/>
+    <testcase name="should add class names to left and right elements" time="0.018" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive"/>
+    <testcase name="should close left element when it is opened" time="0.031" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive"/>
+    <testcase name="should open left element when it is closed" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive"/>
+    <testcase name="should close right element when it is opened" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive"/>
+    <testcase name="should open right element when it is closed" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive"/>
+    <testcase name="should resize left and right elements and add classes when splitter is clicked" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive"/>
+    <testcase name="should close right sidebar and save x position" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive controller"/>
+    <testcase name="should open right sidebar with previous x position" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive controller"/>
+    <testcase name="should close left sidebar and save x position" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive controller"/>
+    <testcase name="should open left sidebar with previous x position" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive controller"/>
+    <testcase name="should resize panes" time="0" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive controller">
+      <skipped/>
+    </testcase>
+    <testcase name="should not resize right pane to a width less than min" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive controller"/>
+    <testcase name="should not resize right pane to a width greater than max" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).splitter vertical directive controller"/>
+    <testcase name="should call show handler when expression is true" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).tooltip toggle"/>
+    <testcase name="should call show handler when expression is false" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).tooltip toggle"/>
+    <testcase name="should replace double brackets by curly braces" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).mustachify filter"/>
+    <testcase name="should replace specified characters by curly braces" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).mustachify filter"/>
+    <testcase name="should force an import based on a uuid" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).import repository service"/>
+    <testcase name="should cancel an import based on a uuid" time="0.026" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).import repository service"/>
+    <testcase name="should list the pages" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should create a page" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should duplicate a page" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should save a page" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should delete a page" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should load a page" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should compute page export url" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should rename a page" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should list the page assets" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should delete a local asset" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should delete an external asset" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should deactivate an asset" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should save an asset" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should mark a page as favorite" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should unmark a page as favorite" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).pageRepo"/>
+    <testcase name="should get page repository" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).repositories service"/>
+    <testcase name="should get widget repository" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).repositories service"/>
+    <testcase name="should save a widget" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should get all widgets" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should get widget by ID" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should create a widget with default template and controller" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should duplicate a widget" time="0.02" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should delete a widget" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should get all custom widgets" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should add a property to a widget" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should update a property of a widget" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should delete a property of a widget" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should compute widget export url" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should delete a local asset" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should delete an external asset" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should save an asset" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should decrement order of an asset" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should increment order of an asset" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should mark a widget as favorite" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should unmark a widget as favorite" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widgetRepo"/>
+    <testcase name="should return an object with getCompletions " time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ace-data-completer"/>
+    <testcase name="should return an of completions " time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ace-data-completer getCompletions"/>
+    <testcase name="can be added as message" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts success"/>
+    <testcase name="can be added as object" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts success"/>
+    <testcase name="can be removed" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts success"/>
+    <testcase name="should be removed after a 8 seconds" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts success"/>
+    <testcase name="can be added as message" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts error"/>
+    <testcase name="can be added as object" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts error"/>
+    <testcase name="can be removed" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts error"/>
+    <testcase name="should be removed after 8 seconds" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts error"/>
+    <testcase name="can be added as message" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts warning"/>
+    <testcase name="can be added as object" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts warning"/>
+    <testcase name="can be removed" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts warning"/>
+    <testcase name="should be removed after a few seconds" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).alerts warning"/>
+    <testcase name="should move an item on its left if the array is full" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to the left"/>
+    <testcase name="should move an item on its left if the array length = 2" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to the left"/>
+    <testcase name="should not change the array if its length = 1" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to the left"/>
+    <testcase name="should add the item if the item does not exist" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to the left"/>
+    <testcase name="should add the item if the item does not exist and length is empty" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to the left"/>
+    <testcase name="should move an item on its left if the array is full" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to the right"/>
+    <testcase name="should move an item on its left if the array is length = 2" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to the right"/>
+    <testcase name="should not change the array if its length = 1" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to the right"/>
+    <testcase name="should add the item if the item does not exist" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to the right"/>
+    <testcase name="should add the item if the item does not exist and length is empty" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to the right"/>
+    <testcase name="should fill an array if this one is empty" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to a custom position"/>
+    <testcase name="should move to a custom position" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays Move an item to a custom position"/>
+    <testcase name="should remove one element in an array of Objects" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays"/>
+    <testcase name="should not remove element in an empty array" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays"/>
+    <testcase name="should not remove an empty element in an array of Objects" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays"/>
+    <testcase name="should not remove an element when equalityTester not defined" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays"/>
+    <testcase name="should remove two elements in an array of integer" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays"/>
+    <testcase name="should remove first element of an array" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays"/>
+    <testcase name="should do nothing when removing first element of an array that is not in array" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays"/>
+    <testcase name="should insert an element in an array of integer at correct position" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays"/>
+    <testcase name="should insert an element in an array of integer at the end if position is incorrect" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays"/>
+    <testcase name="should insert an element in an array of integer at the end if position is not provided" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).arrays"/>
+    <testcase name="should navigate to home page" time="0" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl"/>
+    <testcase name="should navigate back" time="0" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl"/>
+    <testcase name="should add an error if JSON error response with message" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).errorInterceptor"/>
+    <testcase name="should add a generic error if non-JSON error response" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).errorInterceptor"/>
+    <testcase name="should add a generic error if JSON error without message" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).errorInterceptor"/>
+    <testcase name="should give all resolution in the right order" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Resolution service"/>
+    <testcase name="should get a resolution or return md by default" time="0.027" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Resolution service"/>
+    <testcase name="should return the default resolution if no resolution is selected" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Resolution service"/>
+    <testcase name="should return the selected resolution when a resolution is selected" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Resolution service"/>
+    <testcase name="should return a clamp value" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).utils clamp"/>
+    <testcase name="should navigate back" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl"/>
+    <testcase name="should update a property" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl"/>
+    <testcase name="should add a property" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl"/>
+    <testcase name="should delete a property" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl"/>
+    <testcase name="should save a widget with its id" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl"/>
+    <testcase name="should open a dialog to create a new property" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl"/>
+    <testcase name="should open a dialog to save a widget as .." time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl"/>
+    <testcase name="should return false when selected bond is variable or interpolation" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl isTypeSelectable"/>
+    <testcase name="should return true when selected bond is expression or constant" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).CustomWidgetEditorCtrl isTypeSelectable"/>
+    <testcase name="should close the popup and pass params" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl"/>
+    <testcase name="should close the popup and pass params and reset default value" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl"/>
+    <testcase name="should dismiss the popup" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl"/>
+    <testcase name="should update type accordingly to selected bond" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl"/>
+    <testcase name="should expose popup types to scope" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl"/>
+    <testcase name="should expose currentParam to scope" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl"/>
+    <testcase name="should return false when type is not choice" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl isTypeChoicable"/>
+    <testcase name="should return false when type is choice and selected bond is variable or interpolation" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl isTypeChoicable"/>
+    <testcase name="should return true when selected bond is expression or constant and choice is type" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl isTypeChoicable"/>
+    <testcase name="should return false when selected bond is variable or interpolation" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl isTypeSelectable"/>
+    <testcase name="should return true when selected bond is expression or constant" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PropertyEditorPopupCtrl isTypeSelectable"/>
+    <testcase name="should reset registered components" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).components service"/>
+    <testcase name="should register components" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).components service"/>
+    <testcase name="should init a widget" time="0.001" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).components service"/>
+    <testcase name="throw an error when trying to init an unregistered component" time="0.001" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).components service"/>
+    <testcase name="and populate propertyValue value with property default value" time="0.021" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).properties service should compute a property value from widget property"/>
+    <testcase name="and set propertyValue type to constant when property bond is expression" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).properties service should compute a property value from widget property"/>
+    <testcase name="and set propertyValue type to property bond otherwise" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).properties service should compute a property value from widget property"/>
+    <testcase name="should compute all property values of a component" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).properties service"/>
+    <testcase name="should say that a property value with type expression is bound" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).properties service"/>
+    <testcase name="should say that a property value with type variable is bound" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).properties service"/>
+    <testcase name="should say that a property value with type constant is not bound" time="0.002" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).properties service"/>
+    <testcase name="should say that a property value with type interpolation is not bound" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).properties service"/>
+    <testcase name="should create a containerWidget" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).container definition factory"/>
+    <testcase name="should create a create a TabsContainerWidget" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).container definition factory"/>
+    <testcase name="should create a create a FormContainerWidget" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).container definition factory"/>
+    <testcase name="should init scope data" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataPopupController Variable creation"/>
+    <testcase name="should check variable name uniqness" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataPopupController Variable creation"/>
+    <testcase name="should init newData.value depending on the selectedType" time="0.027" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataPopupController Variable creation"/>
+    <testcase name="should init scope data" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataPopupController Edit variable"/>
+    <testcase name="should close modal" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataPopupController save variable"/>
+    <testcase name="should return an object of dataTypes" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data-type getDataTypes"/>
+    <testcase name="should return label for known types" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data-type getDataLabel"/>
+    <testcase name="should return undefined for unknown types" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data-type getDataLabel"/>
+    <testcase name="should return label for known types" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data-type getDataDefaultValue"/>
+    <testcase name="should return undefined for unknown types" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data-type getDataDefaultValue"/>
+    <testcase name="should return a new object for data" time="0.027" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data-type createData"/>
+    <testcase name="should save a new data" time="0.018" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataCtrl"/>
+    <testcase name="should delete a data" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataCtrl"/>
+    <testcase name="should filter a data that match a key value" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataCtrl"/>
+    <testcase name="should filter a data that match a data value" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataCtrl"/>
+    <testcase name="should reset filter for data" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataCtrl"/>
+    <testcase name="should open a data popup" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DataCtrl"/>
+    <testcase name="should be valid if empty" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).validJSon"/>
+    <testcase name="should be valid if containing valid Json" time="0.021" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).validJSon"/>
+    <testcase name="should be invalid if containing bad formated json" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).validJSon"/>
+    <testcase name="should get the right element classes" time="0.018" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should select the current row, and unselect the current component" time="0.018" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should recalculate the components dimensions" time="0.041" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl On drag and drop"/>
+    <testcase name="should push the element to the current row" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl On drag and drop"/>
+    <testcase name="should push the element to the current row" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl On drag and drop"/>
+    <testcase name="should select the component, and unselect the current row" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should select the tab, and unselect the current row" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should append a component to first row if page is empty" time="0.018" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl Add a widget"/>
+    <testcase name="should append a component and create a new row at the end" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl Add a widget"/>
+    <testcase name="should add a component to a row" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl Add a widget"/>
+    <testcase name="it should resize the last widget of a row if row is not full" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl Add a widget"/>
+    <testcase name="resize all the widgets in a row after added a widget to it" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl Add a widget"/>
+    <testcase name="should add a widget and do not change the length if we already have 12 col" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl Add a widget"/>
+    <testcase name="should remove the current row" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should not remove row when there is only one in a container" time="0.032" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should remove the current component and trigger &quot;removed&quot; while removing it" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should not trigger &quot;removed&quot; while moving a component from a row to another" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should remove row when removing last component of a row" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should not remove row when moving component in the same row" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should tell if a row is the current row" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should compute row size" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should check if it is the current component" time="0.02" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should deselect a component" time="0.021" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should save a page using CTRL+s" time="0" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl">
+      <skipped/>
+    </testcase>
+    <testcase name="should save and edit a custom widget" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should check that a page can be saved" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).EditorCtrl"/>
+    <testcase name="should initialize a page" time="0.02" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor service"/>
+    <testcase name="should add palette" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor service"/>
+    <testcase name="should init components" time="0.028" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor service"/>
+    <testcase name="should add an alert if initialize failed" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor service"/>
+    <testcase name="should remove widget assets from page when widget is not in page anymore" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor service"/>
+    <testcase name="should not remove widget assets from page when widget still exists in page" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor service"/>
+    <testcase name="should navigate back" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Menu bar controller"/>
+    <testcase name="should save a page" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Menu bar controller"/>
+    <testcase name="should save and export page" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Menu bar controller"/>
+    <testcase name="should open help pop up" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Menu bar controller"/>
+    <testcase name="should save a page as ..." time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Menu bar controller"/>
+    <testcase name="should display palette sections" time="0.056" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive"/>
+    <testcase name="should select the first sections as default" time="0.048" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive"/>
+    <testcase name="should change a sections" time="0.056" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive"/>
+    <testcase name="should close a sections" time="0.062" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive"/>
+    <testcase name="should display sections with less than 10 widgets as narrow" time="0.049" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive"/>
+    <testcase name="should return sections" time="0.055" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive controller"/>
+    <testcase name="should expose currentSection" time="0.044" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive controller"/>
+    <testcase name="should toggle a section" time="0.042" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive controller"/>
+    <testcase name="should close a section if currentSection is open" time="0.038" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive controller"/>
+    <testcase name="should return correct active section" time="0.057" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive controller"/>
+    <testcase name="should return correct active section" time="0.043" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive controller"/>
+    <testcase name="should return correct narrow value" time="0.05" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive controller"/>
+    <testcase name="should return correct narrow value" time="0.067" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive controller"/>
+    <testcase name="should get section icon class name" time="0.03" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).editor-palette directive controller"/>
+    <testcase name="should display the widget in palette" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).paletteWidget"/>
+    <testcase name="should get palette sections" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).paletteService"/>
+    <testcase name="should return the list of dataNames" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller"/>
+    <testcase name="should create a constant property value when there is none for an expression bond" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller"/>
+    <testcase name="should toggle the expression editor by changing parameter value type" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller"/>
+    <testcase name="should store property value whenever we switch editor to come back to it" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller"/>
+    <testcase name="should return true if the propertyValue is an expression" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller"/>
+    <testcase name="should trigger a call to the right field template" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller"/>
+    <testcase name="should trigger a call to choice-grouped field template when type is choice and choice values are objects" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller"/>
+    <testcase name="should trigger a call to text field template if type is not supported" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller"/>
+    <testcase name="should trigger a call to the right bond template" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller"/>
+    <testcase name="should return false if the propertyValue is an expression" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller"/>
+    <testcase name="should return true if there is no condition" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller check if we have a condition to display"/>
+    <testcase name="should true if the condition is valid" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller check if we have a condition to display"/>
+    <testcase name="should false if the condition is not valid" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field controller check if we have a condition to display"/>
+    <testcase name="should display a boolean expression" time="0.035" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field"/>
+    <testcase name="should allow switching to the expression editor when the property is of type expression" time="0.058" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field"/>
+    <testcase name="should update propertyValue with expression content" time="0.029" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field"/>
+    <testcase name="should update propertyValue with constant value" time="0.027" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field"/>
+    <testcase name="should display a constant property" time="0.024" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field"/>
+    <testcase name="should display a variable property" time="0.028" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field"/>
+    <testcase name="should display an interpolation property" time="0.046" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field"/>
+    <testcase name="should display a textarea for interpolation html property" time="0.036" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).widget property field"/>
+    <testcase name="should return an id for a given type" time="0.018" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).componentFactory"/>
+    <testcase name="should return the incremented id for a given type" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).componentFactory"/>
+    <testcase name="should move the component left" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentMoverDirectiveCtrl"/>
+    <testcase name="should move the component right" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentMoverDirectiveCtrl"/>
+    <testcase name="should display the component mover and move the component" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).componentMover"/>
+    <testcase name="should delete the component" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).componentMover"/>
+    <testcase name="should build a scope with an utility function range" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).componentScopeBuilder"/>
+    <testcase name="should update scope properties when global property values are updated" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).componentScopeBuilder"/>
+    <testcase name="should not break when editor does not exists" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).componentScopeBuilder"/>
+    <testcase name="should not break if the item is not a tabContainer nor a container and return false" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if we are the child of a container"/>
+    <testcase name="should not break if the item is a container without rows and return false" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if we are the child of a container"/>
+    <testcase name="should return false if a rows is undefined or a falsy value" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if we are the child of a container"/>
+    <testcase name="should return true if we have a tab child of another one" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if we are the child of a container"/>
+    <testcase name="should return true if we find a container and it is the one" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if we are the child of a container"/>
+    <testcase name="should return false if the tab is not a child" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if we are the child of a container"/>
+    <testcase name="should call the isChildOf method" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if a component can move"/>
+    <testcase name="should return true if it is a child a component and not the current item" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if a component can move"/>
+    <testcase name="should return true if it is not a child a component and not the current item" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if a component can move"/>
+    <testcase name="should return false if it is not a child a component and the current item" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if a component can move"/>
+    <testcase name="should return false if it is a child not a component and the current item" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if a component can move"/>
+    <testcase name="should return false if it is a child not a component and the same id but not the current item" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service test if a component can move"/>
+    <testcase name="should get the width of a component for the current resolution" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service find the width of a component"/>
+    <testcase name="should get the width 1 if no component is passed as an argument" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service find the width of a component"/>
+    <testcase name="should set the size" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service find the width of a component"/>
+    <testcase name="should call resolutions .all" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service expose an api for columns Find the size of a component"/>
+    <testcase name="should based the count on the current selected resolution" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service expose an api for columns Find the size of a component"/>
+    <testcase name="should return the component col size for the current resolution" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service expose an api for columns Find the size of a component"/>
+    <testcase name="should return 12 if no with is set" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service expose an api for columns Find the size of a component"/>
+    <testcase name="should return defaultResolution resolution if no resolution is set" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service expose an api for columns Find the size of a component"/>
+    <testcase name="should return defaultResolution if no resolution is set" time="0.003" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service expose an api for columns Find the size of a component"/>
+    <testcase name="should get a className based on the number of columns" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service expose an api for columns"/>
+    <testcase name="should distribute equaly the new colsize for each component for lg and md size" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service expose an api for columns set the default size for a col in a row"/>
+    <testcase name="should increase the colsize for the last component if equal colsize is not possible " time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service expose an api for columns set the default size for a col in a row"/>
+    <testcase name="should fill the remaining space if there is empty space in row " time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service expose an api for columns set the default size for a col in a row"/>
+    <testcase name="should return true if a component is a container" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service isContainer"/>
+    <testcase name="should return true if a container is empty" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service isEmpty"/>
+    <testcase name="should return false if a container is not empty" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service isEmpty"/>
+    <testcase name="should return a flat array of child components" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ComponentUtils Service getVisibleComponents"/>
+    <testcase name="should display the component in page" time="0.021" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).component"/>
+    <testcase name="should display the component text property value when it is set" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).component"/>
+    <testcase name="should verify that a container is empty" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl"/>
+    <testcase name="should verify that a container is not empty" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl"/>
+    <testcase name="should verify that a container is repeated when property value repeatedCollection has a value" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl"/>
+    <testcase name="should verify that a container is not repeated otherwise" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl"/>
+    <testcase name="should move row up" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl We can move rows"/>
+    <testcase name="should move row down" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl We can move rows"/>
+    <testcase name="should select the currrent row when we remove a row" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl We can edit rows"/>
+    <testcase name="should select remove a row" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl We can edit rows"/>
+    <testcase name="should not do anything if the current item is not movable" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop an item"/>
+    <testcase name="should select the current row on drop" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop an item"/>
+    <testcase name="should remove the current item on drop" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop an item"/>
+    <testcase name="should select the current row if the item has a configuration and is movable" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row"/>
+    <testcase name="should do nothing if the item has a config and not movable" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row"/>
+    <testcase name="should select the current row" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row The item has no configuration"/>
+    <testcase name="should add a widget if the type is widget" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row The item has no configuration"/>
+    <testcase name="should not drop it if the container is not movable" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row The item has no configuration"/>
+    <testcase name="should not create a new row before if we push a non-movable container" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row We can drop before or after a position"/>
+    <testcase name="should not create a new row after if we push a non-movable container" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row We can drop before or after a position"/>
+    <testcase name="should push the content of a rows at a position if we drag before it" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row We can drop before or after a position"/>
+    <testcase name="should trigger dropAtEndOfTheRow if we drag before it" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row We can drop before or after a position"/>
+    <testcase name="should push the content of a rows after a position if we drag before it" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row We can drop before or after a position"/>
+    <testcase name="should trigger dropAtEndOfTheRow if we drag before it" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row We can drop before or after a position"/>
+    <testcase name="should update the array if the currentComponent has an ID. - after:component" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row We can drop before or after a position"/>
+    <testcase name="should update the array if the currentComponent has an ID. - before:component" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row We can drop before or after a position"/>
+    <testcase name="should update the array if the currentComponent has an ID. - after:container" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row We can drop before or after a position"/>
+    <testcase name="should update the array if the currentComponent has an ID. - before:container" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ContainerDirectiveCtrl Drag and drop of items Drop at the end of a row We can drop before or after a position"/>
+    <testcase name="should not show a movable row when there is only one" time="0.051" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).container"/>
+    <testcase name="should only show move down handle on the first row" time="0.04" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).container"/>
+    <testcase name="should only show move up handle on the last row" time="0.041" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).container"/>
+    <testcase name="should show both move handles on a middle row" time="0.037" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).container"/>
+    <testcase name="should show drop zones before and after the first row" time="0.026" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).container"/>
+    <testcase name="should show 1 drop zones all rows but the first" time="0.037" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).container"/>
+    <testcase name="should display a container in a container" time="0.052" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).container"/>
+    <testcase name="should return empty string for unknown data" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data filters"/>
+    <testcase name="should return empty string for data with no value" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data filters"/>
+    <testcase name="should return data value when data type is constant" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data filters"/>
+    <testcase name="should return data value when data type is interpolation" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data filters"/>
+    <testcase name="should return prefixed data value when data type is expression" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data filters"/>
+    <testcase name="should return prefixed data value when data type is variable" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data filters"/>
+    <testcase name="should return prefixed data value wrapped in an array for collection or choice type" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).data filters"/>
+    <testcase name="should contains 2 drop zones" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive"/>
+    <testcase name="should put right modifier on the second drop zone" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive"/>
+    <testcase name="should add a widget when the element is dropped before" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive"/>
+    <testcase name="should add a widget when the element is dropped after" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive"/>
+    <testcase name="should add a container when the element is dropped before" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive"/>
+    <testcase name="should add a container when the element is dropped after" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive"/>
+    <testcase name="should add a tabs container when the element is dropped before" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive"/>
+    <testcase name="should add a tabs container when the element is dropped after" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive"/>
+    <testcase name="should select the current row" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration"/>
+    <testcase name="should remove the current item from the row" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration"/>
+    <testcase name="should drop the current item in the row" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration"/>
+    <testcase name="should drop the current item in the row" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration"/>
+    <testcase name="should drop the current item in the row if componentIndex is defined" time="0.02" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration"/>
+    <testcase name="should not call the editor move position if the item cannot move" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row"/>
+    <testcase name="should not move on before sur the second item" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Item will not move First item in the row"/>
+    <testcase name="should not move on before first item" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Item will not move First item in the row"/>
+    <testcase name="should not move on after first item" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Item will not move First item in the row"/>
+    <testcase name="should not move on before last item" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Item will not move Second item in the row"/>
+    <testcase name="should not move on after last item" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Item will not move Second item in the row"/>
+    <testcase name="should not move on after sur the first item" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Item will not move Second item in the row"/>
+    <testcase name="should not move on before sur the last item" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Item will not move Second item in the row"/>
+    <testcase name="should not move on after sur the second item" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Item will not move Last item in the row"/>
+    <testcase name="should not move on before last item" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Item will not move Last item in the row"/>
+    <testcase name="should not move on after last item" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Item will not move Last item in the row"/>
+    <testcase name="should move at 1 if we are on the last item before" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Move an item in the row First item"/>
+    <testcase name="should move at 1 if we are on the second item after" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Move an item in the row First item"/>
+    <testcase name="should move at 2 if we are on the last item after" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Move an item in the row First item"/>
+    <testcase name="should move at 0 if we are on the first item before" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Move an item in the row Second item"/>
+    <testcase name="should move at 0 if we are on the first item before" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Move an item in the row Second item"/>
+    <testcase name="should move at 0 if we are on the first item before" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Move an item in the row Last item"/>
+    <testcase name="should move at 0 if we are on the first item after" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Move an item in the row Last item"/>
+    <testcase name="should move at 1 if we are on the second item after" time="0.022" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive we drop a widget with a configuration change the position inside a row Move an item in the row Last item"/>
+    <testcase name="should try to move an item if we drop a widget with a config" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).dropZone directive Can we drag and drop this item here ?"/>
+    <testcase name="should display the formContainer" time="0.027" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).formContainer"/>
+    <testcase name="should display the input with label on the left" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).input with label"/>
+    <testcase name="should display the input with label on the left with a different width" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).input with label"/>
+    <testcase name="should display the input with label on the left with a different label" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).input with label"/>
+    <testcase name="should display the input with label on the top" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).input with label"/>
+    <testcase name="should create a page element for a widget" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).page element factory"/>
+    <testcase name="should create a page element with component type for a widget" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).page element factory"/>
+    <testcase name="should create a page element for a container" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).page element factory"/>
+    <testcase name="should create a page element for a tabsContainer" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).page element factory"/>
+    <testcase name="should create a page element for a tab" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).page element factory"/>
+    <testcase name="should create a page element for a form container" time="0.01" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).page element factory"/>
+    <testcase name="should have the first tab opened, but not selected in the editor" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should open a tab and select it int he editor" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should be possible to move left only if current tab and not first tab" time="0.02" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should be possible to move right only if current tab and not first tab" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should move tab left" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should move tab right" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should add tab at the end" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should remove current tab and select previous one" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should remove current tab and select first when deleting first tab" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should hide remove button when there is only one tab" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should show remove button when there is more than one tab" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).TabsContainerDirectiveCtrl"/>
+    <testcase name="should display the component" time="0.055" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).tabsContainer"/>
+    <testcase name="should add a new tab" time="0.054" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).tabsContainer"/>
+    <testcase name="should remove a tab" time="0.07" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).tabsContainer"/>
+    <testcase name="should show remove button when there is more than one tab" time="0.056" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).tabsContainer"/>
+    <testcase name="should hide remove button when there is only one tab" time="0.041" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).tabsContainer"/>
+    <testcase name="should initialize a widget" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard component wrapper"/>
+    <testcase name="should init a container" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard component wrapper"/>
+    <testcase name="should init a formContainer" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard component wrapper"/>
+    <testcase name="should init a tabsContainer and its tabs" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard component wrapper"/>
+    <testcase name="should initialize a tab" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard component wrapper"/>
+    <testcase name="should add widget to whiteboard widget list while initializing a widget" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard service"/>
+    <testcase name="should remove widget from whiteboard widget list while removing a widget" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard service"/>
+    <testcase name="should not remove widget from whiteboard widget list while removing a widget but not last" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard service"/>
+    <testcase name="should call registered functions while removing a widget" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard service"/>
+    <testcase name="should call registered functions while adding a widget" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard service"/>
+    <testcase name="should trigger onRemove on row components while removing a row" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard service"/>
+    <testcase name="should trigger onRemove on container components while removing a container" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard service"/>
+    <testcase name="should trigger onRemove on tab components while removing a tab" time="0.018" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard service"/>
+    <testcase name="should trigger onRemove on tabs containers components while removing a tabs container" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard service"/>
+    <testcase name="should trigger onRemove on form container components while removing a form container" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).whiteboard service"/>
+    <testcase name="should list all artifacts" time="0.069" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifactListController"/>
+    <testcase name="should open a confirmation dialog to confirm artifact deletion" time="0.062" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifactListController"/>
+    <testcase name="should export an artifact" time="0.053" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifactListController"/>
+    <testcase name="should rename an artifact if the name has changed" time="0.07" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifactListController"/>
+    <testcase name="should revert the name if the rename of the artifact has failed" time="0.074" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifactListController"/>
+    <testcase name="should not rename an artifact if the name has not changed" time="0.065" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifactListController"/>
+    <testcase name="should show a message when there is no artifacts" time="0.054" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).artifactListController"/>
+    <testcase name="should retrieve all artifacts" time="0.011" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).HomeCtrl"/>
+    <testcase name="should expose data for view" time="0.02" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home create button"/>
+    <testcase name="should check widget name if it already exists" time="0.02" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home create button"/>
+    <testcase name="should create a widget and navigate to editor" time="0.018" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home create button"/>
+    <testcase name="should create a page and navigate to editor" time="0.035" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home create button"/>
+    <testcase name="should close the modal instance" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DeletionPopController"/>
+    <testcase name="should dismiss the modal instance" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DeletionPopController"/>
+    <testcase name="should populate artifact and his type" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).DeletionPopController"/>
+    <testcase name="should mark an artifact as favorite" time="0.029" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).favorite button controller"/>
+    <testcase name="should unmark an artifact as favorite" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).favorite button controller"/>
+    <testcase name="should say if artifact is favorite or not" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).favorite button controller"/>
+    <testcase name="should toggle favorite state while clicking on it" time="0.014" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).favorite button directive"/>
+    <testcase name="should have a special class name when artifact is marked as favorite" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).favorite button directive"/>
+    <testcase name="should update " time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).directive fileInputChange"/>
+    <testcase name="should refresh everything" time="0.015" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).HomeCtrl"/>
+    <testcase name="should not open a modal when no report is returned" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home import controller"/>
+    <testcase name="should open a modal when import report is returned" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home import controller"/>
+    <testcase name="should refresh lists when second pop up is closed" time="0.034" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home import controller"/>
+    <testcase name="should not refresh lists when second pop up is canceled" time="0.018" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home import controller"/>
+    <testcase name="should expose data for view" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home import controller"/>
+    <testcase name="should manage importReport and close modal when upload is complete" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home import controller"/>
+    <testcase name="should manage importReport and dismiss modal when upload is complete and import management failed" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).home import controller"/>
+    <testcase name="should get error message for SERVER_ERROR error" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import error messages service"/>
+    <testcase name="should get error message for PAGE_NOT_FOUND error" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import error messages service"/>
+    <testcase name="should get error message for UNEXPECTED_ZIP_STRUCTURE error" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import error messages service"/>
+    <testcase name="should get error message for CANNOT_OPEN_ZIP error" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import error messages service"/>
+    <testcase name="should get error to display object for JSON_STRUCTURE error" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import error messages service"/>
+    <testcase name="should get error response message when type is unknown" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import error messages service"/>
+    <testcase name="should compute consequence according to artefact type" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import error messages service"/>
+    <testcase name="should join artifact names" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).importReportItemList directive"/>
+    <testcase name="should expose data for view" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import artifact report controller"/>
+    <testcase name="should force import" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import artifact report controller"/>
+    <testcase name="should dismiss pop up on force import error" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import artifact report controller"/>
+    <testcase name="should close pop up on force import success" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import artifact report controller"/>
+    <testcase name="should say if a report has element with dependencies" time="0.025" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import artifact report controller"/>
+    <testcase name="should return imported element type" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import artifact report controller"/>
+    <testcase name="should return widget when element has no type" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import artifact report controller"/>
+    <testcase name="should return element name" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import artifact report controller"/>
+    <testcase name="should join artifacts on names" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import Success Message Controller"/>
+    <testcase name="should get overridden state when element has been overridden" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import Success Message Controller"/>
+    <testcase name="should get added state when element has been added" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import Success Message Controller"/>
+    <testcase name="should print to user that element has been added" time="0.016" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ImportArtifactSuccessMessageTemplate"/>
+    <testcase name="should print to user that element has been overridden" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ImportArtifactSuccessMessageTemplate"/>
+    <testcase name="should not display added dependencies section when no dependencies are added" time="0.013" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ImportArtifactSuccessMessageTemplate"/>
+    <testcase name="should display added dependencies" time="0.025" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ImportArtifactSuccessMessageTemplate"/>
+    <testcase name="should not display overridden dependencies section when no dependencies are overridden" time="0.012" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ImportArtifactSuccessMessageTemplate"/>
+    <testcase name="should display overridden dependencies" time="0.021" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).ImportArtifactSuccessMessageTemplate"/>
+    <testcase name="should check error message" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import service"/>
+    <testcase name="should reject response processing when it is an error" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import service when managing import response"/>
+    <testcase name="should get message from error message service when it is an error" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import service when managing import response"/>
+    <testcase name="should resolve response processing when override is false " time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import service when managing import response"/>
+    <testcase name="should set import report context type to &apos;widget&apos; when import report element has no type" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import service when managing import response"/>
+    <testcase name="should resolve response processing when checkOverride is false " time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import service when managing import response"/>
+    <testcase name="should resolve response processing when checkOverride is true and overriden is true " time="1.853" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).Import service when managing import response"/>
+    <testcase name="should try to get the current preview url" time="0.025" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).directive openPreview directive default behaviour"/>
+    <testcase name="should open a popup" time="0.009" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).directive openPreview directive default behaviour"/>
+    <testcase name="should try to get the current preview url" time="0.008" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).directive openPreview directive advanced behaviour"/>
+    <testcase name="should open a popup" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).directive openPreview directive advanced behaviour"/>
+    <testcase name="should set the iframe&apos;s source" time="0.007" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PreviewCtrl"/>
+    <testcase name="should update the iframe src when a notification is received" time="0.006" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PreviewCtrl"/>
+    <testcase name="should not update the iframe src when a notification is received for another id" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PreviewCtrl"/>
+    <testcase name="should refresh preview iframe" time="0.004" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PreviewCtrl"/>
+    <testcase name="should load the page name onLoad" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PreviewCtrl"/>
+    <testcase name="should fill the scope.pageName" time="0.005" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).PreviewCtrl"/>
+    <testcase name="should resolve the necessary for the page editor" time="0.038" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).The route config"/>
+    <testcase name="should resolve the necessary for the page preview" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).The route config"/>
+    <testcase name="should redirect to custom widget editor" time="0.022" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).The route config"/>
+    <testcase name="should redirect to home otherwise" time="0.017" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).The route config"/>
+    <testcase name="should load french translations" time="0.02" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).The route config"/>
+    <testcase name="should load spanish translations" time="0.019" classname="JavaScript unit tests Chrome 47.0.2526 (Linux 0.0.0).The route config"/>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>

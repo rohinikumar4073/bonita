@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/common/directives/artifact-name-validation.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/common/directives/artifact-name-validation.js</span></h1>
+    <h2>
+        Statements: <span class="metric">92.31% <small>(36 / 39)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">64.71% <small>(11 / 17)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">92.86% <small>(13 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(17 / 17)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/common/directives/</a> &#187; artifact-name-validation.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12</span>
+<span class="cline-any cline-yes">12</span>
+<span class="cline-any cline-yes">12</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">220</span>
+<span class="cline-any cline-yes">220</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">14</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12</span>
+<span class="cline-any cline-yes">12</span>
+<span class="cline-any cline-yes">12</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';var _createClass = function () {function defineProperties(target, props) {for (var i = 0; i &lt; props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;<span class="missing-if-branch" title="else path not taken" >E</span>if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}return function (Constructor, protoProps, staticProps) {<span class="missing-if-branch" title="else path not taken" >E</span>if (protoProps) defineProperties(Constructor.prototype, protoProps);<span class="missing-if-branch" title="if path not taken" >I</span>if (staticProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor, staticProps);r</span>eturn Constructor;};}();<span class="fstat-no" title="function not covered" >function _classCallCheck(instance, Constructor) {<span class="cstat-no" title="statement not covered" ></span>if (!(instance instanceof Constructor)) {<span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function");}</span>}</span>(function () {
+&nbsp;
+  'use strict';var 
+&nbsp;
+  ArtifactNameValidationController = function () {
+&nbsp;
+    function ArtifactNameValidationController(gettextCatalog) {_classCallCheck(this, ArtifactNameValidationController);
+      this.maxlength = 240;
+      this.validators = { 
+        pattern: gettextCatalog.getString('Name must contains only alphanumeric characters with no space'), 
+        maxlength: gettextCatalog.getString('Name must be less than {{maxlength}} characters long', this) };}_createClass(ArtifactNameValidationController, [{ key: 'errorMessage', value: function errorMessage() 
+&nbsp;
+&nbsp;
+&nbsp;
+      {var _this = this;
+        return this.form &amp;&amp; Object.keys(this.form.$error).reduce(function (acc, val) {return acc || _this.validators[val] || <span class="branch-2 cbranch-no" title="branch not covered" >acc;</span>}, '');} }]);return ArtifactNameValidationController;}();
+&nbsp;
+&nbsp;
+&nbsp;
+  /**
+   * Perform basic validation on UI Designer artifact's name field
+   * Display a tooltip in case of erred/too long names
+   *
+   * @example &lt;input artifact-name-validation="bottom-right" ng-model="artifact.name"&gt;
+   *
+   * @param artifact-name-validation {string} tooltip placement (top-left by default)
+   */
+  function artifactNameValidationDirective() {
+    return { 
+      scope: {}, 
+      require: ['^form', 'artifactNameValidation'], 
+      controller: ArtifactNameValidationController, 
+      controllerAs: 'name', 
+      templateUrl: 'js/common/directives/artifact-name-validation.html', 
+      replace: true, 
+      link: function (scope, element, attrs, ctrls) {
+        var ctrl = ctrls[1];
+        ctrl.form = ctrls[0];
+        ctrl.placement = attrs.artifactNameValidation || 'top-left';} };}
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+  /**
+   * Add extra validation message to an artifact-name-validation directive
+   *
+   * @example &lt;input ng-minlength="20" artifact-name-validation artifact-name-validation-messages="{ minlength: 'Field should have at least 20 characters'}" ng-model="artifact.name"&gt;
+   *
+   * @param artifact-name-validation-messages {object} denotes a validation error key while a value should be a validation message
+   */
+  function artifactNameValidationMessagesDirective() {
+    return { 
+      require: 'artifactNameValidation', 
+      link: function (scope, element, attrs, ctrl) {
+        attrs.$observe('artifactNameValidationMessages', function (value) {return angular.extend(ctrl.validators, scope.$eval(value));});} };}
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+  angular.
+  module('bonitasoft.designer.common.directives').
+  directive('artifactNameValidation', artifactNameValidationDirective).
+  directive('artifactNameValidationMessages', artifactNameValidationMessagesDirective);})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFydGlmYWN0LW5hbWUtdmFsaWRhdGlvbi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoidXNCQUFBLENBQUMsWUFBVzs7QUFFVixlQUZVOztBQUlKLGtDQUpJOztBQU1SLGFBRkksZ0NBRUosQ0FBWSxjQUFaLEVBQTRCLHVCQUZ4QixnQ0FFd0I7QUFDMUIsV0FBSyxTQUFMLEdBQWlCLEdBQWpCO0FBQ0EsV0FBSyxVQUFMLEdBQWtCO0FBQ2hCLGlCQUFTLGVBQWUsU0FBZixDQUF5QiwrREFBekIsQ0FETztBQUVoQixtQkFBVyxlQUFlLFNBQWYsQ0FBeUIsc0RBQXpCLEVBQWlGLElBQWpGLENBRkssRUFBbEIsQ0FJRCxDQVpPLGFBSUosZ0NBSkk7Ozs7QUFjTztBQUNiLGVBQU8sS0FBSyxJQUFMLElBQWEsT0FBTyxJQUFQLENBQVksS0FBSyxJQUFMLENBQVUsTUFBdEIsRUFBOEIsTUFBOUIsQ0FBcUMsVUFBQyxHQUFELEVBQU0sR0FBTixVQUFjLE9BQU8sTUFBSyxVQUFMLENBQWdCLEdBQWhCLENBQVAsSUFBK0IsR0FBN0MsRUFBckMsRUFBdUYsRUFBdkYsQ0FBcEIsQ0FDRCxDQWhCTyxZQUlKLGdDQUpJOzs7Ozs7Ozs7Ozs7QUEyQlYsV0FBUywrQkFBVCxHQUEyQztBQUN6QyxXQUFPO0FBQ0wsYUFBTyxFQURGO0FBRUwsZUFBUyxDQUFDLE9BQUQsRUFBVSx3QkFBVixDQUZKO0FBR0wsa0JBQVksZ0NBSFA7QUFJTCxvQkFBYyxNQUpUO0FBS0wsbUJBQWEsb0RBTFI7QUFNTCxlQUFTLElBTko7QUFPTCxZQUFNLFVBQVMsS0FBVCxFQUFnQixPQUFoQixFQUF5QixLQUF6QixFQUFnQyxLQUFoQyxFQUF1QztBQUMzQyxZQUFJLE9BQU8sTUFBTSxDQUFOLENBQVg7QUFDQSxhQUFLLElBQUwsR0FBWSxNQUFNLENBQU4sQ0FBWjtBQUNBLGFBQUssU0FBTCxHQUFpQixNQUFNLHNCQUFOLElBQWdDLFVBQWpELENBQ0QsQ0FYSSxFQUFQLENBYUQ7Ozs7Ozs7Ozs7OztBQVNELFdBQVMsdUNBQVQsR0FBbUQ7QUFDakQsV0FBTztBQUNMLGVBQVMsd0JBREo7QUFFTCxZQUFNLFVBQVMsS0FBVCxFQUFnQixPQUFoQixFQUF5QixLQUF6QixFQUFnQyxJQUFoQyxFQUFzQztBQUMxQyxjQUFNLFFBQU4sQ0FBZSxnQ0FBZixFQUFpRCxVQUFDLEtBQUQsVUFBVyxRQUFRLE1BQVIsQ0FBZSxLQUFLLFVBQXBCLEVBQWdDLE1BQU0sS0FBTixDQUFZLEtBQVosQ0FBaEMsQ0FBWCxFQUFqRCxFQUNELENBSkksRUFBUCxDQU1EOzs7OztBQUVEO0FBQ0csUUFESCxDQUNVLHVDQURWO0FBRUcsV0FGSCxDQUVhLHdCQUZiLEVBRXVDLCtCQUZ2QztBQUdHLFdBSEgsQ0FHYSxnQ0FIYixFQUcrQyx1Q0FIL0MsRUFLRCxDQWhFRCIsImZpbGUiOiJhcnRpZmFjdC1uYW1lLXZhbGlkYXRpb24uanMiLCJzb3VyY2VzQ29udGVudCI6WyIoZnVuY3Rpb24oKSB7XG5cbiAgJ3VzZSBzdHJpY3QnO1xuXG4gIGNsYXNzIEFydGlmYWN0TmFtZVZhbGlkYXRpb25Db250cm9sbGVyIHtcblxuICAgIGNvbnN0cnVjdG9yKGdldHRleHRDYXRhbG9nKSB7XG4gICAgICB0aGlzLm1heGxlbmd0aCA9IDI0MDtcbiAgICAgIHRoaXMudmFsaWRhdG9ycyA9IHtcbiAgICAgICAgcGF0dGVybjogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdOYW1lIG11c3QgY29udGFpbnMgb25seSBhbHBoYW51bWVyaWMgY2hhcmFjdGVycyB3aXRoIG5vIHNwYWNlJyksXG4gICAgICAgIG1heGxlbmd0aDogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdOYW1lIG11c3QgYmUgbGVzcyB0aGFuIHt7bWF4bGVuZ3RofX0gY2hhcmFjdGVycyBsb25nJywgdGhpcylcbiAgICAgIH07XG4gICAgfVxuXG4gICAgZXJyb3JNZXNzYWdlKCkge1xuICAgICAgcmV0dXJuIHRoaXMuZm9ybSAmJiBPYmplY3Qua2V5cyh0aGlzLmZvcm0uJGVycm9yKS5yZWR1Y2UoKGFjYywgdmFsKSA9PiBhY2MgfHwgdGhpcy52YWxpZGF0b3JzW3ZhbF0gfHwgYWNjLCAnJyk7XG4gICAgfVxuICB9XG5cbiAgLyoqXG4gICAqIFBlcmZvcm0gYmFzaWMgdmFsaWRhdGlvbiBvbiBVSSBEZXNpZ25lciBhcnRpZmFjdCdzIG5hbWUgZmllbGRcbiAgICogRGlzcGxheSBhIHRvb2x0aXAgaW4gY2FzZSBvZiBlcnJlZC90b28gbG9uZyBuYW1lc1xuICAgKlxuICAgKiBAZXhhbXBsZSA8aW5wdXQgYXJ0aWZhY3QtbmFtZS12YWxpZGF0aW9uPVwiYm90dG9tLXJpZ2h0XCIgbmctbW9kZWw9XCJhcnRpZmFjdC5uYW1lXCI+XG4gICAqXG4gICAqIEBwYXJhbSBhcnRpZmFjdC1uYW1lLXZhbGlkYXRpb24ge3N0cmluZ30gdG9vbHRpcCBwbGFjZW1lbnQgKHRvcC1sZWZ0IGJ5IGRlZmF1bHQpXG4gICAqL1xuICBmdW5jdGlvbiBhcnRpZmFjdE5hbWVWYWxpZGF0aW9uRGlyZWN0aXZlKCkge1xuICAgIHJldHVybiB7XG4gICAgICBzY29wZToge30sXG4gICAgICByZXF1aXJlOiBbJ15mb3JtJywgJ2FydGlmYWN0TmFtZVZhbGlkYXRpb24nXSxcbiAgICAgIGNvbnRyb2xsZXI6IEFydGlmYWN0TmFtZVZhbGlkYXRpb25Db250cm9sbGVyLFxuICAgICAgY29udHJvbGxlckFzOiAnbmFtZScsXG4gICAgICB0ZW1wbGF0ZVVybDogJ2pzL2NvbW1vbi9kaXJlY3RpdmVzL2FydGlmYWN0LW5hbWUtdmFsaWRhdGlvbi5odG1sJyxcbiAgICAgIHJlcGxhY2U6IHRydWUsXG4gICAgICBsaW5rOiBmdW5jdGlvbihzY29wZSwgZWxlbWVudCwgYXR0cnMsIGN0cmxzKSB7XG4gICAgICAgIGxldCBjdHJsID0gY3RybHNbMV07XG4gICAgICAgIGN0cmwuZm9ybSA9IGN0cmxzWzBdO1xuICAgICAgICBjdHJsLnBsYWNlbWVudCA9IGF0dHJzLmFydGlmYWN0TmFtZVZhbGlkYXRpb24gfHwgJ3RvcC1sZWZ0JztcbiAgICAgIH1cbiAgICB9O1xuICB9XG5cbiAgLyoqXG4gICAqIEFkZCBleHRyYSB2YWxpZGF0aW9uIG1lc3NhZ2UgdG8gYW4gYXJ0aWZhY3QtbmFtZS12YWxpZGF0aW9uIGRpcmVjdGl2ZVxuICAgKlxuICAgKiBAZXhhbXBsZSA8aW5wdXQgbmctbWlubGVuZ3RoPVwiMjBcIiBhcnRpZmFjdC1uYW1lLXZhbGlkYXRpb24gYXJ0aWZhY3QtbmFtZS12YWxpZGF0aW9uLW1lc3NhZ2VzPVwieyBtaW5sZW5ndGg6ICdGaWVsZCBzaG91bGQgaGF2ZSBhdCBsZWFzdCAyMCBjaGFyYWN0ZXJzJ31cIiBuZy1tb2RlbD1cImFydGlmYWN0Lm5hbWVcIj5cbiAgICpcbiAgICogQHBhcmFtIGFydGlmYWN0LW5hbWUtdmFsaWRhdGlvbi1tZXNzYWdlcyB7b2JqZWN0fSBkZW5vdGVzIGEgdmFsaWRhdGlvbiBlcnJvciBrZXkgd2hpbGUgYSB2YWx1ZSBzaG91bGQgYmUgYSB2YWxpZGF0aW9uIG1lc3NhZ2VcbiAgICovXG4gIGZ1bmN0aW9uIGFydGlmYWN0TmFtZVZhbGlkYXRpb25NZXNzYWdlc0RpcmVjdGl2ZSgpIHtcbiAgICByZXR1cm4ge1xuICAgICAgcmVxdWlyZTogJ2FydGlmYWN0TmFtZVZhbGlkYXRpb24nLFxuICAgICAgbGluazogZnVuY3Rpb24oc2NvcGUsIGVsZW1lbnQsIGF0dHJzLCBjdHJsKSB7XG4gICAgICAgIGF0dHJzLiRvYnNlcnZlKCdhcnRpZmFjdE5hbWVWYWxpZGF0aW9uTWVzc2FnZXMnLCAodmFsdWUpID0+IGFuZ3VsYXIuZXh0ZW5kKGN0cmwudmFsaWRhdG9ycywgc2NvcGUuJGV2YWwodmFsdWUpKSk7XG4gICAgICB9XG4gICAgfTtcbiAgfVxuXG4gIGFuZ3VsYXJcbiAgICAubW9kdWxlKCdib25pdGFzb2Z0LmRlc2lnbmVyLmNvbW1vbi5kaXJlY3RpdmVzJylcbiAgICAuZGlyZWN0aXZlKCdhcnRpZmFjdE5hbWVWYWxpZGF0aW9uJywgYXJ0aWZhY3ROYW1lVmFsaWRhdGlvbkRpcmVjdGl2ZSlcbiAgICAuZGlyZWN0aXZlKCdhcnRpZmFjdE5hbWVWYWxpZGF0aW9uTWVzc2FnZXMnLCBhcnRpZmFjdE5hbWVWYWxpZGF0aW9uTWVzc2FnZXNEaXJlY3RpdmUpO1xuXG59KSgpO1xuIl19</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

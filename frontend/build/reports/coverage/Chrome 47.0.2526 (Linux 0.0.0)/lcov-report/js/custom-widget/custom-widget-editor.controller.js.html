@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/custom-widget/custom-widget-editor.controller.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../prettify.css">
+    <link rel="stylesheet" href="../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">js/custom-widget/custom-widget-editor.controller.js</span></h1>
+    <h2>
+        Statements: <span class="metric">69.39% <small>(34 / 49)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">50% <small>(2 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">56% <small>(14 / 25)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">68.09% <small>(32 / 47)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">js/custom-widget/</a> &#187; custom-widget-editor.controller.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict'; /**
+               * Copyright (C) 2015 Bonitasoft S.A.
+               * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+               * This program is free software: you can redistribute it and/or modify
+               * it under the terms of the GNU General Public License as published by
+               * the Free Software Foundation, either version 2.0 of the License, or
+               * (at your option) any later version.
+               * This program is distributed in the hope that it will be useful,
+               * but WITHOUT ANY WARRANTY; without even the implied warranty of
+               * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+               * GNU General Public License for more details.
+               * You should have received a copy of the GNU General Public License
+               * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+               */
+(function () {
+  'use strict';
+&nbsp;
+  angular.
+  module('bonitasoft.designer.custom-widget').
+  controller('CustomWidgetEditorCtrl', CustomWidgetEditorCtrl);
+&nbsp;
+  function CustomWidgetEditorCtrl($scope, artifact, artifactRepo, alerts, $uibModal, $window, keymaster, gettextCatalog, $stateParams, $state, BONDS, browserHistoryService) {
+&nbsp;
+    $scope.widget = artifact;
+    $scope.bonds = BONDS;
+&nbsp;
+    var saveSuccessMsg = gettextCatalog.getString('Custom widget [ {{name}} ] successfully saved', { name: $scope.widget.name });
+    var widgetRepo = artifactRepo;
+&nbsp;
+    keymaster('ctrl+s', <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      $scope.$apply(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        $scope.save();}</span>);
+&nbsp;
+      // prevent default browser action
+<span class="cstat-no" title="statement not covered" >      return false;}</span>);
+&nbsp;
+&nbsp;
+    $scope.isTypeSelectable = function (propertyBond) {
+      return propertyBond !== 'variable' &amp;&amp; propertyBond !== 'interpolation';};
+&nbsp;
+&nbsp;
+    $scope.back = function () {return browserHistoryService.back(function () {return $state.go('designer.home');});};
+&nbsp;
+    /**
+     * Updates the property
+     * @param paramName the name of the property to update
+     * @param param - the property to update
+     */
+    $scope.updateParam = function (paramName, param) {
+      widgetRepo.updateProperty($scope.widget.id, paramName, param).then(function (response) {
+        $scope.widget.properties = response.data;});};
+&nbsp;
+&nbsp;
+&nbsp;
+    /**
+     * Adds a new property
+     * @param param - the param to add
+     */
+    $scope.addParam = function (param) {
+      widgetRepo.addProperty($scope.widget.id, param).then(function (response) {
+        $scope.widget.properties = response.data;});};
+&nbsp;
+&nbsp;
+&nbsp;
+    /**
+     * Deletes an existing property, by dropping it from the collection
+     * @param paramIndex - the index of the property to drop
+     */
+    $scope.deleteParam = function (param) {
+      widgetRepo.deleteProperty($scope.widget.id, param.name).then(<span class="fstat-no" title="function not covered" >function (response) {</span>
+<span class="cstat-no" title="statement not covered" >        $scope.widget.properties = response.data;}</span>);};
+&nbsp;
+&nbsp;
+&nbsp;
+    /**
+     * Saves a widget and gives it an id based on its name (Awesome Widget -&gt; awesome-widget)
+     */
+    $scope.save = function () {
+      widgetRepo.save($scope.widget).then(function () {
+        alerts.addSuccess(saveSuccessMsg, 2000);});};
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+    $scope.saveAndExport = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      widgetRepo.save($scope.widget).then(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        $window.location = widgetRepo.exportUrl($scope.widget);}</span>);};
+&nbsp;
+&nbsp;
+&nbsp;
+    $scope.saveAs = function (widget) {
+      var modalInstance = $uibModal.open({ 
+        templateUrl: 'js/custom-widget/save-as-popup.html', 
+        controller: 'saveWidgetAsPopUpCtrl', 
+        controllerAs: 'ctrl', 
+        resolve: { 
+          widget: <span class="fstat-no" title="function not covered" >function () {<span class="cstat-no" title="statement not covered" ></span>return widget;}</span> } });
+&nbsp;
+&nbsp;
+&nbsp;
+      modalInstance.result.
+      then(saveAs).
+      then(reload);
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function reload(widget) {</span>
+<span class="cstat-no" title="statement not covered" >        $stateParams.id = widget.id;</span>
+<span class="cstat-no" title="statement not covered" >        $state.go($state.current, $stateParams, { </span>
+          reload: true });}
+&nbsp;
+&nbsp;
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function saveAs(data) {</span>
+<span class="cstat-no" title="statement not covered" >        return widgetRepo.create(data, widget.id);}</span>};
+&nbsp;
+&nbsp;
+&nbsp;
+    $scope.createOrUpdate = function (param) {
+&nbsp;
+      var modalInstance = $uibModal.open({ 
+        templateUrl: 'js/custom-widget/create-property.html', 
+        controller: 'PropertyEditorPopupCtrl', 
+        resolve: { 
+          param: <span class="fstat-no" title="function not covered" >function () {<span class="cstat-no" title="statement not covered" ></span>return param;}</span> } });
+&nbsp;
+&nbsp;
+&nbsp;
+      modalInstance.result.
+      then(<span class="fstat-no" title="function not covered" >function (result) {</span>
+<span class="cstat-no" title="statement not covered" >        if (result.paramToUpdate) {</span>
+<span class="cstat-no" title="statement not covered" >          $scope.updateParam(result.paramToUpdate.name, result.param);}</span> else 
+        {
+<span class="cstat-no" title="statement not covered" >          $scope.addParam(result.param);}</span>});};
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+    $scope.openHelp = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      $uibModal.open({ </span>
+        templateUrl: 'js/custom-widget/help-popup.html', 
+        size: 'lg' });};}})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImN1c3RvbS13aWRnZXQtZWRpdG9yLmNvbnRyb2xsZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFjQSxDQUFDLFlBQVc7QUFDVjs7QUFFQTtBQUNHLFFBREgsQ0FDVSxtQ0FEVjtBQUVHLFlBRkgsQ0FFYyx3QkFGZCxFQUV3QyxzQkFGeEM7O0FBSUEsV0FBUyxzQkFBVCxDQUFnQyxNQUFoQyxFQUF3QyxRQUF4QyxFQUFrRCxZQUFsRCxFQUFnRSxNQUFoRSxFQUF3RSxTQUF4RSxFQUFtRixPQUFuRixFQUE0RixTQUE1RixFQUF1RyxjQUF2RyxFQUF1SCxZQUF2SCxFQUFxSSxNQUFySSxFQUE2SSxLQUE3SSxFQUFvSixxQkFBcEosRUFBMks7O0FBRXpLLFdBQU8sTUFBUCxHQUFnQixRQUFoQjtBQUNBLFdBQU8sS0FBUCxHQUFlLEtBQWY7O0FBRUEsUUFBSSxpQkFBaUIsZUFBZSxTQUFmLENBQXlCLCtDQUF6QixFQUEwRSxFQUFFLE1BQU0sT0FBTyxNQUFQLENBQWMsSUFBdEIsRUFBMUUsQ0FBckI7QUFDQSxRQUFJLGFBQWEsWUFBakI7O0FBRUEsY0FBVSxRQUFWLEVBQW9CLFlBQVc7QUFDN0IsYUFBTyxNQUFQLENBQWMsWUFBVztBQUN2QixlQUFPLElBQVAsR0FDRCxDQUZEOzs7QUFJQSxhQUFPLEtBQVAsQ0FDRCxDQU5EOzs7QUFRQSxXQUFPLGdCQUFQLEdBQTBCLFVBQVMsWUFBVCxFQUF1QjtBQUMvQyxhQUFPLGlCQUFpQixVQUFqQixJQUErQixpQkFBaUIsZUFBdkQsQ0FDRCxDQUZEOzs7QUFJQSxXQUFPLElBQVAsR0FBYyxvQkFBTSxzQkFBc0IsSUFBdEIsQ0FBMkIsb0JBQU0sT0FBTyxFQUFQLENBQVUsZUFBVixDQUFOLEVBQTNCLENBQU4sRUFBZDs7Ozs7OztBQU9BLFdBQU8sV0FBUCxHQUFxQixVQUFTLFNBQVQsRUFBb0IsS0FBcEIsRUFBMkI7QUFDOUMsaUJBQVcsY0FBWCxDQUEwQixPQUFPLE1BQVAsQ0FBYyxF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RUFBZixFQUlELENBTEQsQ0FNRCxDQUNGLENBaklEIiwiZmlsZSI6ImN1c3RvbS13aWRnZXQtZWRpdG9yLmNvbnRyb2xsZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIENvcHlyaWdodCAoQykgMjAxNSBCb25pdGFzb2Z0IFMuQS5cbiAqIEJvbml0YXNvZnQsIDMyIHJ1ZSBHdXN0YXZlIEVpZmZlbCAtIDM4MDAwIEdyZW5vYmxlXG4gKiBUaGlzIHByb2dyYW0gaXMgZnJlZSBzb2Z0d2FyZTogeW91IGNhbiByZWRpc3RyaWJ1dGUgaXQgYW5kL29yIG1vZGlmeVxuICogaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBhcyBwdWJsaXNoZWQgYnlcbiAqIHRoZSBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb24sIGVpdGhlciB2ZXJzaW9uIDIuMCBvZiB0aGUgTGljZW5zZSwgb3JcbiAqIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uXG4gKiBUaGlzIHByb2dyYW0gaXMgZGlzdHJpYnV0ZWQgaW4gdGhlIGhvcGUgdGhhdCBpdCB3aWxsIGJlIHVzZWZ1bCxcbiAqIGJ1dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBpbXBsaWVkIHdhcnJhbnR5IG9mXG4gKiBNRVJDSEFOVEFCSUxJVFkgb3IgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UuIFNlZSB0aGVcbiAqIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGZvciBtb3JlIGRldGFpbHMuXG4gKiBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZVxuICogYWxvbmcgd2l0aCB0aGlzIHByb2dyYW0uIElmIG5vdCwgc2VlIDxodHRwOi8vd3d3LmdudS5vcmcvbGljZW5zZXMvPi5cbiAqL1xuKGZ1bmN0aW9uKCkge1xuICAndXNlIHN0cmljdCc7XG5cbiAgYW5ndWxhclxuICAgIC5tb2R1bGUoJ2Jvbml0YXNvZnQuZGVzaWduZXIuY3VzdG9tLXdpZGdldCcpXG4gICAgLmNvbnRyb2xsZXIoJ0N1c3RvbVdpZGdldEVkaXRvckN0cmwnLCBDdXN0b21XaWRnZXRFZGl0b3JDdHJsKTtcblxuICBmdW5jdGlvbiBDdXN0b21XaWRnZXRFZGl0b3JDdHJsKCRzY29wZSwgYXJ0aWZhY3QsIGFydGlmYWN0UmVwbywgYWxlcnRzLCAkdWliTW9kYWwsICR3aW5kb3csIGtleW1hc3RlciwgZ2V0dGV4dENhdGFsb2csICRzdGF0ZVBhcmFtcywgJHN0YXRlLCBCT05EUywgYnJvd3Nlckhpc3RvcnlTZXJ2aWNlKSB7XG5cbiAgICAkc2NvcGUud2lkZ2V0ID0gYXJ0aWZhY3Q7XG4gICAgJHNjb3BlLmJvbmRzID0gQk9ORFM7XG5cbiAgICB2YXIgc2F2ZVN1Y2Nlc3NNc2cgPSBnZXR0ZXh0Q2F0YWxvZy5nZXRTdHJpbmcoJ0N1c3RvbSB3aWRnZXQgWyB7e25hbWV9fSBdIHN1Y2Nlc3NmdWxseSBzYXZlZCcsIHsgbmFtZTogJHNjb3BlLndpZGdldC5uYW1lIH0pO1xuICAgIHZhciB3aWRnZXRSZXBvID0gYXJ0aWZhY3RSZXBvO1xuXG4gICAga2V5bWFzdGVyKCdjdHJsK3MnLCBmdW5jdGlvbigpIHtcbiAgICAgICRzY29wZS4kYXBwbHkoZnVuY3Rpb24oKSB7XG4gICAgICAgICRzY29wZS5zYXZlKCk7XG4gICAgICB9KTtcbiAgICAgIC8vIHByZXZlbnQgZGVmYXVsdCBicm93c2VyIGFjdGlvblxuICAgICAgcmV0dXJuIGZhbHNlO1xuICAgIH0pO1xuXG4gICAgJHNjb3BlLmlzVHlwZVNlbGVjdGFibGUgPSBmdW5jdGlvbihwcm9wZXJ0eUJvbmQpIHtcbiAgICAgIHJldHVybiBwcm9wZXJ0eUJvbmQgIT09ICd2YXJpYWJsZScgJiYgcHJvcGVydHlCb25kICE9PSAnaW50ZXJwb2xhdGlvbic7XG4gICAgfTtcblxuICAgICRzY29wZS5iYWNrID0gKCkgPT4gYnJvd3Nlckhpc3RvcnlTZXJ2aWNlLmJhY2soKCkgPT4gJHN0YXRlLmdvKCdkZXNpZ25lci5ob21lJykpO1xuXG4gICAgLyoqXG4gICAgICogVXBkYXRlcyB0aGUgcHJvcGVydHlcbiAgICAgKiBAcGFyYW0gcGFyYW1OYW1lIHRoZSBuYW1lIG9mIHRoZSBwcm9wZXJ0eSB0byB1cGRhdGVcbiAgICAgKiBAcGFyYW0gcGFyYW0gLSB0aGUgcHJvcGVydHkgdG8gdXBkYXRlXG4gICAgICovXG4gICAgJHNjb3BlLnVwZGF0ZVBhcmFtID0gZnVuY3Rpb24ocGFyYW1OYW1lLCBwYXJhbSkge1xuICAgICAgd2lkZ2V0UmVwby51cGRhdGVQcm9wZXJ0eSgkc2NvcGUud2lkZ2V0LmlkLCBwYXJhbU5hbWUsIHBhcmFtKS50aGVuKGZ1bmN0aW9uKHJlc3BvbnNlKSB7XG4gICAgICAgICRzY29wZS53aWRnZXQucHJvcGVydGllcyA9IHJlc3BvbnNlLmRhdGE7XG4gICAgICB9KTtcbiAgICB9O1xuXG4gICAgLyoqXG4gICAgICogQWRkcyBhIG5ldyBwcm9wZXJ0eVxuICAgICAqIEBwYXJhbSBwYXJhbSAtIHRoZSBwYXJhbSB0byBhZGRcbiAgICAgKi9cbiAgICAkc2NvcGUuYWRkUGFyYW0gPSBmdW5jdGlvbihwYXJhbSkge1xuICAgICAgd2lkZ2V0UmVwby5hZGRQcm9wZXJ0eSgkc2NvcGUud2lkZ2V0LmlkLCBwYXJhbSkudGhlbihmdW5jdGlvbihyZXNwb25zZSkge1xuICAgICAgICAkc2NvcGUud2lkZ2V0LnByb3BlcnRpZXMgPSByZXNwb25zZS5kYXRhO1xuICAgICAgfSk7XG4gICAgfTtcblxuICAgIC8qKlxuICAgICAqIERlbGV0ZXMgYW4gZXhpc3RpbmcgcHJvcGVydHksIGJ5IGRyb3BwaW5nIGl0IGZyb20gdGhlIGNvbGxlY3Rpb25cbiAgICAgKiBAcGFyYW0gcGFyYW1JbmRleCAtIHRoZSBpbmRleCBvZiB0aGUgcHJvcGVydHkgdG8gZHJvcFxuICAgICAqL1xuICAgICRzY29wZS5kZWxldGVQYXJhbSA9IGZ1bmN0aW9uKHBhcmFtKSB7XG4gICAgICB3aWRnZXRSZXBvLmRlbGV0ZVByb3BlcnR5KCRzY29wZS53aWRnZXQuaWQsIHBhcmFtLm5hbWUpLnRoZW4oZnVuY3Rpb24ocmVzcG9uc2UpIHtcbiAgICAgICAgJHNjb3BlLndpZGdldC5wcm9wZXJ0aWVzID0gcmVzcG9uc2UuZGF0YTtcbiAgICAgIH0pO1xuICAgIH07XG5cbiAgICAvKipcbiAgICAgKiBTYXZlcyBhIHdpZGdldCBhbmQgZ2l2ZXMgaXQgYW4gaWQgYmFzZWQgb24gaXRzIG5hbWUgKEF3ZXNvbWUgV2lkZ2V0IC0+IGF3ZXNvbWUtd2lkZ2V0KVxuICAgICAqL1xuICAgICRzY29wZS5zYXZlID0gZnVuY3Rpb24oKSB7XG4gICAgICB3aWRnZXRSZXBvLnNhdmUoJHNjb3BlLndpZGdldCkudGhlbihmdW5jdGlvbigpIHtcbiAgICAgICAgYWxlcnRzLmFkZFN1Y2Nlc3Moc2F2ZVN1Y2Nlc3NNc2csIDIwMDApO1xuICAgICAgfSk7XG5cbiAgICB9O1xuXG4gICAgJHNjb3BlLnNhdmVBbmRFeHBvcnQgPSBmdW5jdGlvbigpIHtcbiAgICAgIHdpZGdldFJlcG8uc2F2ZSgkc2NvcGUud2lkZ2V0KS50aGVuKGZ1bmN0aW9uKCkge1xuICAgICAgICAkd2luZG93LmxvY2F0aW9uID0gd2lkZ2V0UmVwby5leHBvcnRVcmwoJHNjb3BlLndpZGdldCk7XG4gICAgICB9KTtcbiAgICB9O1xuXG4gICAgJHNjb3BlLnNhdmVBcyA9IGZ1bmN0aW9uKHdpZGdldCkge1xuICAgICAgdmFyIG1vZGFsSW5zdGFuY2UgPSAkdWliTW9kYWwub3Blbih7XG4gICAgICAgIHRlbXBsYXRlVXJsOiAnanMvY3VzdG9tLXdpZGdldC9zYXZlLWFzLXBvcHVwLmh0bWwnLFxuICAgICAgICBjb250cm9sbGVyOiAnc2F2ZVdpZGdldEFzUG9wVXBDdHJsJyxcbiAgICAgICAgY29udHJvbGxlckFzOiAnY3RybCcsXG4gICAgICAgIHJlc29sdmU6IHtcbiAgICAgICAgICB3aWRnZXQ6ICgpID0+IHdpZGdldFxuICAgICAgICB9XG4gICAgICB9KTtcblxuICAgICAgbW9kYWxJbnN0YW5jZS5yZXN1bHRcbiAgICAgICAgLnRoZW4oc2F2ZUFzKVxuICAgICAgICAudGhlbihyZWxvYWQpO1xuXG4gICAgICBmdW5jdGlvbiByZWxvYWQod2lkZ2V0KSB7XG4gICAgICAgICRzdGF0ZVBhcmFtcy5pZCA9IHdpZGdldC5pZDtcbiAgICAgICAgJHN0YXRlLmdvKCRzdGF0ZS5jdXJyZW50LCAkc3RhdGVQYXJhbXMsIHtcbiAgICAgICAgICByZWxvYWQ6IHRydWVcbiAgICAgICAgfSk7XG4gICAgICB9XG5cbiAgICAgIGZ1bmN0aW9uIHNhdmVBcyhkYXRhKSB7XG4gICAgICAgIHJldHVybiB3aWRnZXRSZXBvLmNyZWF0ZShkYXRhLCB3aWRnZXQuaWQpO1xuICAgICAgfVxuICAgIH07XG5cbiAgICAkc2NvcGUuY3JlYXRlT3JVcGRhdGUgPSBmdW5jdGlvbihwYXJhbSkge1xuXG4gICAgICB2YXIgbW9kYWxJbnN0YW5jZSA9ICR1aWJNb2RhbC5vcGVuKHtcbiAgICAgICAgdGVtcGxhdGVVcmw6ICdqcy9jdXN0b20td2lkZ2V0L2NyZWF0ZS1wcm9wZXJ0eS5odG1sJyxcbiAgICAgICAgY29udHJvbGxlcjogJ1Byb3BlcnR5RWRpdG9yUG9wdXBDdHJsJyxcbiAgICAgICAgcmVzb2x2ZToge1xuICAgICAgICAgIHBhcmFtOiAoKSA9PiBwYXJhbVxuICAgICAgICB9XG4gICAgICB9KTtcblxuICAgICAgbW9kYWxJbnN0YW5jZS5yZXN1bHRcbiAgICAgICAgLnRoZW4oZnVuY3Rpb24ocmVzdWx0KSB7XG4gICAgICAgICAgaWYgKHJlc3VsdC5wYXJhbVRvVXBkYXRlKSB7XG4gICAgICAgICAgICAkc2NvcGUudXBkYXRlUGFyYW0ocmVzdWx0LnBhcmFtVG9VcGRhdGUubmFtZSwgcmVzdWx0LnBhcmFtKTtcbiAgICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgJHNjb3BlLmFkZFBhcmFtKHJlc3VsdC5wYXJhbSk7XG4gICAgICAgICAgfVxuICAgICAgICB9KTtcbiAgICB9O1xuXG4gICAgJHNjb3BlLm9wZW5IZWxwID0gKCkgPT4ge1xuICAgICAgJHVpYk1vZGFsLm9wZW4oe1xuICAgICAgICB0ZW1wbGF0ZVVybDogJ2pzL2N1c3RvbS13aWRnZXQvaGVscC1wb3B1cC5odG1sJyxcbiAgICAgICAgc2l6ZTogJ2xnJ1xuICAgICAgfSk7XG4gICAgfTtcbiAgfVxufSkoKTtcbiJdfQ==</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

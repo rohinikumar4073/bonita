@@ -1,0 +1,111 @@
+.EditorHeader {
+  background-color: @color-editor-header-bg;
+  height: @nav-bar-height;
+  display: table;
+  width: 100%;
+  min-width: @screen-sm-max;
+}
+
+.EditorHeader-menu {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.EditorHeader-resolutions {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.EditorHeader-help {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 1.5em;
+}
+
+.EditorHeader-back {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: @color-editor-header-text;
+  background-color: @color-palette-bg;
+
+  height: @nav-bar-height;
+  line-height: @nav-bar-height;
+  width: 50px;
+  cursor: pointer;
+  &:hover{
+    background: lighten(@color-editor-header-back-bg, 5%);
+    color: @color-editor-header-text;
+  }
+}
+
+.EditorHeader-homeNav {
+  height: @nav-bar-height;
+  line-height: @nav-bar-height;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: -4px;
+  padding-right: 15px;
+  &:hover{
+    background: lighten(@color-editor-header-back-bg, 5%);
+    color: @color-editor-header-text;
+    text-decoration: none;
+  }
+}
+
+.EditorHeader-icon  {
+  color: @color-editor-header-text;
+  font-size: 2em;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 .6em;
+  position: relative;
+  top: -.08em;
+  &:hover{
+    color: @color-editor-header-text;
+    text-decoration: none;
+  }
+}
+
+.EditorHeader-brand {
+  color: @color-editor-header-text;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.EditorHeader-form {
+  display: inline-block;
+  margin: 0 2em;
+}
+
+.EditorHeader-name {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+
+  border-color: #404853;
+  border-width: 2px;
+  box-shadow: none;
+  text-align: center;
+
+  &::-webkit-input-placeholder {
+    color: @color-editor-header-placeholder;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: @color-editor-header-placeholder;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: @color-editor-header-placeholder;
+  }
+
+  &:-ms-input-placeholder {
+    color: @color-editor-header-placeholder;
+  }
+}

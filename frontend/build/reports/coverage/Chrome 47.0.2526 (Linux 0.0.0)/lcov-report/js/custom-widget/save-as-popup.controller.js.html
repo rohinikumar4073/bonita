@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/custom-widget/save-as-popup.controller.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../prettify.css">
+    <link rel="stylesheet" href="../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">js/custom-widget/save-as-popup.controller.js</span></h1>
+    <h2>
+        Statements: <span class="metric">68.75% <small>(22 / 32)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">50% <small>(5 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">62.5% <small>(5 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">60% <small>(6 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">js/custom-widget/</a> &#187; save-as-popup.controller.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';var _createClass = function () {function defineProperties(target, props) {for (var i = 0; i &lt; props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;<span class="missing-if-branch" title="else path not taken" >E</span>if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}return function (Constructor, protoProps, staticProps) {<span class="missing-if-branch" title="else path not taken" >E</span>if (protoProps) defineProperties(Constructor.prototype, protoProps);<span class="missing-if-branch" title="if path not taken" >I</span>if (staticProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor, staticProps);r</span>eturn Constructor;};}();<span class="fstat-no" title="function not covered" >function _classCallCheck(instance, Constructor) {<span class="cstat-no" title="statement not covered" ></span>if (!(instance instanceof Constructor)) {<span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function");}</span>}</span>(function () {
+&nbsp;
+  'use strict';
+&nbsp;
+  var _$uibModalInstance = void 0;var 
+&nbsp;
+  saveWidgetAsPopUpCtrl = function () {
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function saveWidgetAsPopUpCtrl($uibModalInstance, widget) {<span class="cstat-no" title="statement not covered" ></span>_classCallCheck(this, saveWidgetAsPopUpCtrl);</span>
+<span class="cstat-no" title="statement not covered" >      this.widget = widget;</span>
+<span class="cstat-no" title="statement not covered" >      this.newName = widget.name;</span>
+<span class="cstat-no" title="statement not covered" >      _$uibModalInstance = $uibModalInstance;}</span>_createClass(saveWidgetAsPopUpCtrl, [{ key: 'ok', value: <span class="fstat-no" title="function not covered" >function ok() </span>
+&nbsp;
+&nbsp;
+      {
+<span class="cstat-no" title="statement not covered" >        var widget = angular.copy(this.widget); </span>// copy widget to avoid side effects in case of creation error
+<span class="cstat-no" title="statement not covered" >        widget.name = this.newName;</span>
+<span class="cstat-no" title="statement not covered" >        _$uibModalInstance.close(widget);}</span> }]);return saveWidgetAsPopUpCtrl;}();
+&nbsp;
+&nbsp;
+&nbsp;
+  angular.
+  module('bonitasoft.designer.custom-widget').
+  controller('saveWidgetAsPopUpCtrl', saveWidgetAsPopUpCtrl);})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNhdmUtYXMtcG9wdXAuY29udHJvbGxlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoidXNCQUFBLENBQUMsWUFBVzs7QUFFVjs7QUFFQSxNQUFJLDJCQUFKLENBSlU7O0FBTUosdUJBTkk7O0FBUVIsYUFGSSxxQkFFSixDQUFZLGlCQUFaLEVBQStCLE1BQS9CLEVBQXVDLHVCQUZuQyxxQkFFbUM7QUFDckMsV0FBSyxNQUFMLEdBQWMsTUFBZDtBQUNBLFdBQUssT0FBTCxHQUFlLE9BQU8sSUFBdEI7QUFDQSwyQkFBcUIsaUJBQXJCLENBQ0QsQ0FaTyxhQU1KLHFCQU5JOzs7QUFjSDtBQUNILFlBQUksU0FBUyxRQUFRLElBQVIsQ0FBYSxLQUFLLE1BQWxCLENBQWIsQztBQUNBLGVBQU8sSUFBUCxHQUFjLEtBQUssT0FBbkI7QUFDQSwyQkFBbUIsS0FBbkIsQ0FBeUIsTUFBekIsRUFDRCxDQWxCTyxZQU1KLHFCQU5JOzs7O0FBcUJWO0FBQ0ssUUFETCxDQUNZLG1DQURaO0FBRUssWUFGTCxDQUVnQix1QkFGaEIsRUFFeUMscUJBRnpDLEVBSUQsQ0F6QkQiLCJmaWxlIjoic2F2ZS1hcy1wb3B1cC5jb250cm9sbGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiKGZ1bmN0aW9uKCkge1xuXG4gICd1c2Ugc3RyaWN0JztcblxuICBsZXQgXyR1aWJNb2RhbEluc3RhbmNlO1xuXG4gIGNsYXNzIHNhdmVXaWRnZXRBc1BvcFVwQ3RybCB7XG5cbiAgICBjb25zdHJ1Y3RvcigkdWliTW9kYWxJbnN0YW5jZSwgd2lkZ2V0KSB7XG4gICAgICB0aGlzLndpZGdldCA9IHdpZGdldDtcbiAgICAgIHRoaXMubmV3TmFtZSA9IHdpZGdldC5uYW1lO1xuICAgICAgXyR1aWJNb2RhbEluc3RhbmNlID0gJHVpYk1vZGFsSW5zdGFuY2U7XG4gICAgfVxuXG4gICAgb2soKSB7XG4gICAgICBsZXQgd2lkZ2V0ID0gYW5ndWxhci5jb3B5KHRoaXMud2lkZ2V0KTsgICAvLyBjb3B5IHdpZGdldCB0byBhdm9pZCBzaWRlIGVmZmVjdHMgaW4gY2FzZSBvZiBjcmVhdGlvbiBlcnJvclxuICAgICAgd2lkZ2V0Lm5hbWUgPSB0aGlzLm5ld05hbWU7XG4gICAgICBfJHVpYk1vZGFsSW5zdGFuY2UuY2xvc2Uod2lkZ2V0KTtcbiAgICB9XG4gIH1cblxuICBhbmd1bGFyXG4gICAgICAubW9kdWxlKCdib25pdGFzb2Z0LmRlc2lnbmVyLmN1c3RvbS13aWRnZXQnKVxuICAgICAgLmNvbnRyb2xsZXIoJ3NhdmVXaWRnZXRBc1BvcFVwQ3RybCcsIHNhdmVXaWRnZXRBc1BvcFVwQ3RybCk7XG5cbn0pKCk7XG4iXX0=</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<div class="modal-header">
+    <button type="button" class="close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
+    <h3 class="modal-title" translate>Help</h3>
+</div>
+<div class="modal-body">
+    <uib-tabset class="tabs-left">
+        <uib-tab heading="{{ 'Editor organization' | translate }}">
+
+            <p translate>Use the palette on the left to drag and drop containers and widgets in the whiteboard.</p>
+
+            <p translate>Once you select an element, edit its properties in the properties panel on the right.</p>
+
+            <p translate>Create variables in the Variables panel at the bottom, and use them to edit the widget
+                properties.</p>
+
+            <p ng-if="pageEdition" translate>Add images, CSS or JavaScript resources to your pages in the Assets panel
+                at the bottom.</p>
+
+        </uib-tab>
+
+        <uib-tab heading="{{ 'Rows' | translate }}">
+            <p>
+                <translate>The whiteboard is organized in <b>rows</b> that you can move up and down, or delete.
+                </translate>
+            <ul>
+                <li translate>Drag and drop widgets or containers in rows</li>
+                <li translate>When you delete a row, the following rows move up</li>
+                <li translate>Within a row, when you delete a widget or a container, the following elements move to the
+                    left
+                </li>
+            </ul>
+            </p>
+        </uib-tab>
+
+        <uib-tab heading="{{ 'Widgets' | translate }}">
+            <p translate>Use <b>widgets</b> from the palette on the left to <b>display information to</b> and <b>gather
+                information from</b> the end users.</p>
+
+            <p translate>Configure widgets using the <b>properties panel</b> on the right.</p>
+
+            <p translate>You can also create <b>custom widgets</b> from the home page.</p>
+        </uib-tab>
+
+        <uib-tab heading="{{ 'Containers' | translate }}">
+            <p translate>
+                You can group widgets into a container to define the arrangement of widgets in a form or a page. A
+                container can contain other containers.
+            </p>
+
+            <p>
+                <translate>Each type or container has sepcific behaviors</translate>
+            <ul>
+
+                <li translate>Repeat content for the plain container</li>
+                <li translate>Multiple content for tabs container</li>
+                <li translate>Access to $form capabilities for form container</li>
+            </ul>
+            </p>
+
+            <p class="CalloutSubscription">
+                <span class="CalloutSubscription--title" translate>Subscription edition</span>
+                <translate>You can save the content of a plain container as a reusable fragment.</translate>
+            </p>
+
+        </uib-tab>
+
+        <uib-tab heading="{{ 'Variables' | translate }}">
+            <p translate>
+                In the scope of a page, form, or layout, a variable can be used to handle business data,
+                or can contain structural information that determines how page elements behave.
+            </p>
+
+            <p translate>
+                Create a variable in the bottom panel. Using a variable in a widget property depends on the property value type,
+                described in the next section.
+            </p>
+
+            <p class="CalloutSubscription">
+                <span class="CalloutSubscription--title" translate>Subscription edition</span>
+                <translate>
+                    In the fragment editor, you can set the scope of a variable to <i>specific to this fragment</i> or
+                    to <i>exposed to the page</i>.
+                </translate>
+            </p>
+        </uib-tab>
+
+        <uib-tab heading="{{ 'Properties' | translate }}">
+            <ng-include src="'js/editor/help/property-bond-help.html'"/>
+        </uib-tab>
+
+        <uib-tab heading="{{ 'Localization' | translate }}">
+            <h4 translate>Subscription edition</h4>
+            <p translate>UI designer includes a mechanism to add translations for page elements, to support multi-language
+                pages. The text displayed in the preview and at runtime adapts to the locale or browser language
+                automatically.</p>
+
+            <p translate>You can translate all the text displayed on a page or form: the labels, the placeholders, the
+                available values of a list, but also the date format of the DatePicker widget. The base language
+                is en_US. The phrases in English are used as the keys to the translated phrases. This means that
+                in the Page editor whiteboard, any default text that is created is in English. The rest of the
+                UI designer, including properties, is in the language of your Bonita BPM Studio. When you
+                preview a page that has translated keys, the language of your browser is used.</p>
+
+            <p translate>Each page has a localization asset that contains the keys and the translations for all phrases
+                and all languages that the page supports. The asset is a file, localization.json. Each language
+                is identified by the ISO 639 language attribute (for example, fr-FR, es-ES). Open the default
+                localization.json asset to see how this file must be formatted. You can modify the default asset
+                for your page, or import a new asset to replace the default one.</p>
+
+            <p translate>In production, if the user is logged in to Bonita BPM, pages are displayed in the Portal language
+                selected by the user, or in the default Portal language.</p>
+        </uib-tab>
+        <uid-responsive-help-tab></uid-responsive-help-tab>
+    </uib-tabset>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-link" ng-click="cancel()" translate>Close</button>
+</div>

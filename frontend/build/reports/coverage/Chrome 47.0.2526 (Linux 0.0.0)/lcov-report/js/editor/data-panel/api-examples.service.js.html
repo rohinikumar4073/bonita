@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/editor/data-panel/api-examples.service.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">js/editor/data-panel/api-examples.service.js</span></h1>
+    <h2>
+        Statements: <span class="metric">70.59% <small>(12 / 17)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">83.33% <small>(5 / 6)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(11 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/editor/data-panel/</a> &#187; api-examples.service.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">25</span>
+<span class="cline-any cline-yes">60</span>
+<span class="cline-any cline-yes">60</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';<span class="fstat-no" title="function not covered" >function _toConsumableArray(arr) {<span class="cstat-no" title="statement not covered" ></span>if (Array.isArray(arr)) {<span class="cstat-no" title="statement not covered" >for (var i = 0, arr2 = Array(arr.length); i &lt; arr.length; i++) {<span class="cstat-no" title="statement not covered" >arr2[i] = arr[i];}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn arr2;}</span> else {<span class="cstat-no" title="statement not covered" >return Array.from(arr);}</span>}</span> /**
+                                                                                                                                                                                                         * Copyright (C) 2015 Bonitasoft S.A.
+                                                                                                                                                                                                         * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+                                                                                                                                                                                                         * This program is free software: you can redistribute it and/or modify
+                                                                                                                                                                                                         * it under the terms of the GNU General Public License as published by
+                                                                                                                                                                                                         * the Free Software Foundation, either version 2.0 of the License, or
+                                                                                                                                                                                                         * (at your option) any later version.
+                                                                                                                                                                                                         * This program is distributed in the hope that it will be useful,
+                                                                                                                                                                                                         * but WITHOUT ANY WARRANTY; without even the implied warranty of
+                                                                                                                                                                                                         * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+                                                                                                                                                                                                         * GNU General Public License for more details.
+                                                                                                                                                                                                         * You should have received a copy of the GNU General Public License
+                                                                                                                                                                                                         * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+                                                                                                                                                                                                         */
+angular.module('bonitasoft.designer.editor.data-panel').factory('apiExamples', function (gettextCatalog) {
+&nbsp;
+  var examples = { 
+    'System API': [
+    { 
+      description: gettextCatalog.getString('Get current logged user'), 
+      url: '../API/system/session/1', 
+      more: gettextCatalog.getString('User id could then be obtained by using {{youVar.user_id}}') }], 
+&nbsp;
+&nbsp;
+    'BPM API': [
+    { 
+      description: gettextCatalog.getString('Get a human task by its identifier'), 
+      url: '../API/bpm/humanTask/&lt;strong&gt;{{taskId}}&lt;/strong&gt;', 
+      more: gettextCatalog.getString('Case identifier could then be retrieved by {{myVar.rootCaseId}}') }, 
+&nbsp;
+    { 
+      description: gettextCatalog.getString('List of human task in ready state for current user (pending + assigned)'), 
+      url: '../API/bpm/humanTask?c=10&amp;p=0&amp;f=state=ready&amp;f=user_id=&lt;strong&gt;{{userId}}&lt;/strong&gt;&amp;f=caseId=&lt;strong&gt;{{caseId}}&lt;/strong&gt;' }, 
+&nbsp;
+    { 
+      description: gettextCatalog.getString('List of cases open for a process definition id'), 
+      url: '../API/bpm/case?p=0&amp;c=10&amp;f=processDefinitionId=&lt;strong&gt;{{myProcessDefinitionId}}&lt;/strong&gt;' }, 
+&nbsp;
+    { 
+      description: gettextCatalog.getString('All process data of a case: Search for a list of case variables'), 
+      url: '../API/bpm/caseVariable?p=0&amp;c=10&amp;f=case_id=&lt;strong&gt;{{caseId}}&lt;/strong&gt;' }, 
+&nbsp;
+    { 
+      description: gettextCatalog.getString('Search a list of cases based on search indexes'), 
+      url: '../API/bpm/case?p=0&amp;c=10&amp;s=&lt;strong&gt;{{searchIndexValueSearched}}&lt;/strong&gt;' }, 
+&nbsp;
+    { 
+      description: gettextCatalog.getString('Get a case by its identifier'), 
+      url: '../API/bpm/case/&lt;strong&gt;{{caseId}}&lt;/strong&gt;' }], 
+&nbsp;
+&nbsp;
+    'Identity API': [
+    { 
+      description: gettextCatalog.getString('Get professional details of a user'), 
+      url: '../API/identity/user/&lt;strong&gt;{{userId}}&lt;/strong&gt;?d=professional_data' }], 
+&nbsp;
+&nbsp;
+    'Customuserinfo API': [
+    { 
+      description: gettextCatalog.getString('Get custom information of a user'), 
+      url: '../API/customuserinfo/user?p=0&amp;c=10&amp;f=userId=&lt;strong&gt;{{userId}}&lt;/strong&gt;' }], 
+&nbsp;
+&nbsp;
+    'BDM API': [
+    { 
+      description: gettextCatalog.getString('Get all business variables defined in a case'), 
+      url: '../API/bdm/businessDataReference?f=caseId=&lt;strong&gt;{{caseId}}&lt;/strong&gt;&amp;p=0&amp;c=10', 
+      more: gettextCatalog.getString('In a process form, if you have defined business variables in your process, use the context variable to retrieve them (e.g. context.businessVariableName_ref).') }, 
+&nbsp;
+    { 
+      description: gettextCatalog.getString('Get a named business variable reference defined in a case'), 
+      url: '../API/bdm/businessDataReference/&lt;strong&gt;{{caseId}}&lt;/strong&gt;/&lt;strong&gt;{{businessVariableName}}&lt;/strong&gt;', 
+      alternative: { 
+        before: gettextCatalog.getString('In a process form, if you have defined business variables in your process, use the link to the variable to retrieve using the context variable:'), 
+        url: '../&lt;strong&gt;{{context.businessVariableName_ref.link}}&lt;/strong&gt;', 
+        more: gettextCatalog.getString('Where businessVariableName is the name of the business variable defined at pool level.') } }, 
+&nbsp;
+&nbsp;
+    { 
+      description: gettextCatalog.getString('Call a business data (custom) query'), 
+      url: '../API/bdm/businessData/&lt;strong&gt;{{businessDataType}}&lt;/strong&gt;?q=&lt;strong&gt;{{queryName}}&lt;/strong&gt;&amp;p=0&amp;c=10&amp;f=&lt;strong&gt;{{filter}}&lt;/strong&gt;', 
+      more: gettextCatalog.getString('Where businessDataType = com.company.model.MyData, queryName = name of the BDM query, filter = "myParam=myValue"') }] };
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+  function flatten(arrayOfArray) {var _ref;
+    return (_ref = []).concat.apply(_ref, _toConsumableArray(arrayOfArray));}
+&nbsp;
+&nbsp;
+  var transformExamplesToFlatList = function () {
+    return flatten(Object.keys(examples).map(function (category) {
+      return examples[category].map(function (api) {
+        api.category = category;
+        return api;});}));};
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+  return { 
+    get: transformExamplesToFlatList };});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwaS1leGFtcGxlcy5zZXJ2aWNlLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O0FBY0EsUUFBUSxNQUFSLENBQWUsdUNBQWYsRUFBd0QsT0FBeEQsQ0FBZ0UsYUFBaEUsRUFBK0UsVUFBUyxjQUFULEVBQXlCOztBQUV0RyxNQUFJLFdBQVc7QUFDYixrQkFBYztBQUNaO0FBQ0UsbUJBQWEsZUFBZSxTQUFmLENBQXlCLHlCQUF6QixDQURmO0FBRUUsV0FBSyx5QkFGUDtBQUdFLFlBQU0sZUFBZSxTQUFmLENBQXlCLDREQUF6QixDQUhSLEVBRFksQ0FERDs7O0FBUWIsZUFBVztBQUNUO0FBQ0UsbUJBQWEsZUFBZSxTQUFmLENBQXlCLG9DQUF6QixDQURmO0FBRUUsV0FBSyxrREFGUDtBQUdFLFlBQU0sZUFBZSxTQUFmLENBQXlCLGlFQUF6QixDQUhSLEVBRFM7O0FBTVQ7QUFDRSxtQkFBYSxlQUFlLFNBQWYsQ0FBeUIseUVBQXpCLENBRGY7QUFFRSxXQUFLLHdIQUZQLEVBTlM7O0FBVVQ7QUFDRSxtQkFBYSxlQUFlLFNBQWYsQ0FBeUIsZ0RBQXpCLENBRGY7QUFFRSxXQUFLLDJGQUZQLEVBVlM7O0FBY1Q7QUFDRSxtQkFBYSxlQUFlLFNBQWYsQ0FBeUIsaUVBQXpCLENBRGY7QUFFRSxXQUFLLHdFQUZQLEVBZFM7O0FBa0JUO0FBQ0UsbUJBQWEsZUFBZSxTQUFmLENBQXlCLGdEQUF6QixDQURmO0FBRUUsV0FBSywwRUFGUCxFQWxCUzs7QUFzQlQ7QUFDRSxtQkFBYSxlQUFlLFNBQWYsQ0FBeUIsOEJBQXpCLENBRGY7QUFFRSxXQUFLLDZDQUZQLEVBdEJTLENBUkU7OztBQW1DYixvQkFBZ0I7QUFDZDtBQUNFLG1CQUFhLGVBQWUsU0FBZixDQUF5QixvQ0FBekIsQ0FEZjtBQUVFLFdBQUssc0VBRlAsRUFEYyxDQW5DSDs7O0FBeUNiLDBCQUFzQjtBQUNwQjtBQUNFLG1CQUFhLGVBQWUsU0FBZixDQUF5QixrQ0FBekIsQ0FEZjtBQUVFLFdBQUssMEVBRlAsRUFEb0IsQ0F6Q1Q7OztBQStDYixlQUFXO0FBQ1Q7QUFDRSxtQkFBYSxlQUFlLFNBQWYsQ0FBeUIsOENBQXpCLENBRGY7QUFFRSxXQUFLLGdGQUZQO0FBR0UsWUFBTSxlQUFlLFNBQWYsQ0FBeUIsK0pBQXpCLENBSFIsRUFEUzs7QUFNVDtBQUNFLG1CQUFhLGVBQWUsU0FBZixDQUF5QiwyREFBekIsQ0FEZjtBQUVFLFdBQUssd0dBRlA7QUFHRSxtQkFBYTtBQUNYLGdCQUFRLGVBQWUsU0FBZixDQUF5QixpSkFBekIsQ0FERztBQUVYLGFBQUssK0RBRk07QUFHWCxjQUFNLGVBQWUsU0FBZixDQUF5Qix3RkFBekIsQ0FISyxFQUhmLEVBTlM7OztBQWVUO0FBQ0UsbUJBQWEsZUFBZSxTQUFmLENBQXlCLHFDQUF6QixDQURmO0FBRUUsV0FBSyx1SUFGUDtBQUdFLFlBQU0sZUFBZSxTQUFmLENBQXlCLGtIQUF6QixDQUhSLEVBZlMsQ0EvQ0UsRUFBZjs7Ozs7QUFzRUEsV0FBUyxPQUFULENBQWlCLFlBQWpCLEVBQStCO0FBQzdCLFdBQU8sWUFBRyxNQUFILGdDQUFhLFlBQWIsRUFBUCxDQUNEOzs7QUFFRCxNQUFJLDhCQUE4QixZQUFXO0FBQzNDLFdBQU8sUUFBUSxPQUFPLElBQVAsQ0FBWSxRQUFaLEVBQXNCLEdBQXRCLENBQTBCLFVBQVMsUUFBVCxFQUFtQjtBQUMxRCxhQUFPLFNBQVMsUUFBVCxFQUFtQixHQUFuQixDQUF1QixVQUFTLEdBQVQsRUFBYztBQUMxQyxZQUFJLFFBQUosR0FBZSxRQUFmO0FBQ0EsZUFBTyxHQUFQLENBQ0QsQ0FITSxDQUFQLENBSUQsQ0FMYyxDQUFSLENBQVAsQ0FNRCxDQVBEOzs7OztBQVNBLFNBQU87QUFDTCxTQUFLLDJCQURBLEVBQVAsQ0FHRCxDQXhGRCIsImZpbGUiOiJhcGktZXhhbXBsZXMuc2VydmljZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQ29weXJpZ2h0IChDKSAyMDE1IEJvbml0YXNvZnQgUy5BLlxuICogQm9uaXRhc29mdCwgMzIgcnVlIEd1c3RhdmUgRWlmZmVsIC0gMzgwMDAgR3Jlbm9ibGVcbiAqIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOiB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5XG4gKiBpdCB1bmRlciB0aGUgdGVybXMgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGFzIHB1Ymxpc2hlZCBieVxuICogdGhlIEZyZWUgU29mdHdhcmUgRm91bmRhdGlvbiwgZWl0aGVyIHZlcnNpb24gMi4wIG9mIHRoZSBMaWNlbnNlLCBvclxuICogKGF0IHlvdXIgb3B0aW9uKSBhbnkgbGF0ZXIgdmVyc2lvbi5cbiAqIFRoaXMgcHJvZ3JhbSBpcyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUgdXNlZnVsLFxuICogYnV0IFdJVEhPVVQgQU5ZIFdBUlJBTlRZOyB3aXRob3V0IGV2ZW4gdGhlIGltcGxpZWQgd2FycmFudHkgb2ZcbiAqIE1FUkNIQU5UQUJJTElUWSBvciBGSVRORVNTIEZPUiBBIFBBUlRJQ1VMQVIgUFVSUE9TRS4gU2VlIHRoZVxuICogR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgZm9yIG1vcmUgZGV0YWlscy5cbiAqIFlvdSBzaG91bGQgaGF2ZSByZWNlaXZlZCBhIGNvcHkgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlXG4gKiBhbG9uZyB3aXRoIHRoaXMgcHJvZ3JhbS4gSWYgbm90LCBzZWUgPGh0dHA6Ly93d3cuZ251Lm9yZy9saWNlbnNlcy8+LlxuICovXG5hbmd1bGFyLm1vZHVsZSgnYm9uaXRhc29mdC5kZXNpZ25lci5lZGl0b3IuZGF0YS1wYW5lbCcpLmZhY3RvcnkoJ2FwaUV4YW1wbGVzJywgZnVuY3Rpb24oZ2V0dGV4dENhdGFsb2cpIHtcblxuICB2YXIgZXhhbXBsZXMgPSB7XG4gICAgJ1N5c3RlbSBBUEknOiBbXG4gICAgICB7XG4gICAgICAgIGRlc2NyaXB0aW9uOiBnZXR0ZXh0Q2F0YWxvZy5nZXRTdHJpbmcoJ0dldCBjdXJyZW50IGxvZ2dlZCB1c2VyJyksXG4gICAgICAgIHVybDogJy4uL0FQSS9zeXN0ZW0vc2Vzc2lvbi8xJyxcbiAgICAgICAgbW9yZTogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdVc2VyIGlkIGNvdWxkIHRoZW4gYmUgb2J0YWluZWQgYnkgdXNpbmcge3t5b3VWYXIudXNlcl9pZH19JylcbiAgICAgIH1cbiAgICBdLFxuICAgICdCUE0gQVBJJzogW1xuICAgICAge1xuICAgICAgICBkZXNjcmlwdGlvbjogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdHZXQgYSBodW1hbiB0YXNrIGJ5IGl0cyBpZGVudGlmaWVyJyksXG4gICAgICAgIHVybDogJy4uL0FQSS9icG0vaHVtYW5UYXNrLzxzdHJvbmc+e3t0YXNrSWR9fTwvc3Ryb25nPicsXG4gICAgICAgIG1vcmU6IGdldHRleHRDYXRhbG9nLmdldFN0cmluZygnQ2FzZSBpZGVudGlmaWVyIGNvdWxkIHRoZW4gYmUgcmV0cmlldmVkIGJ5IHt7bXlWYXIucm9vdENhc2VJZH19JylcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGRlc2NyaXB0aW9uOiBnZXR0ZXh0Q2F0YWxvZy5nZXRTdHJpbmcoJ0xpc3Qgb2YgaHVtYW4gdGFzayBpbiByZWFkeSBzdGF0ZSBmb3IgY3VycmVudCB1c2VyIChwZW5kaW5nICsgYXNzaWduZWQpJyksXG4gICAgICAgIHVybDogJy4uL0FQSS9icG0vaHVtYW5UYXNrP2M9MTAmcD0wJmY9c3RhdGU9cmVhZHkmZj11c2VyX2lkPTxzdHJvbmc+e3t1c2VySWR9fTwvc3Ryb25nPiZmPWNhc2VJZD08c3Ryb25nPnt7Y2FzZUlkfX08L3N0cm9uZz4nXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBkZXNjcmlwdGlvbjogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdMaXN0IG9mIGNhc2VzIG9wZW4gZm9yIGEgcHJvY2VzcyBkZWZpbml0aW9uIGlkJyksXG4gICAgICAgIHVybDogJy4uL0FQSS9icG0vY2FzZT9wPTAmYz0xMCZmPXByb2Nlc3NEZWZpbml0aW9uSWQ9PHN0cm9uZz57e215UHJvY2Vzc0RlZmluaXRpb25JZH19PC9zdHJvbmc+J1xuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgZGVzY3JpcHRpb246IGdldHRleHRDYXRhbG9nLmdldFN0cmluZygnQWxsIHByb2Nlc3MgZGF0YSBvZiBhIGNhc2U6IFNlYXJjaCBmb3IgYSBsaXN0IG9mIGNhc2UgdmFyaWFibGVzJyksXG4gICAgICAgIHVybDogJy4uL0FQSS9icG0vY2FzZVZhcmlhYmxlP3A9MCZjPTEwJmY9Y2FzZV9pZD08c3Ryb25nPnt7Y2FzZUlkfX08L3N0cm9uZz4nXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBkZXNjcmlwdGlvbjogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdTZWFyY2ggYSBsaXN0IG9mIGNhc2VzIGJhc2VkIG9uIHNlYXJjaCBpbmRleGVzJyksXG4gICAgICAgIHVybDogJy4uL0FQSS9icG0vY2FzZT9wPTAmYz0xMCZzPTxzdHJvbmc+e3tzZWFyY2hJbmRleFZhbHVlU2VhcmNoZWR9fTwvc3Ryb25nPidcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGRlc2NyaXB0aW9uOiBnZXR0ZXh0Q2F0YWxvZy5nZXRTdHJpbmcoJ0dldCBhIGNhc2UgYnkgaXRzIGlkZW50aWZpZXInKSxcbiAgICAgICAgdXJsOiAnLi4vQVBJL2JwbS9jYXNlLzxzdHJvbmc+e3tjYXNlSWR9fTwvc3Ryb25nPidcbiAgICAgIH1cbiAgICBdLFxuICAgICdJZGVudGl0eSBBUEknOiBbXG4gICAgICB7XG4gICAgICAgIGRlc2NyaXB0aW9uOiBnZXR0ZXh0Q2F0YWxvZy5nZXRTdHJpbmcoJ0dldCBwcm9mZXNzaW9uYWwgZGV0YWlscyBvZiBhIHVzZXInKSxcbiAgICAgICAgdXJsOiAnLi4vQVBJL2lkZW50aXR5L3VzZXIvPHN0cm9uZz57e3VzZXJJZH19PC9zdHJvbmc+P2Q9cHJvZmVzc2lvbmFsX2RhdGEnXG4gICAgICB9XG4gICAgXSxcbiAgICAnQ3VzdG9tdXNlcmluZm8gQVBJJzogW1xuICAgICAge1xuICAgICAgICBkZXNjcmlwdGlvbjogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdHZXQgY3VzdG9tIGluZm9ybWF0aW9uIG9mIGEgdXNlcicpLFxuICAgICAgICB1cmw6ICcuLi9BUEkvY3VzdG9tdXNlcmluZm8vdXNlcj9wPTAmYz0xMCZmPXVzZXJJZD08c3Ryb25nPnt7dXNlcklkfX08L3N0cm9uZz4nXG4gICAgICB9XG4gICAgXSxcbiAgICAnQkRNIEFQSSc6IFtcbiAgICAgIHtcbiAgICAgICAgZGVzY3JpcHRpb246IGdldHRleHRDYXRhbG9nLmdldFN0cmluZygnR2V0IGFsbCBidXNpbmVzcyB2YXJpYWJsZXMgZGVmaW5lZCBpbiBhIGNhc2UnKSxcbiAgICAgICAgdXJsOiAnLi4vQVBJL2JkbS9idXNpbmVzc0RhdGFSZWZlcmVuY2U/Zj1jYXNlSWQ9PHN0cm9uZz57e2Nhc2VJZH19PC9zdHJvbmc+JnA9MCZjPTEwJyxcbiAgICAgICAgbW9yZTogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdJbiBhIHByb2Nlc3MgZm9ybSwgaWYgeW91IGhhdmUgZGVmaW5lZCBidXNpbmVzcyB2YXJpYWJsZXMgaW4geW91ciBwcm9jZXNzLCB1c2UgdGhlIGNvbnRleHQgdmFyaWFibGUgdG8gcmV0cmlldmUgdGhlbSAoZS5nLiBjb250ZXh0LmJ1c2luZXNzVmFyaWFibGVOYW1lX3JlZikuJylcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGRlc2NyaXB0aW9uOiBnZXR0ZXh0Q2F0YWxvZy5nZXRTdHJpbmcoJ0dldCBhIG5hbWVkIGJ1c2luZXNzIHZhcmlhYmxlIHJlZmVyZW5jZSBkZWZpbmVkIGluIGEgY2FzZScpLFxuICAgICAgICB1cmw6ICcuLi9BUEkvYmRtL2J1c2luZXNzRGF0YVJlZmVyZW5jZS88c3Ryb25nPnt7Y2FzZUlkfX08L3N0cm9uZz4vPHN0cm9uZz57e2J1c2luZXNzVmFyaWFibGVOYW1lfX08L3N0cm9uZz4nLFxuICAgICAgICBhbHRlcm5hdGl2ZToge1xuICAgICAgICAgIGJlZm9yZTogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdJbiBhIHByb2Nlc3MgZm9ybSwgaWYgeW91IGhhdmUgZGVmaW5lZCBidXNpbmVzcyB2YXJpYWJsZXMgaW4geW91ciBwcm9jZXNzLCB1c2UgdGhlIGxpbmsgdG8gdGhlIHZhcmlhYmxlIHRvIHJldHJpZXZlIHVzaW5nIHRoZSBjb250ZXh0IHZhcmlhYmxlOicpLFxuICAgICAgICAgIHVybDogJy4uLzxzdHJvbmc+e3tjb250ZXh0LmJ1c2luZXNzVmFyaWFibGVOYW1lX3JlZi5saW5rfX08L3N0cm9uZz4nLFxuICAgICAgICAgIG1vcmU6IGdldHRleHRDYXRhbG9nLmdldFN0cmluZygnV2hlcmUgYnVzaW5lc3NWYXJpYWJsZU5hbWUgaXMgdGhlIG5hbWUgb2YgdGhlIGJ1c2luZXNzIHZhcmlhYmxlIGRlZmluZWQgYXQgcG9vbCBsZXZlbC4nKVxuICAgICAgICB9XG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBkZXNjcmlwdGlvbjogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdDYWxsIGEgYnVzaW5lc3MgZGF0YSAoY3VzdG9tKSBxdWVyeScpLFxuICAgICAgICB1cmw6ICcuLi9BUEkvYmRtL2J1c2luZXNzRGF0YS88c3Ryb25nPnt7YnVzaW5lc3NEYXRhVHlwZX19PC9zdHJvbmc+P3E9PHN0cm9uZz57e3F1ZXJ5TmFtZX19PC9zdHJvbmc+JnA9MCZjPTEwJmY9PHN0cm9uZz57e2ZpbHRlcn19PC9zdHJvbmc+JyxcbiAgICAgICAgbW9yZTogZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdXaGVyZSBidXNpbmVzc0RhdGFUeXBlID0gY29tLmNvbXBhbnkubW9kZWwuTXlEYXRhLCBxdWVyeU5hbWUgPSBuYW1lIG9mIHRoZSBCRE0gcXVlcnksIGZpbHRlciA9IFwibXlQYXJhbT1teVZhbHVlXCInKVxuICAgICAgfVxuICAgIF1cbiAgfTtcblxuICBmdW5jdGlvbiBmbGF0dGVuKGFycmF5T2ZBcnJheSkge1xuICAgIHJldHVybiBbXS5jb25jYXQoLi4uYXJyYXlPZkFycmF5KTtcbiAgfVxuXG4gIHZhciB0cmFuc2Zvcm1FeGFtcGxlc1RvRmxhdExpc3QgPSBmdW5jdGlvbigpIHtcbiAgICByZXR1cm4gZmxhdHRlbihPYmplY3Qua2V5cyhleGFtcGxlcykubWFwKGZ1bmN0aW9uKGNhdGVnb3J5KSB7XG4gICAgICByZXR1cm4gZXhhbXBsZXNbY2F0ZWdvcnldLm1hcChmdW5jdGlvbihhcGkpIHtcbiAgICAgICAgYXBpLmNhdGVnb3J5ID0gY2F0ZWdvcnk7XG4gICAgICAgIHJldHVybiBhcGk7XG4gICAgICB9KTtcbiAgICB9KSk7XG4gIH07XG5cbiAgcmV0dXJuIHtcbiAgICBnZXQ6IHRyYW5zZm9ybUV4YW1wbGVzVG9GbGF0TGlzdFxuICB9O1xufSk7XG4iXX0=</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

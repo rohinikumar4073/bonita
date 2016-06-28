@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/common/services/error-interceptor.service.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/common/services/error-interceptor.service.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(7 / 7)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(5 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(3 / 3)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(7 / 7)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/common/services/</a> &#187; error-interceptor.service.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">294</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">461</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict'; /**
+               * Copyright (C) 2015 Bonitasoft S.A.
+               * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+               * This program is free software: you can redistribute it and/or modify
+               * it under the terms of the GNU General Public License as published by
+               * the Free Software Foundation, either version 2.0 of the License, or
+               * (at your option) any later version.
+               * This program is distributed in the hope that it will be useful,
+               * but WITHOUT ANY WARRANTY; without even the implied warranty of
+               * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+               * GNU General Public License for more details.
+               * You should have received a copy of the GNU General Public License
+               * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+               */
+/**
+ * http response interceptor which extracts the error message from an error http response and adds it to the alerts
+ * service
+ */
+angular.module('bonitasoft.designer.common.services').factory('errorInterceptor', function ($q, alerts) {
+&nbsp;
+  'use strict';
+&nbsp;
+  return { 
+    responseError: function (rejection) {
+      if (rejection.headers('Content-Type') &amp;&amp; 
+      rejection.headers('Content-Type').indexOf('application/json') === 0 &amp;&amp; 
+      angular.isDefined(rejection.data.message)) {
+        alerts.addError(rejection.data.message);} else 
+      {
+        alerts.addError('Unexpected server error');}
+&nbsp;
+      return $q.reject(rejection);} };}).
+&nbsp;
+&nbsp;
+config(function ($httpProvider) {
+  $httpProvider.interceptors.push('errorInterceptor');});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImVycm9yLWludGVyY2VwdG9yLnNlcnZpY2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBa0JBLFFBQVEsTUFBUixDQUFlLHFDQUFmLEVBQXNELE9BQXRELENBQThELGtCQUE5RCxFQUFrRixVQUFTLEVBQVQsRUFBYSxNQUFiLEVBQXFCOztBQUVyRzs7QUFFQSxTQUFPO0FBQ0wsbUJBQWUsVUFBUyxTQUFULEVBQW9CO0FBQ2pDLFVBQUksVUFBVSxPQUFWLENBQWtCLGNBQWxCO0FBQ0EsZ0JBQVUsT0FBVixDQUFrQixjQUFsQixFQUFrQyxPQUFsQyxDQUEwQyxrQkFBMUMsTUFBa0UsQ0FEbEU7QUFFQSxjQUFRLFNBQVIsQ0FBa0IsVUFBVSxJQUFWLENBQWUsT0FBakMsQ0FGSixFQUUrQztBQUM3QyxlQUFPLFFBQVAsQ0FBZ0IsVUFBVSxJQUFWLENBQWUsT0FBL0IsRUFDRCxDQUpEO0FBSU87QUFDTCxlQUFPLFFBQVAsQ0FBZ0IseUJBQWhCLEVBQ0Q7O0FBQ0QsYUFBTyxHQUFHLE1BQUgsQ0FBVSxTQUFWLENBQVAsQ0FDRCxDQVZJLEVBQVAsQ0FZRCxDQWhCRDs7O0FBZ0JHLE1BaEJILENBZ0JVLFVBQVMsYUFBVCxFQUF3QjtBQUNoQyxnQkFBYyxZQUFkLENBQTJCLElBQTNCLENBQWdDLGtCQUFoQyxFQUNELENBbEJEIiwiZmlsZSI6ImVycm9yLWludGVyY2VwdG9yLnNlcnZpY2UuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIENvcHlyaWdodCAoQykgMjAxNSBCb25pdGFzb2Z0IFMuQS5cbiAqIEJvbml0YXNvZnQsIDMyIHJ1ZSBHdXN0YXZlIEVpZmZlbCAtIDM4MDAwIEdyZW5vYmxlXG4gKiBUaGlzIHByb2dyYW0gaXMgZnJlZSBzb2Z0d2FyZTogeW91IGNhbiByZWRpc3RyaWJ1dGUgaXQgYW5kL29yIG1vZGlmeVxuICogaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBhcyBwdWJsaXNoZWQgYnlcbiAqIHRoZSBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb24sIGVpdGhlciB2ZXJzaW9uIDIuMCBvZiB0aGUgTGljZW5zZSwgb3JcbiAqIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uXG4gKiBUaGlzIHByb2dyYW0gaXMgZGlzdHJpYnV0ZWQgaW4gdGhlIGhvcGUgdGhhdCBpdCB3aWxsIGJlIHVzZWZ1bCxcbiAqIGJ1dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBpbXBsaWVkIHdhcnJhbnR5IG9mXG4gKiBNRVJDSEFOVEFCSUxJVFkgb3IgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UuIFNlZSB0aGVcbiAqIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGZvciBtb3JlIGRldGFpbHMuXG4gKiBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZVxuICogYWxvbmcgd2l0aCB0aGlzIHByb2dyYW0uIElmIG5vdCwgc2VlIDxodHRwOi8vd3d3LmdudS5vcmcvbGljZW5zZXMvPi5cbiAqL1xuLyoqXG4gKiBodHRwIHJlc3BvbnNlIGludGVyY2VwdG9yIHdoaWNoIGV4dHJhY3RzIHRoZSBlcnJvciBtZXNzYWdlIGZyb20gYW4gZXJyb3IgaHR0cCByZXNwb25zZSBhbmQgYWRkcyBpdCB0byB0aGUgYWxlcnRzXG4gKiBzZXJ2aWNlXG4gKi9cbmFuZ3VsYXIubW9kdWxlKCdib25pdGFzb2Z0LmRlc2lnbmVyLmNvbW1vbi5zZXJ2aWNlcycpLmZhY3RvcnkoJ2Vycm9ySW50ZXJjZXB0b3InLCBmdW5jdGlvbigkcSwgYWxlcnRzKSB7XG5cbiAgJ3VzZSBzdHJpY3QnO1xuXG4gIHJldHVybiB7XG4gICAgcmVzcG9uc2VFcnJvcjogZnVuY3Rpb24ocmVqZWN0aW9uKSB7XG4gICAgICBpZiAocmVqZWN0aW9uLmhlYWRlcnMoJ0NvbnRlbnQtVHlwZScpICYmXG4gICAgICAgICAgcmVqZWN0aW9uLmhlYWRlcnMoJ0NvbnRlbnQtVHlwZScpLmluZGV4T2YoJ2FwcGxpY2F0aW9uL2pzb24nKSA9PT0gMCAmJlxuICAgICAgICAgIGFuZ3VsYXIuaXNEZWZpbmVkKHJlamVjdGlvbi5kYXRhLm1lc3NhZ2UpKSB7XG4gICAgICAgIGFsZXJ0cy5hZGRFcnJvcihyZWplY3Rpb24uZGF0YS5tZXNzYWdlKTtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIGFsZXJ0cy5hZGRFcnJvcignVW5leHBlY3RlZCBzZXJ2ZXIgZXJyb3InKTtcbiAgICAgIH1cbiAgICAgIHJldHVybiAkcS5yZWplY3QocmVqZWN0aW9uKTtcbiAgICB9XG4gIH07XG59KS5jb25maWcoZnVuY3Rpb24oJGh0dHBQcm92aWRlcikge1xuICAkaHR0cFByb3ZpZGVyLmludGVyY2VwdG9ycy5wdXNoKCdlcnJvckludGVyY2VwdG9yJyk7XG59KTtcbiJdfQ==</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

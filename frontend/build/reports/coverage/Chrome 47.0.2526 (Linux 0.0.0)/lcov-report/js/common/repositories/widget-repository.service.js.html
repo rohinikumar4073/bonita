@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/common/repositories/widget-repository.service.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">js/common/repositories/widget-repository.service.js</span></h1>
+    <h2>
+        Statements: <span class="metric">67.86% <small>(38 / 56)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">33.33% <small>(9 / 27)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">80% <small>(20 / 25)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">91.67% <small>(22 / 24)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/common/repositories/</a> &#187; widget-repository.service.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83</td><td class="line-coverage"><span class="cline-any cline-yes">163</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">84</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">84</span>
+<span class="cline-any cline-yes">84</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">84</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">84</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">84</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';var _createClass = function () {<span class="fstat-no" title="function not covered" >function defineProperties(target, props) {<span class="cstat-no" title="statement not covered" ></span>for (var i = 0; i &lt; props.length; i++) {<span class="cstat-no" title="statement not covered" >var descriptor = props[i];<span class="cstat-no" title="statement not covered" >d</span>escriptor.enumerable = descriptor.enumerable || false;<span class="cstat-no" title="statement not covered" >d</span>escriptor.configurable = true;<span class="cstat-no" title="statement not covered" >i</span>f ("value" in descriptor) <span class="cstat-no" title="statement not covered" >descriptor.writable = true;<span class="cstat-no" title="statement not covered" >O</span></span>bject.defineProperty(target, descriptor.key, descriptor);}</span>}</span>return <span class="fstat-no" title="function not covered" >function (Constructor, protoProps, staticProps) {<span class="cstat-no" title="statement not covered" ></span>if (protoProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor.prototype, protoProps);<span class="cstat-no" title="statement not covered" >i</span></span>f (staticProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor, staticProps);<span class="cstat-no" title="statement not covered" >r</span></span>eturn Constructor;}</span>;}();<span class="fstat-no" title="function not covered" >function _classCallCheck(instance, Constructor) {<span class="cstat-no" title="statement not covered" ></span>if (!(instance instanceof Constructor)) {<span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function");}</span>}</span>function _possibleConstructorReturn(self, call) {<span class="missing-if-branch" title="if path not taken" >I</span>if (!self) {<span class="cstat-no" title="statement not covered" >throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}</span>return call &amp;&amp; (<span class="branch-1 cbranch-no" title="branch not covered" >typeof call === "object" </span>|| <span class="branch-2 cbranch-no" title="branch not covered" >typeof call === "function")</span> ? <span class="branch-0 cbranch-no" title="branch not covered" >call </span>: self;}function _inherits(subClass, superClass) {<span class="missing-if-branch" title="if path not taken" >I</span>if (typeof superClass !== "function" &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >superClass !== null)</span> {<span class="cstat-no" title="statement not covered" >throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);}</span>subClass.prototype = Object.create(superClass &amp;&amp; superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });<span class="missing-if-branch" title="else path not taken" >E</span>if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : <span class="branch-1 cbranch-no" title="branch not covered" >subClass.__proto__ = superClass;</span>} /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * Copyright (C) 2015 Bonitasoft S.A.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * This program is free software: you can redistribute it and/or modify
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * it under the terms of the GNU General Public License as published by
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * the Free Software Foundation, either version 2.0 of the License, or
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * (at your option) any later version.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * This program is distributed in the hope that it will be useful,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * but WITHOUT ANY WARRANTY; without even the implied warranty of
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * GNU General Public License for more details.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * You should have received a copy of the GNU General Public License
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            */
+(function () {
+&nbsp;
+  'use strict';
+&nbsp;
+  angular.
+  module('bonitasoft.designer.common.repositories').
+  factory('widgetRepo', widgetRepository);
+&nbsp;
+  function widgetRepository(Repository) {var 
+&nbsp;
+    WidgetRepository = function (_Repository) {_inherits(WidgetRepository, _Repository);
+      function WidgetRepository() {_classCallCheck(this, WidgetRepository);return _possibleConstructorReturn(this, Object.getPrototypeOf(WidgetRepository).call(this, 
+        'widget', 'rest/widgets'));}
+&nbsp;
+      /**
+       * Returns all the custom widgets by fetching all of them and filtering the custom ones.
+       * @returns {*}
+       */_createClass(WidgetRepository, [{ key: 'customs', value: function customs() 
+        {
+          return this.$http.get(this.baseUrl + '?view=light').
+          then(function (response) {return response.data.filter(function (widget) {return widget.custom;});}).
+          then(function (widgets) {return widgets.map(function (widget) {
+              widget.icon = true;
+              widget.type = 'widget';
+              return widget;});});}
+&nbsp;
+&nbsp;
+&nbsp;
+        /**
+         * Loads assets used by the widgets and by the widgets
+         * Returns a promise
+         * @param widget
+         */ }, { key: 'loadAssets', value: <span class="fstat-no" title="function not covered" >function loadAssets(</span>
+        widget) {
+<span class="cstat-no" title="statement not covered" >          return this.load(widget.id).</span>
+          then(<span class="fstat-no" title="function not covered" >function (response) {<span class="cstat-no" title="statement not covered" ></span>return response.data.assets;}</span>);} }, { key: 'createAsset', value: function createAsset(
+&nbsp;
+&nbsp;
+        id, asset) {
+          return this.$http.post(this.baseUrl + '/' + id + '/assets', asset).
+          then(function (response) {return response.data;});} }, { key: 'deleteAsset', value: function deleteAsset(
+&nbsp;
+&nbsp;
+        id, asset) {
+          return this.$http.delete(this.baseUrl + '/' + id + '/assets/' + asset.id);} }, { key: 'incrementOrderAsset', value: function incrementOrderAsset(
+&nbsp;
+&nbsp;
+        widgetId, asset) {
+          return this.$http.put(this.baseUrl + '/' + widgetId + '/assets/' + asset.id + '?increment=true', asset);} }, { key: 'decrementOrderAsset', value: function decrementOrderAsset(
+&nbsp;
+&nbsp;
+        widgetId, asset) {
+          return this.$http.put(this.baseUrl + '/' + widgetId + '/assets/' + asset.id + '?decrement=true', asset);} }, { key: 'addProperty', value: function addProperty(
+&nbsp;
+&nbsp;
+        widgetId, property) {
+          return this.$http.post(this.baseUrl + '/' + widgetId + '/properties', property);} }, { key: 'updateProperty', value: function updateProperty(
+&nbsp;
+&nbsp;
+        widgetId, propertyName, propertyUpdated) {
+          return this.$http.put(this.baseUrl + '/' + widgetId + '/properties/' + propertyName, propertyUpdated);} }, { key: 'deleteProperty', value: function deleteProperty(
+&nbsp;
+&nbsp;
+        widgetId, propertyName) {
+          return this.$http.delete(this.baseUrl + '/' + widgetId + '/properties/' + propertyName);} }]);return WidgetRepository;}(Repository);
+&nbsp;
+&nbsp;
+    return new WidgetRepository();}})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndpZGdldC1yZXBvc2l0b3J5LnNlcnZpY2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFjQSxDQUFDLFlBQVc7O0FBRVY7O0FBRUE7QUFDRyxRQURILENBQ1UseUNBRFY7QUFFRyxTQUZILENBRVcsWUFGWCxFQUV5QixnQkFGekI7O0FBSUEsV0FBUyxnQkFBVCxDQUEwQixVQUExQixFQUFzQzs7QUFFOUIsb0JBRjhCLHFDQUU5QixnQkFGOEI7QUFHbEMsZUFESSxnQkFDSixHQUFjLHVCQURWLGdCQUNVLGdFQURWLGdCQUNVO0FBQ04sZ0JBRE0sRUFDSSxjQURKLEdBRWI7Ozs7O1NBTGlDLGFBRTlCLGdCQUY4QjtBQVV4QjtBQUNSLGlCQUFPLEtBQUssS0FBTCxDQUFXLEdBQVgsQ0FBa0IsS0FBSyxPQUF2QjtBQUNKLGNBREksQ0FDQyxVQUFDLFFBQUQsVUFBYyxTQUFTLElBQVQsQ0FBYyxNQUFkLENBQXFCLFVBQUMsTUFBRCxVQUFZLE9BQU8sTUFBbkIsRUFBckIsQ0FBZCxFQUREO0FBRUosY0FGSSxDQUVDLFVBQUMsT0FBRCxVQUFhLFFBQVEsR0FBUixDQUFZLFVBQUMsTUFBRCxFQUFZO0FBQ3pDLHFCQUFPLElBQVAsR0FBYyxJQUFkO0FBQ0EscUJBQU8sSUFBUCxHQUFjLFFBQWQ7QUFDQSxxQkFBTyxNQUFQLENBQ0QsQ0FKa0IsQ0FBYixFQUZELENBQVAsQ0FPRDs7Ozs7Ozs7V0FsQmlDO0FBeUJ2QixjQXpCdUIsRUF5QmY7QUFDakIsaUJBQU8sS0FBSyxJQUFMLENBQVUsT0FBTyxFQUFqQjtBQUNKLGNBREksQ0FDQyxVQUFDLFFBQUQsVUFBYyxTQUFTLElBQVQsQ0FBYyxNQUE1QixFQURELENBQVAsQ0FFRCxDQTVCaUM7OztBQThCdEIsVUE5QnNCLEVBOEJsQixLQTlCa0IsRUE4Qlg7QUFDckIsaUJBQU8sS0FBSyxLQUFMLENBQVcsSUFBWCxDQUFtQixLQUFLLE9BQXhCLFNBQW1DLEVBQW5DLGNBQWdELEtBQWhEO0FBQ0osY0FESSxDQUNDLFVBQUMsUUFBRCxVQUFjLFNBQVMsSUFBdkIsRUFERCxDQUFQLENBRUQsQ0FqQ2lDOzs7QUFtQ3RCLFVBbkNzQixFQW1DbEIsS0FuQ2tCLEVBbUNYO0FBQ3JCLGlCQUFPLEtBQUssS0FBTCxDQUFXLE1BQVgsQ0FBcUIsS0FBSyxPQUExQixTQUFxQyxFQUFyQyxnQkFBa0QsTUFBTSxFQUF4RCxDQUFQLENBQ0QsQ0FyQ2lDOzs7QUF1Q2QsZ0JBdkNjLEVBdUNKLEtBdkNJLEVBdUNHO0FBQ25DLGlCQUFPLEtBQUssS0FBTCxDQUFXLEdBQVgsQ0FBa0IsS0FBSyxPQUF2QixTQUFrQyxRQUFsQyxnQkFBcUQsTUFBTSxFQUEzRCxzQkFBZ0YsS0FBaEYsQ0FBUCxDQUNELENBekNpQzs7O0FBMkNkLGdCQTNDYyxFQTJDSixLQTNDSSxFQTJDRztBQUNuQyxpQkFBTyxLQUFLLEtBQUwsQ0FBVyxHQUFYLENBQWtCLEtBQUssT0FBdkIsU0FBa0MsUUFBbEMsZ0JBQXFELE1BQU0sRUFBM0Qsc0JBQWdGLEtBQWhGLENBQVAsQ0FDRCxDQTdDaUM7OztBQStDdEIsZ0JBL0NzQixFQStDWixRQS9DWSxFQStDRjtBQUM5QixpQkFBTyxLQUFLLEtBQUwsQ0FBVyxJQUFYLENBQW1CLEtBQUssT0FBeEIsU0FBbUMsUUFBbkMsa0JBQTBELFFBQTFELENBQVAsQ0FDRCxDQWpEaUM7OztBQW1EbkIsZ0JBbkRtQixFQW1EVCxZQW5EUyxFQW1ESyxlQW5ETCxFQW1Ec0I7QUFDdEQsaUJBQU8sS0FBSyxLQUFMLENBQVcsR0FBWCxDQUFrQixLQUFLLE9BQXZCLFNBQWtDLFFBQWxDLG9CQUF5RCxZQUF6RCxFQUF5RSxlQUF6RSxDQUFQLENBQ0QsQ0FyRGlDOzs7QUF1RG5CLGdCQXZEbUIsRUF1RFQsWUF2RFMsRUF1REs7QUFDckMsaUJBQU8sS0FBSyxLQUFMLENBQVcsTUFBWCxDQUFxQixLQUFLLE9BQTFCLFNBQXFDLFFBQXJDLG9CQUE0RCxZQUE1RCxDQUFQLENBQ0QsQ0F6RGlDLFlBRTlCLGdCQUY4QixHQUVMLFVBRks7OztBQTJEcEMsV0FBTyxJQUFJLGdCQUFKLEVBQVAsQ0FDRCxDQUNGLENBckVEIiwiZmlsZSI6IndpZGdldC1yZXBvc2l0b3J5LnNlcnZpY2UuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIENvcHlyaWdodCAoQykgMjAxNSBCb25pdGFzb2Z0IFMuQS5cbiAqIEJvbml0YXNvZnQsIDMyIHJ1ZSBHdXN0YXZlIEVpZmZlbCAtIDM4MDAwIEdyZW5vYmxlXG4gKiBUaGlzIHByb2dyYW0gaXMgZnJlZSBzb2Z0d2FyZTogeW91IGNhbiByZWRpc3RyaWJ1dGUgaXQgYW5kL29yIG1vZGlmeVxuICogaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBhcyBwdWJsaXNoZWQgYnlcbiAqIHRoZSBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb24sIGVpdGhlciB2ZXJzaW9uIDIuMCBvZiB0aGUgTGljZW5zZSwgb3JcbiAqIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uXG4gKiBUaGlzIHByb2dyYW0gaXMgZGlzdHJpYnV0ZWQgaW4gdGhlIGhvcGUgdGhhdCBpdCB3aWxsIGJlIHVzZWZ1bCxcbiAqIGJ1dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBpbXBsaWVkIHdhcnJhbnR5IG9mXG4gKiBNRVJDSEFOVEFCSUxJVFkgb3IgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UuIFNlZSB0aGVcbiAqIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGZvciBtb3JlIGRldGFpbHMuXG4gKiBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZVxuICogYWxvbmcgd2l0aCB0aGlzIHByb2dyYW0uIElmIG5vdCwgc2VlIDxodHRwOi8vd3d3LmdudS5vcmcvbGljZW5zZXMvPi5cbiAqL1xuKGZ1bmN0aW9uKCkge1xuXG4gICd1c2Ugc3RyaWN0JztcblxuICBhbmd1bGFyXG4gICAgLm1vZHVsZSgnYm9uaXRhc29mdC5kZXNpZ25lci5jb21tb24ucmVwb3NpdG9yaWVzJylcbiAgICAuZmFjdG9yeSgnd2lkZ2V0UmVwbycsIHdpZGdldFJlcG9zaXRvcnkpO1xuXG4gIGZ1bmN0aW9uIHdpZGdldFJlcG9zaXRvcnkoUmVwb3NpdG9yeSkge1xuXG4gICAgY2xhc3MgV2lkZ2V0UmVwb3NpdG9yeSBleHRlbmRzIFJlcG9zaXRvcnkge1xuICAgICAgY29uc3RydWN0b3IoKSB7XG4gICAgICAgIHN1cGVyKCd3aWRnZXQnLCAncmVzdC93aWRnZXRzJyk7XG4gICAgICB9XG4gICAgICAvKipcbiAgICAgICAqIFJldHVybnMgYWxsIHRoZSBjdXN0b20gd2lkZ2V0cyBieSBmZXRjaGluZyBhbGwgb2YgdGhlbSBhbmQgZmlsdGVyaW5nIHRoZSBjdXN0b20gb25lcy5cbiAgICAgICAqIEByZXR1cm5zIHsqfVxuICAgICAgICovXG4gICAgICBjdXN0b21zKCkge1xuICAgICAgICByZXR1cm4gdGhpcy4kaHR0cC5nZXQoYCR7dGhpcy5iYXNlVXJsfT92aWV3PWxpZ2h0YClcbiAgICAgICAgICAudGhlbigocmVzcG9uc2UpID0+IHJlc3BvbnNlLmRhdGEuZmlsdGVyKCh3aWRnZXQpID0+IHdpZGdldC5jdXN0b20pKVxuICAgICAgICAgIC50aGVuKCh3aWRnZXRzKSA9PiB3aWRnZXRzLm1hcCgod2lkZ2V0KSA9PiB7XG4gICAgICAgICAgICB3aWRnZXQuaWNvbiA9IHRydWU7XG4gICAgICAgICAgICB3aWRnZXQudHlwZSA9ICd3aWRnZXQnO1xuICAgICAgICAgICAgcmV0dXJuIHdpZGdldDtcbiAgICAgICAgICB9KSk7XG4gICAgICB9XG5cbiAgICAgIC8qKlxuICAgICAgICogTG9hZHMgYXNzZXRzIHVzZWQgYnkgdGhlIHdpZGdldHMgYW5kIGJ5IHRoZSB3aWRnZXRzXG4gICAgICAgKiBSZXR1cm5zIGEgcHJvbWlzZVxuICAgICAgICogQHBhcmFtIHdpZGdldFxuICAgICAgICovXG4gICAgICBsb2FkQXNzZXRzKHdpZGdldCkge1xuICAgICAgICByZXR1cm4gdGhpcy5sb2FkKHdpZGdldC5pZClcbiAgICAgICAgICAudGhlbigocmVzcG9uc2UpID0+IHJlc3BvbnNlLmRhdGEuYXNzZXRzKTtcbiAgICAgIH1cblxuICAgICAgY3JlYXRlQXNzZXQoaWQsIGFzc2V0KSB7XG4gICAgICAgIHJldHVybiB0aGlzLiRodHRwLnBvc3QoYCR7dGhpcy5iYXNlVXJsfS8ke2lkfS9hc3NldHNgLCBhc3NldClcbiAgICAgICAgICAudGhlbigocmVzcG9uc2UpID0+IHJlc3BvbnNlLmRhdGEpO1xuICAgICAgfVxuXG4gICAgICBkZWxldGVBc3NldChpZCwgYXNzZXQpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuJGh0dHAuZGVsZXRlKGAke3RoaXMuYmFzZVVybH0vJHtpZH0vYXNzZXRzLyR7YXNzZXQuaWR9YCk7XG4gICAgICB9XG5cbiAgICAgIGluY3JlbWVudE9yZGVyQXNzZXQod2lkZ2V0SWQsIGFzc2V0KSB7XG4gICAgICAgIHJldHVybiB0aGlzLiRodHRwLnB1dChgJHt0aGlzLmJhc2VVcmx9LyR7d2lkZ2V0SWR9L2Fzc2V0cy8ke2Fzc2V0LmlkfT9pbmNyZW1lbnQ9dHJ1ZWAsIGFzc2V0KTtcbiAgICAgIH1cblxuICAgICAgZGVjcmVtZW50T3JkZXJBc3NldCh3aWRnZXRJZCwgYXNzZXQpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuJGh0dHAucHV0KGAke3RoaXMuYmFzZVVybH0vJHt3aWRnZXRJZH0vYXNzZXRzLyR7YXNzZXQuaWR9P2RlY3JlbWVudD10cnVlYCwgYXNzZXQpO1xuICAgICAgfVxuXG4gICAgICBhZGRQcm9wZXJ0eSh3aWRnZXRJZCwgcHJvcGVydHkpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuJGh0dHAucG9zdChgJHt0aGlzLmJhc2VVcmx9LyR7d2lkZ2V0SWR9L3Byb3BlcnRpZXNgLCBwcm9wZXJ0eSk7XG4gICAgICB9XG5cbiAgICAgIHVwZGF0ZVByb3BlcnR5KHdpZGdldElkLCBwcm9wZXJ0eU5hbWUsIHByb3BlcnR5VXBkYXRlZCkge1xuICAgICAgICByZXR1cm4gdGhpcy4kaHR0cC5wdXQoYCR7dGhpcy5iYXNlVXJsfS8ke3dpZGdldElkfS9wcm9wZXJ0aWVzLyR7cHJvcGVydHlOYW1lfWAsIHByb3BlcnR5VXBkYXRlZCk7XG4gICAgICB9XG5cbiAgICAgIGRlbGV0ZVByb3BlcnR5KHdpZGdldElkLCBwcm9wZXJ0eU5hbWUpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuJGh0dHAuZGVsZXRlKGAke3RoaXMuYmFzZVVybH0vJHt3aWRnZXRJZH0vcHJvcGVydGllcy8ke3Byb3BlcnR5TmFtZX1gKTtcbiAgICAgIH1cbiAgICB9XG4gICAgcmV0dXJuIG5ldyBXaWRnZXRSZXBvc2l0b3J5KCk7XG4gIH1cbn0pKCk7XG4iXX0=</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

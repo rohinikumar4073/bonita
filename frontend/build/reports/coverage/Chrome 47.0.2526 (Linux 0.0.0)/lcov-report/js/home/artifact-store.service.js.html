@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/home/artifact-store.service.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../prettify.css">
+    <link rel="stylesheet" href="../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/home/artifact-store.service.js</span></h1>
+    <h2>
+        Statements: <span class="metric">89.74% <small>(35 / 39)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">50% <small>(6 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">92.31% <small>(12 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(11 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">js/home/</a> &#187; artifact-store.service.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</td><td class="line-coverage"><span class="cline-any cline-yes">28</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';var _createClass = function () {function defineProperties(target, props) {for (var i = 0; i &lt; props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;<span class="missing-if-branch" title="else path not taken" >E</span>if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}return function (Constructor, protoProps, staticProps) {<span class="missing-if-branch" title="else path not taken" >E</span>if (protoProps) defineProperties(Constructor.prototype, protoProps);<span class="missing-if-branch" title="if path not taken" >I</span>if (staticProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor, staticProps);r</span>eturn Constructor;};}();function _toConsumableArray(arr) {<span class="missing-if-branch" title="else path not taken" >E</span>if (Array.isArray(arr)) {for (var i = 0, arr2 = Array(arr.length); i &lt; arr.length; i++) {arr2[i] = arr[i];}return arr2;} else {<span class="cstat-no" title="statement not covered" >return Array.from(arr);}</span>}<span class="fstat-no" title="function not covered" >function _classCallCheck(instance, Constructor) {<span class="cstat-no" title="statement not covered" ></span>if (!(instance instanceof Constructor)) {<span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function");}</span>}</span> /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * Copyright (C) 2015 Bonitasoft S.A.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * This program is free software: you can redistribute it and/or modify
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * it under the terms of the GNU General Public License as published by
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * the Free Software Foundation, either version 2.0 of the License, or
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * (at your option) any later version.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * This program is distributed in the hope that it will be useful,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * but WITHOUT ANY WARRANTY; without even the implied warranty of
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * GNU General Public License for more details.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * You should have received a copy of the GNU General Public License
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   */
+(function () {
+  'use strict';var 
+&nbsp;
+  ArtifactStore = function () {
+&nbsp;
+    function ArtifactStore($q, pageRepo, widgetRepo) {_classCallCheck(this, ArtifactStore);
+      this.$q = $q;
+      this.repositories = [pageRepo, { 
+        all: function () {return widgetRepo.customs();} }];}_createClass(ArtifactStore, [{ key: 'load', value: function load() 
+&nbsp;
+&nbsp;
+&nbsp;
+      {
+        return this.$q.all(this.repositories.map(function (repository) {return repository.all();})).
+        then(function (artifacts) {var _ref;return (_ref = []).concat.apply(_ref, _toConsumableArray(artifacts));});} }, { key: 'registerRepository', value: function registerRepository(
+&nbsp;
+&nbsp;
+      repository) {
+        this.repositories.push(repository);} }]);return ArtifactStore;}();
+&nbsp;
+&nbsp;
+  angular.
+  module('bonitasoft.designer.home').
+  service('artifactStore', ArtifactStore);})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFydGlmYWN0LXN0b3JlLnNlcnZpY2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFjQSxDQUFDLFlBQVc7QUFDVixlQURVOztBQUdKLGVBSEk7O0FBS1IsYUFGSSxhQUVKLENBQVksRUFBWixFQUFnQixRQUFoQixFQUEwQixVQUExQixFQUFzQyx1QkFGbEMsYUFFa0M7QUFDcEMsV0FBSyxFQUFMLEdBQVUsRUFBVjtBQUNBLFdBQUssWUFBTCxHQUFvQixDQUFDLFFBQUQsRUFBVztBQUM3QixhQUFLLG9CQUFNLFdBQVcsT0FBWCxFQUFOLEVBRHdCLEVBQVgsQ0FBcEIsQ0FHRCxDQVZPLGFBR0osYUFISTs7OztBQVlEO0FBQ0wsZUFBTyxLQUFLLEVBQUwsQ0FBUSxHQUFSLENBQVksS0FBSyxZQUFMLENBQWtCLEdBQWxCLENBQXNCLFVBQUMsVUFBRCxVQUFnQixXQUFXLEdBQVgsRUFBaEIsRUFBdEIsQ0FBWjtBQUNKLFlBREksQ0FDQyxVQUFDLFNBQUQsbUJBQWUsWUFBRyxNQUFILGdDQUFhLFNBQWIsRUFBZixFQURELENBQVAsQ0FFRCxDQWZPOzs7QUFpQlcsZ0JBakJYLEVBaUJ1QjtBQUM3QixhQUFLLFlBQUwsQ0FBa0IsSUFBbEIsQ0FBdUIsVUFBdkIsRUFDRCxDQW5CTyxZQUdKLGFBSEk7OztBQXFCVjtBQUNHLFFBREgsQ0FDVSwwQkFEVjtBQUVHLFNBRkgsQ0FFVyxlQUZYLEVBRTRCLGFBRjVCLEVBR0QsQ0F4QkQiLCJmaWxlIjoiYXJ0aWZhY3Qtc3RvcmUuc2VydmljZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQ29weXJpZ2h0IChDKSAyMDE1IEJvbml0YXNvZnQgUy5BLlxuICogQm9uaXRhc29mdCwgMzIgcnVlIEd1c3RhdmUgRWlmZmVsIC0gMzgwMDAgR3Jlbm9ibGVcbiAqIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOiB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5XG4gKiBpdCB1bmRlciB0aGUgdGVybXMgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGFzIHB1Ymxpc2hlZCBieVxuICogdGhlIEZyZWUgU29mdHdhcmUgRm91bmRhdGlvbiwgZWl0aGVyIHZlcnNpb24gMi4wIG9mIHRoZSBMaWNlbnNlLCBvclxuICogKGF0IHlvdXIgb3B0aW9uKSBhbnkgbGF0ZXIgdmVyc2lvbi5cbiAqIFRoaXMgcHJvZ3JhbSBpcyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUgdXNlZnVsLFxuICogYnV0IFdJVEhPVVQgQU5ZIFdBUlJBTlRZOyB3aXRob3V0IGV2ZW4gdGhlIGltcGxpZWQgd2FycmFudHkgb2ZcbiAqIE1FUkNIQU5UQUJJTElUWSBvciBGSVRORVNTIEZPUiBBIFBBUlRJQ1VMQVIgUFVSUE9TRS4gU2VlIHRoZVxuICogR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgZm9yIG1vcmUgZGV0YWlscy5cbiAqIFlvdSBzaG91bGQgaGF2ZSByZWNlaXZlZCBhIGNvcHkgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlXG4gKiBhbG9uZyB3aXRoIHRoaXMgcHJvZ3JhbS4gSWYgbm90LCBzZWUgPGh0dHA6Ly93d3cuZ251Lm9yZy9saWNlbnNlcy8+LlxuICovXG4oZnVuY3Rpb24oKSB7XG4gICd1c2Ugc3RyaWN0JztcblxuICBjbGFzcyBBcnRpZmFjdFN0b3JlIHtcblxuICAgIGNvbnN0cnVjdG9yKCRxLCBwYWdlUmVwbywgd2lkZ2V0UmVwbykge1xuICAgICAgdGhpcy4kcSA9ICRxO1xuICAgICAgdGhpcy5yZXBvc2l0b3JpZXMgPSBbcGFnZVJlcG8sIHtcbiAgICAgICAgYWxsOiAoKSA9PiB3aWRnZXRSZXBvLmN1c3RvbXMoKVxuICAgICAgfV07XG4gICAgfVxuXG4gICAgbG9hZCgpIHtcbiAgICAgIHJldHVybiB0aGlzLiRxLmFsbCh0aGlzLnJlcG9zaXRvcmllcy5tYXAoKHJlcG9zaXRvcnkpID0+IHJlcG9zaXRvcnkuYWxsKCkpKVxuICAgICAgICAudGhlbigoYXJ0aWZhY3RzKSA9PiBbXS5jb25jYXQoLi4uYXJ0aWZhY3RzKSk7XG4gICAgfVxuXG4gICAgcmVnaXN0ZXJSZXBvc2l0b3J5KHJlcG9zaXRvcnkpIHtcbiAgICAgIHRoaXMucmVwb3NpdG9yaWVzLnB1c2gocmVwb3NpdG9yeSk7XG4gICAgfVxuICB9XG4gIGFuZ3VsYXJcbiAgICAubW9kdWxlKCdib25pdGFzb2Z0LmRlc2lnbmVyLmhvbWUnKVxuICAgIC5zZXJ2aWNlKCdhcnRpZmFjdFN0b3JlJywgQXJ0aWZhY3RTdG9yZSk7XG59KSgpO1xuIl19</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

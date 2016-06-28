@@ -1,0 +1,20 @@
+<div class="PropertyPanel-inner" ng-show="currentComponent">
+    <h3 class="PropertyPanel-title">{{ currentComponent.$$widget.name }}</h3>
+
+    <div class="PropertyPanel-content">
+        <div class="row">
+            <div class="col-xs-12" ng-if="currentComponent.$$widget.custom">
+                <button class="btn btn-bonita-property" id="edit-custom-widget" ng-disabled="!canBeSaved(page)"
+                        ng-click="saveAndEditCustomWidget(currentComponent.$$widget.id)" translate>Edit the custom widget
+                </button>
+            </div>
+        </div>
+        <div ng-include="currentComponent.$$propertiesTemplateUrl"></div>
+    </div>
+</div>
+
+<div class="PropertyPanel-inner" ng-show="!currentComponent">
+    <div class="PropertyPanel-content">
+        <h4 class="PropertyPanel-hint" translate>Select an element on the whiteboard, then set its properties here</h4>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+<div class="modal-header">
+    <h3 class="modal-title" ng-if="!paramToUpdate" translate>Create new property</h3>
+    <h3 class="modal-title" ng-if="paramToUpdate"><span translate>Edit property</span> <i>{{ currentParam.name }}</i></h3>
+</div>
+<form class="CustomWidgetProperty" name="propertyForm" ng-submit="ok()">
+    <div class="modal-body">
+        <div class="form-group">
+            <label for="name" class="control-label control-label--required" translate>Name</label> &nbsp;<small class="text-muted" translate>(used in your template and controller)</small>
+            <input id="name" class="form-control" name="name" ng-model="currentParam.name" ng-pattern="'[a-zA-Z0-9]*$'" required autofocus>
+            <span ng-if="propertyForm.name.$error.pattern" class="text-danger" translate>Property names must start with a letter and contain only alphanumeric characters</span>
+        </div>
+        <div class="form-group">
+            <label for="label" class="control-label control-label--required" translate>Label</label> &nbsp;<small class="text-muted" translate>(displayed in editor's property panel)</small>
+            <input id="label" class="form-control" name="label" ng-model="currentParam.label" required>
+        </div>
+        <div class="form-group">
+            <label for="help" class="control-label" translate>Tooltip <i class="fa fa-info-circle" uib-tooltip="{{ 'The tooltip will be display as such, close to the property label.' | translate}}"></i> </label>
+            <textarea id="help" class="EditWidgetPopup-help  form-control" name="help" ng-model="currentParam.help" placeholder="{{ 'Describes the property' | translate}}"/>
+        </div>
+        <div class="form-group">
+            <label for="caption" class="control-label" translate>Caption</label>
+            <small class="help-block EditWidgetPopup-captionMarginTop">{{'The caption will be displayed as such below the property label.' | translate}}</small>
+            <input id="caption" class="form-control" name="caption" ng-model="currentParam.caption" placeholder="{{ 'Can be used to define the expected input format' | translate}}">
+        </div>
+        <div class="form-group">
+            <label for="bond" class="control-label control-label--required" translate>Treat value as</label>
+            <div id="bond" class="btn-group CustomWidgetProperty--fullWidth" uib-dropdown>
+                <button id="bondButton" type="button" class="btn btn-default CustomWidgetProperty--textLeft CustomWidgetProperty--fullWidth" uib-dropdown-toggle>
+                    {{bonds[currentParam.bond].name | translate}} <span ng-show="bond !== 'constant'">-</span> <i class="ui-icon ui-{{currentParam.bond}}"> &nbsp;</i><span class="fa fa-caret-down CustomWidgetProperty-dropdownCaret"></span>
+                </button>
+                <ul class="dropdown-menu CustomWidgetProperty--fullWidth" role="menu" aria-labelledby="bondButton">
+                    <li ng-repeat="(bond, bondDetails) in bonds" ng-click="updateBond(bond)" required role="menuitem"><a href="">{{bondDetails.name | translate}} <span ng-show="bond !== 'constant'">-</span> <i class="ui-icon ui-{{bond}}"></i></a></li>
+                </ul>
+            </div>
+            <div class="CustomWidgetProperty-treatAsDescription">
+                <small ng-click="bondHelpToggled = !bondHelpToggled" class="clickable"> <span ng-if="bondHelpToggled" class="fa fa-caret-down"></span><span ng-if="!bondHelpToggled" class="fa fa-caret-right"></span> <u>Description</u></small>
+                <div class="col-md-12 row" uib-collapse="!bondHelpToggled">
+                    <div><ng-include src="bonds[currentParam.bond].template"/></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" ng-if="isTypeSelectable()">
+            <label for="type" class="control-label control-label--required" translate>Type</label>
+            <!-- <select id="type" class="form-control" name="type" ng-model="currentParam.type"
+                    ng-options="type for type in types" ng-change="currentParam.defaultValue = null" required></select> -->
+            <div id="type" class="btn-group CustomWidgetProperty--fullWidth" uib-dropdown>
+                <button id="typeButton" type="button" class="btn btn-default CustomWidgetProperty--textLeft CustomWidgetProperty--fullWidth" uib-dropdown-toggle>{{currentParam.type | translate}} <span class="fa fa-caret-down CustomWidgetProperty-dropdownCaret"></button>
+                <ul class="dropdown-menu CustomWidgetProperty--fullWidth" role="menu" aria-labelledby="typeButton">
+                    <li ng-repeat="type in types" ng-click="currentParam.defaultValue = null" required role="menuitem"><a href="" ng-click="currentParam.type = type">{{type | translate}}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-group" ng-if="isTypeChoicable()">
+            <label for="choices" class="control-label control-label--required" translate>Choices (comma separated)</label>
+            <input id="choices" class="form-control" name="choices" ng-model="currentParam.choiceValues" ng-list required>
+        </div>
+        <div class="form-group" ng-if="currentParam.bond !== 'variable'">
+            <div ng-switch="currentParam.type">
+            <label for="default" class="control-label" translate>Default</label>
+            <input id="default" class="form-control" name="default" ng-model="currentParam.defaultValue"
+                   ng-switch-default>
+            <input id="default" type="number" class="form-control" name="default"
+                   ng-model="currentParam.defaultValue" ng-switch-when="integer">
+            <select id="default" class="form-control" name="default" ng-init="currentParam.defaultValue = true"
+                   ng-model="currentParam.defaultValue" ng-options="key for key in [true, false]" ng-switch-when="boolean">
+            <input id="default" type="text" class="form-control" name="default" ng-list
+                   ng-model="currentParam.defaultValue" ng-switch-when="collection">
+            <select id="default" class="form-control" name="default"
+                    ng-model="currentParam.defaultValue" ng-switch-when="choice"
+                    ng-options="choice for choice in currentParam.choiceValues"></select>
+            </div>
+        </div>
+    </div>
+    <!--due to some bad management of the modal-footer size and its top border,
+    the description content overlaps the footer's top border... we need to clear float style -->
+    <div class="clearfix"></div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-bonita-default" ng-disabled="propertyForm.$invalid" ng-click="ok()">{{ (paramToUpdate ? 'Save' : 'Create')|translate }}</button>
+        <button type="button" class="btn btn-link" ng-click="cancel()" translate>Cancel</button>
+    </div>
+
+</form>

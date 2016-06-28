@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/editor/container-definition-factory.service.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../prettify.css">
+    <link rel="stylesheet" href="../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/editor/container-definition-factory.service.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(10 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(5 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(10 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">js/editor/</a> &#187; container-definition-factory.service.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">46</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict'; /**
+               * Copyright (C) 2015 Bonitasoft S.A.
+               * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+               * This program is free software: you can redistribute it and/or modify
+               * it under the terms of the GNU General Public License as published by
+               * the Free Software Foundation, either version 2.0 of the License, or
+               * (at your option) any later version.
+               * This program is distributed in the hope that it will be useful,
+               * but WITHOUT ANY WARRANTY; without even the implied warranty of
+               * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+               * GNU General Public License for more details.
+               * You should have received a copy of the GNU General Public License
+               * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+               */
+(function () {
+&nbsp;
+  'use strict';
+&nbsp;
+  angular.
+  module('bonitasoft.designer.editor').
+  factory('containerDefinitionFactory', containerDefinitionFactory);
+&nbsp;
+  function containerDefinitionFactory(gettext) {
+&nbsp;
+    return { 
+      createTabsContainerWidget: createTabsContainerWidget, 
+      createContainerWidget: createContainerWidget, 
+      createFormContainerWidget: createFormContainerWidget };
+&nbsp;
+&nbsp;
+    // using gettext to add key to catalog that will be later translated in a template
+    function createContainerWidget() {
+      return { 
+        container: true, 
+        custom: false, 
+        id: 'container', 
+        type: 'container', 
+        icon: '&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 20"&gt;&lt;path fill="#fff" d="M50,6.7V3.8h-1v2.9H50z M50,11.4V8.6h-1v2.9H50z M50,16.2v-2.9h-1v2.9H50z M49,20h1v-1.9h-1v1V20zM44.1,20h2.9v-1h-2.9V20z M39.2,20h2.9v-1h-2.9V20z M34.3,20h2.9v-1h-2.9V20z M29.4,20h2.9v-1h-2.9V20z M24.5,20h2.9v-1h-2.9V20zM19.6,20h2.9v-1h-2.9V20z M14.7,20h2.9v-1h-2.9V20z M9.8,20h2.9v-1H9.8V20z M4.9,20h2.9v-1H4.9V20z M0,18.1V20h2.9v-1H1v-1H0zM0,13.3v2.9h1v-2.9H0z M0,8.6v2.9h1V8.6H0z M0,3.8v2.9h1V3.8H0z M2.9,0H0v1.9h1V1h2V0z M7.8,0H4.9v1h2.9V0z M12.7,0H9.8v1h2.9V0zM17.6,0h-2.9v1h2.9V0z M22.5,0h-2.9v1h2.9V0z M27.5,0h-2.9v1h2.9V0z M32.4,0h-2.9v1h2.9V0z M37.3,0h-2.9v1h2.9V0z M42.2,0h-2.9v1h2.9V0z M47.1,0h-2.9v1h2.9V0z M50,0h-1v1v1h1V0z"/&gt;&lt;/svg&gt;', 
+        name: 'Container', 
+        description: gettext('Group of widgets used to define the arrangement of the page elements. Its content can be repeated over an array'), 
+        order: -2, 
+        properties: [
+        { 
+          name: 'repeatedCollection', 
+          label: gettext('Collection'), 
+          help: gettext('Number of array elements defines the number of times the container structure is repeated. Array data is available to widgets in the container'), 
+          caption: gettext('Repeat container content. Variable of type array'), 
+          icon: { 
+            className: 'fa fa-list-ul' }, 
+&nbsp;
+          type: 'string', 
+          bond: 'variable' }] };}
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+    function createTabsContainerWidget() {
+      return { 
+        container: true, 
+        custom: false, 
+        id: 'tabsContainer', 
+        type: 'tabsContainer', 
+        icon: '&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 20"&gt;&lt;path fill="#fff" d="M50,11.4V8.6h-1v2.9H50z M50,16.2v-2.9h-1v2.9H50z M49,20h1v-1.9h-1v1V20z M44.1,20h2.9v-1h-2.9V20zM39.2,20h2.9v-1h-2.9V20z M34.3,20h2.9v-1h-2.9V20z M29.4,20h2.9v-1h-2.9V20z M24.5,20h2.9v-1h-2.9V20z M19.6,20h2.9v-1h-2.9V20zM14.7,20h2.9v-1h-2.9V20z M9.8,20h2.9v-1H9.8V20z M4.9,20h2.9v-1H4.9V20z M0,18.1V20h2.9v-1H1v-1H0z M0,13.3v2.9h1v-2.9H0zM0,8.6v2.9h1V8.6H0z M0,1v5.7h1V1H0z M15.7,0H1v1h14.7V0z M16.7,1h-1v4.8h2v-1h-1V1z M22.5,4.8h-2.9v1h2.9V4.8z M27.5,4.8h-2.9v1h2.9V4.8z M32.4,4.8h-2.9v1h2.9V4.8z M37.3,4.8h-2.9v1h2.9V4.8z M42.2,4.8h-2.9v1h2.9V4.8z M47.1,4.8h-2.9v1h2.9V4.8z M50,4.8h-1v1v1h1V4.8z"/&gt;&lt;path fill="#CBD5E1" d="M34.3,1h-1v3.8h1V1z M18.6,1h14.7V0H18.6V1z M18.6,4.8V1h-1v3.8H18.6z"/&gt;&lt;/svg&gt;', 
+        order: -1, 
+        name: 'Tabs container', 
+        description: gettext('Multiple groups of widgets, each group in a tab') };}
+&nbsp;
+&nbsp;
+&nbsp;
+    function createFormContainerWidget() {
+      return { 
+        container: true, 
+        custom: false, 
+        id: 'formContainer', 
+        type: 'formContainer', 
+        icon: '&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 20"&gt;&lt;path fill="#fff" d="M5 19h3v1H5v-1zm5-18h3V0h-3v1zM5 1h3V0H5v1zm5 19h3v-1h-3v1zm5 0h3v-1h-3v1zm5 0h3v-1h-3v1zM15 1h3V0h-3v1zM1 9H0v2h1V9zM0 2h1V1h2V0H0v2zm23-2h-3v1h3V0zM1 4H0v3h1V4zm0 14H0v2h3v-1H1v-1zm0-5H0v3h1v-3zM27 0h-2v1h2V0zm22 19v1h1v-1.9h-1v.9zm-24 1h2v-1h-2v1zM44 1h3V0h-3v1zm5 15h1v-3h-1v3zm0-16v2h1V0h-1zm0 7h1V4h-1v3zm0 4h1V9h-1v2zm-5 9h3v-1h-3v1zM39 1h3V0h-3v1zM29 1h3V0h-3v1zm0 19h3v-1h-3v1zm5 0h3v-1h-3v1zm0-19h3V0h-3v1zm5 19h3v-1h-3v1zm-9-6H18v4h12v-4z"/&gt;&lt;path fill="#CBD5E1" d="M45 2v4H18V2h27zM18 12h27V8H18v4zm4 5h4v-2h-4v2zM7 5h9V3H7v2zm-2 6h7V9H5v2zm8 0h3V9h-3v2z"/&gt;&lt;/svg&gt;', 
+        name: 'Form container', 
+        order: 0, 
+        description: gettext('Container used for a form. Eases validation') };}}})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRhaW5lci1kZWZpbml0aW9uLWZhY3Rvcnkuc2VydmljZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7OztBQWNBLENBQUMsWUFBVzs7QUFFVjs7QUFFQTtBQUNHLFFBREgsQ0FDVSw0QkFEVjtBQUVHLFNBRkgsQ0FFVyw0QkFGWCxFQUV5QywwQkFGekM7O0FBSUEsV0FBUywwQkFBVCxDQUFvQyxPQUFwQyxFQUE2Qzs7QUFFM0MsV0FBTztBQUNMLGlDQUEyQix5QkFEdEI7QUFFTCw2QkFBdUIscUJBRmxCO0FBR0wsaUNBQTJCLHlCQUh0QixFQUFQOzs7O0FBT0EsYUFBUyxxQkFBVCxHQUFpQztBQUMvQixhQUFPO0FBQ0wsbUJBQVcsSUFETjtBQUVMLGdCQUFRLEtBRkg7QUFHTCxZQUFJLFdBSEM7QUFJTCxjQUFNLFdBSkQ7QUFLTCxjQUFNLHN0QkFMRDtBQU1MLGNBQU0sV0FORDtBQU9MLHFCQUFhLFFBQVEsaUhBQVIsQ0FQUjtBQVFMLGVBQU8sQ0FBQyxDQVJIO0FBU0wsb0JBQVk7QUFDVjtBQUNFLGdCQUFNLG9CQURSO0FBRUUsaUJBQU8sUUFBUSxZQUFSLENBRlQ7QUFHRSxnQkFBTSxRQUFRLCtJQUFSLENBSFI7QUFJRSxtQkFBUyxRQUFRLGtEQUFSLENBSlg7QUFLRSxnQkFBTTtBQUNKLHVCQUFXLGVBRFAsRUFMUjs7QUFRRSxnQkFBTSxRQVJSO0FBU0UsZ0JBQU0sVUFUUixFQURVLENBVFAsRUFBUCxDQXVCRDs7Ozs7O0FBRUQsYUFBUyx5QkFBVCxHQUFxQztBQUNuQyxhQUFPO0FBQ0wsbUJBQVcsSUFETjtBQUVMLGdCQUFRLEtBRkg7QUFHTCxZQUFJLGVBSEM7QUFJTCxjQUFNLGVBSkQ7QUFLTCxjQUFNLCt3QkFMRDtBQU1MLGVBQU8sQ0FBQyxDQU5IO0FBT0wsY0FBTSxnQkFQRDtBQVFMLHFCQUFhLFFBQVEsaURBQVIsQ0FSUixFQUFQLENBVUQ7Ozs7QUFFRCxhQUFTLHlCQUFULEdBQXFDO0FBQ25DLGFBQU87QUFDTCxtQkFBVyxJQUROO0FBRUwsZ0JBQVEsS0FGSDtBQUdMLFlBQUksZUFIQztBQUlMLGNBQU0sZUFKRDtBQUtMLGNBQU0saXBCQUxEO0FBTUwsY0FBTSxnQkFORDtBQU9MLGVBQU8sQ0FQRjtBQVFMLHFCQUFhLFFBQVEsNkNBQVIsQ0FSUixFQUFQLENBVUQsQ0FDRixDQUVGLENBdEVEIiwiZmlsZSI6ImNvbnRhaW5lci1kZWZpbml0aW9uLWZhY3Rvcnkuc2VydmljZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQ29weXJpZ2h0IChDKSAyMDE1IEJvbml0YXNvZnQgUy5BLlxuICogQm9uaXRhc29mdCwgMzIgcnVlIEd1c3RhdmUgRWlmZmVsIC0gMzgwMDAgR3Jlbm9ibGVcbiAqIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOiB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5XG4gKiBpdCB1bmRlciB0aGUgdGVybXMgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGFzIHB1Ymxpc2hlZCBieVxuICogdGhlIEZyZWUgU29mdHdhcmUgRm91bmRhdGlvbiwgZWl0aGVyIHZlcnNpb24gMi4wIG9mIHRoZSBMaWNlbnNlLCBvclxuICogKGF0IHlvdXIgb3B0aW9uKSBhbnkgbGF0ZXIgdmVyc2lvbi5cbiAqIFRoaXMgcHJvZ3JhbSBpcyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUgdXNlZnVsLFxuICogYnV0IFdJVEhPVVQgQU5ZIFdBUlJBTlRZOyB3aXRob3V0IGV2ZW4gdGhlIGltcGxpZWQgd2FycmFudHkgb2ZcbiAqIE1FUkNIQU5UQUJJTElUWSBvciBGSVRORVNTIEZPUiBBIFBBUlRJQ1VMQVIgUFVSUE9TRS4gU2VlIHRoZVxuICogR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgZm9yIG1vcmUgZGV0YWlscy5cbiAqIFlvdSBzaG91bGQgaGF2ZSByZWNlaXZlZCBhIGNvcHkgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlXG4gKiBhbG9uZyB3aXRoIHRoaXMgcHJvZ3JhbS4gSWYgbm90LCBzZWUgPGh0dHA6Ly93d3cuZ251Lm9yZy9saWNlbnNlcy8+LlxuICovXG4oZnVuY3Rpb24oKSB7XG5cbiAgJ3VzZSBzdHJpY3QnO1xuXG4gIGFuZ3VsYXJcbiAgICAubW9kdWxlKCdib25pdGFzb2Z0LmRlc2lnbmVyLmVkaXRvcicpXG4gICAgLmZhY3RvcnkoJ2NvbnRhaW5lckRlZmluaXRpb25GYWN0b3J5JywgY29udGFpbmVyRGVmaW5pdGlvbkZhY3RvcnkpO1xuXG4gIGZ1bmN0aW9uIGNvbnRhaW5lckRlZmluaXRpb25GYWN0b3J5KGdldHRleHQpIHtcblxuICAgIHJldHVybiB7XG4gICAgICBjcmVhdGVUYWJzQ29udGFpbmVyV2lkZ2V0OiBjcmVhdGVUYWJzQ29udGFpbmVyV2lkZ2V0LFxuICAgICAgY3JlYXRlQ29udGFpbmVyV2lkZ2V0OiBjcmVhdGVDb250YWluZXJXaWRnZXQsXG4gICAgICBjcmVhdGVGb3JtQ29udGFpbmVyV2lkZ2V0OiBjcmVhdGVGb3JtQ29udGFpbmVyV2lkZ2V0XG4gICAgfTtcblxuICAgIC8vIHVzaW5nIGdldHRleHQgdG8gYWRkIGtleSB0byBjYXRhbG9nIHRoYXQgd2lsbCBiZSBsYXRlciB0cmFuc2xhdGVkIGluIGEgdGVtcGxhdGVcbiAgICBmdW5jdGlvbiBjcmVhdGVDb250YWluZXJXaWRnZXQoKSB7XG4gICAgICByZXR1cm4ge1xuICAgICAgICBjb250YWluZXI6IHRydWUsXG4gICAgICAgIGN1c3RvbTogZmFsc2UsXG4gICAgICAgIGlkOiAnY29udGFpbmVyJyxcbiAgICAgICAgdHlwZTogJ2NvbnRhaW5lcicsXG4gICAgICAgIGljb246ICc8c3ZnIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIiB2aWV3Qm94PVwiMCAwIDUwIDIwXCI+PHBhdGggZmlsbD1cIiNmZmZcIiBkPVwiTTUwLDYuN1YzLjhoLTF2Mi45SDUweiBNNTAsMTEuNFY4LjZoLTF2Mi45SDUweiBNNTAsMTYuMnYtMi45aC0xdjIuOUg1MHogTTQ5LDIwaDF2LTEuOWgtMXYxVjIwek00NC4xLDIwaDIuOXYtMWgtMi45VjIweiBNMzkuMiwyMGgyLjl2LTFoLTIuOVYyMHogTTM0LjMsMjBoMi45di0xaC0yLjlWMjB6IE0yOS40LDIwaDIuOXYtMWgtMi45VjIweiBNMjQuNSwyMGgyLjl2LTFoLTIuOVYyMHpNMTkuNiwyMGgyLjl2LTFoLTIuOVYyMHogTTE0LjcsMjBoMi45di0xaC0yLjlWMjB6IE05LjgsMjBoMi45di0xSDkuOFYyMHogTTQuOSwyMGgyLjl2LTFINC45VjIweiBNMCwxOC4xVjIwaDIuOXYtMUgxdi0xSDB6TTAsMTMuM3YyLjloMXYtMi45SDB6IE0wLDguNnYyLjloMVY4LjZIMHogTTAsMy44djIuOWgxVjMuOEgweiBNMi45LDBIMHYxLjloMVYxaDJWMHogTTcuOCwwSDQuOXYxaDIuOVYweiBNMTIuNywwSDkuOHYxaDIuOVYwek0xNy42LDBoLTIuOXYxaDIuOVYweiBNMjIuNSwwaC0yLjl2MWgyLjlWMHogTTI3LjUsMGgtMi45djFoMi45VjB6IE0zMi40LDBoLTIuOXYxaDIuOVYweiBNMzcuMywwaC0yLjl2MWgyLjlWMHogTTQyLjIsMGgtMi45djFoMi45VjB6IE00Ny4xLDBoLTIuOXYxaDIuOVYweiBNNTAsMGgtMXYxdjFoMVYwelwiLz48L3N2Zz4nLFxuICAgICAgICBuYW1lOiAnQ29udGFpbmVyJyxcbiAgICAgICAgZGVzY3JpcHRpb246IGdldHRleHQoJ0dyb3VwIG9mIHdpZGdldHMgdXNlZCB0byBkZWZpbmUgdGhlIGFycmFuZ2VtZW50IG9mIHRoZSBwYWdlIGVsZW1lbnRzLiBJdHMgY29udGVudCBjYW4gYmUgcmVwZWF0ZWQgb3ZlciBhbiBhcnJheScpLFxuICAgICAgICBvcmRlcjogLTIsXG4gICAgICAgIHByb3BlcnRpZXM6IFtcbiAgICAgICAgICB7XG4gICAgICAgICAgICBuYW1lOiAncmVwZWF0ZWRDb2xsZWN0aW9uJyxcbiAgICAgICAgICAgIGxhYmVsOiBnZXR0ZXh0KCdDb2xsZWN0aW9uJyksXG4gICAgICAgICAgICBoZWxwOiBnZXR0ZXh0KCdOdW1iZXIgb2YgYXJyYXkgZWxlbWVudHMgZGVmaW5lcyB0aGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBjb250YWluZXIgc3RydWN0dXJlIGlzIHJlcGVhdGVkLiBBcnJheSBkYXRhIGlzIGF2YWlsYWJsZSB0byB3aWRnZXRzIGluIHRoZSBjb250YWluZXInKSxcbiAgICAgICAgICAgIGNhcHRpb246IGdldHRleHQoJ1JlcGVhdCBjb250YWluZXIgY29udGVudC4gVmFyaWFibGUgb2YgdHlwZSBhcnJheScpLFxuICAgICAgICAgICAgaWNvbjoge1xuICAgICAgICAgICAgICBjbGFzc05hbWU6ICdmYSBmYS1saXN0LXVsJ1xuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHR5cGU6ICdzdHJpbmcnLFxuICAgICAgICAgICAgYm9uZDogJ3ZhcmlhYmxlJ1xuICAgICAgICAgIH1cbiAgICAgICAgXVxuICAgICAgfTtcbiAgICB9XG5cbiAgICBmdW5jdGlvbiBjcmVhdGVUYWJzQ29udGFpbmVyV2lkZ2V0KCkge1xuICAgICAgcmV0dXJuIHtcbiAgICAgICAgY29udGFpbmVyOiB0cnVlLFxuICAgICAgICBjdXN0b206IGZhbHNlLFxuICAgICAgICBpZDogJ3RhYnNDb250YWluZXInLFxuICAgICAgICB0eXBlOiAndGFic0NvbnRhaW5lcicsXG4gICAgICAgIGljb246ICc8c3ZnIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIiB2aWV3Qm94PVwiMCAwIDUwIDIwXCI+PHBhdGggZmlsbD1cIiNmZmZcIiBkPVwiTTUwLDExLjRWOC42aC0xdjIuOUg1MHogTTUwLDE2LjJ2LTIuOWgtMXYyLjlINTB6IE00OSwyMGgxdi0xLjloLTF2MVYyMHogTTQ0LjEsMjBoMi45di0xaC0yLjlWMjB6TTM5LjIsMjBoMi45di0xaC0yLjlWMjB6IE0zNC4zLDIwaDIuOXYtMWgtMi45VjIweiBNMjkuNCwyMGgyLjl2LTFoLTIuOVYyMHogTTI0LjUsMjBoMi45di0xaC0yLjlWMjB6IE0xOS42LDIwaDIuOXYtMWgtMi45VjIwek0xNC43LDIwaDIuOXYtMWgtMi45VjIweiBNOS44LDIwaDIuOXYtMUg5LjhWMjB6IE00LjksMjBoMi45di0xSDQuOVYyMHogTTAsMTguMVYyMGgyLjl2LTFIMXYtMUgweiBNMCwxMy4zdjIuOWgxdi0yLjlIMHpNMCw4LjZ2Mi45aDFWOC42SDB6IE0wLDF2NS43aDFWMUgweiBNMTUuNywwSDF2MWgxNC43VjB6IE0xNi43LDFoLTF2NC44aDJ2LTFoLTFWMXogTTIyLjUsNC44aC0yLjl2MWgyLjlWNC44eiBNMjcuNSw0LjhoLTIuOXYxaDIuOVY0Ljh6IE0zMi40LDQuOGgtMi45djFoMi45VjQuOHogTTM3LjMsNC44aC0yLjl2MWgyLjlWNC44eiBNNDIuMiw0LjhoLTIuOXYxaDIuOVY0Ljh6IE00Ny4xLDQuOGgtMi45djFoMi45VjQuOHogTTUwLDQuOGgtMXYxdjFoMVY0Ljh6XCIvPjxwYXRoIGZpbGw9XCIjQ0JENUUxXCIgZD1cIk0zNC4zLDFoLTF2My44aDFWMXogTTE4LjYsMWgxNC43VjBIMTguNlYxeiBNMTguNiw0LjhWMWgtMXYzLjhIMTguNnpcIi8+PC9zdmc+JyxcbiAgICAgICAgb3JkZXI6IC0xLFxuICAgICAgICBuYW1lOiAnVGFicyBjb250YWluZXInLFxuICAgICAgICBkZXNjcmlwdGlvbjogZ2V0dGV4dCgnTXVsdGlwbGUgZ3JvdXBzIG9mIHdpZGdldHMsIGVhY2ggZ3JvdXAgaW4gYSB0YWInKSxcbiAgICAgIH07XG4gICAgfVxuXG4gICAgZnVuY3Rpb24gY3JlYXRlRm9ybUNvbnRhaW5lcldpZGdldCgpIHtcbiAgICAgIHJldHVybiB7XG4gICAgICAgIGNvbnRhaW5lcjogdHJ1ZSxcbiAgICAgICAgY3VzdG9tOiBmYWxzZSxcbiAgICAgICAgaWQ6ICdmb3JtQ29udGFpbmVyJyxcbiAgICAgICAgdHlwZTogJ2Zvcm1Db250YWluZXInLFxuICAgICAgICBpY29uOiAnPHN2ZyB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCIgdmlld0JveD1cIjAgMCA1MCAyMFwiPjxwYXRoIGZpbGw9XCIjZmZmXCIgZD1cIk01IDE5aDN2MUg1di0xem01LTE4aDNWMGgtM3Yxek01IDFoM1YwSDV2MXptNSAxOWgzdi0xaC0zdjF6bTUgMGgzdi0xaC0zdjF6bTUgMGgzdi0xaC0zdjF6TTE1IDFoM1YwaC0zdjF6TTEgOUgwdjJoMVY5ek0wIDJoMVYxaDJWMEgwdjJ6bTIzLTJoLTN2MWgzVjB6TTEgNEgwdjNoMVY0em0wIDE0SDB2Mmgzdi0xSDF2LTF6bTAtNUgwdjNoMXYtM3pNMjcgMGgtMnYxaDJWMHptMjIgMTl2MWgxdi0xLjloLTF2Ljl6bS0yNCAxaDJ2LTFoLTJ2MXpNNDQgMWgzVjBoLTN2MXptNSAxNWgxdi0zaC0xdjN6bTAtMTZ2MmgxVjBoLTF6bTAgN2gxVjRoLTF2M3ptMCA0aDFWOWgtMXYyem0tNSA5aDN2LTFoLTN2MXpNMzkgMWgzVjBoLTN2MXpNMjkgMWgzVjBoLTN2MXptMCAxOWgzdi0xaC0zdjF6bTUgMGgzdi0xaC0zdjF6bTAtMTloM1YwaC0zdjF6bTUgMTloM3YtMWgtM3Yxem0tOS02SDE4djRoMTJ2LTR6XCIvPjxwYXRoIGZpbGw9XCIjQ0JENUUxXCIgZD1cIk00NSAydjRIMThWMmgyN3pNMTggMTJoMjdWOEgxOHY0em00IDVoNHYtMmgtNHYyek03IDVoOVYzSDd2MnptLTIgNmg3VjlINXYyem04IDBoM1Y5aC0zdjJ6XCIvPjwvc3ZnPicsXG4gICAgICAgIG5hbWU6ICdGb3JtIGNvbnRhaW5lcicsXG4gICAgICAgIG9yZGVyOiAwLFxuICAgICAgICBkZXNjcmlwdGlvbjogZ2V0dGV4dCgnQ29udGFpbmVyIHVzZWQgZm9yIGEgZm9ybS4gRWFzZXMgdmFsaWRhdGlvbicpLFxuICAgICAgfTtcbiAgICB9XG4gIH1cblxufSkoKTtcbiJdfQ==</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

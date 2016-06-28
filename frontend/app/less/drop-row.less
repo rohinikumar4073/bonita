@@ -1,0 +1,44 @@
+.dropRow {
+  position: relative;
+  height: 5px;
+  font-size: 12px;
+  padding-left: 10px;
+  border-radius: 3px;
+  margin: 0 5px;
+  color: transparent;
+}
+
+
+.dropRow.bo-drag-enter {
+  .shadow-on-focus();
+}
+
+.dropRow.bo-drag-enter:not(.bo-drag-dropzone-child) {
+  height: 40px;
+  line-height: 40px;
+  background-color: #ddd;
+  border: 2px dashed #999;
+  color: #aaa;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.dropRow.bo-drag-dropzone-child {
+  overflow: hidden;
+  color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  pointer-events: none
+}
+
+// Special case for the first and last dropRow in the editor;
+// we want it to cover all the upper space so once we drop a component on top,
+#editor > .widget-wrapper > div > .dropRow:first-child,
+#editor > .widget-wrapper > div > .dropRow--last{
+  height: 40px;
+}
+
+// placeholder special case when there is an empty whiteboard
+#editor > .widget-wrapper > div:first-child > .row-builder > .widget-placeholder{
+  margin-top: 40px;
+}

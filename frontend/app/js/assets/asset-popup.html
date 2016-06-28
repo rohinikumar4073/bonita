@@ -1,0 +1,27 @@
+<form name="addAsset" action="{{vm.assetSavingAction}}" novalidate
+      ng-submit="vm.saveExternalAsset(vm.newAsset, $event)"
+      ng-upload="vm.onComplete(content)">
+
+    <div class="modal-header">
+        <h3 class="modal-title" ng-if="vm.isNewAsset" translate>Add a new asset</h3>
+        <h3 class="modal-title" ng-if="!vm.isNewAsset"><span translate>Edit asset</span><strong> {{vm.asset.name}}</strong></h3>
+    </div>
+
+    <div class="modal-body">
+        <div class="form-group">
+            <label class="control-label control-label--required" for="type" translate>Type</label>
+            <select name="type" ng-model="vm.newAsset.type" class="form-control"
+                    ng-options="type.key as type.value for type in vm.assetTypes"
+                    ng-change="vm.updateSavingAction(vm.newAsset.type)"></select>
+        </div>
+        <ng-include src="vm.templates[vm.newAsset.type]"></ng-include>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-primary"
+                ng-disabled="!addAsset.$valid || (vm.isExternalAsset(vm.newAsset) && vm.isExisting(vm.newAsset))">
+            {{ vm.isNewAsset ? 'Add': 'Save' | translate }}
+        </button>
+        <button class="btn btn-link" type="button" ng-click="vm.cancel()" translate>Cancel</button>
+    </div>
+</form>

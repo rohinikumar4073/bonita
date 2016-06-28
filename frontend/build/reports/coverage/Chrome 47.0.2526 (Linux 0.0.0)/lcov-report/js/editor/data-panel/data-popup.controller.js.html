@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/editor/data-panel/data-popup.controller.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/editor/data-panel/data-popup.controller.js</span></h1>
+    <h2>
+        Statements: <span class="metric">94.44% <small>(17 / 18)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(4 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">80% <small>(4 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">94.44% <small>(17 / 18)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/editor/data-panel/</a> &#187; data-popup.controller.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict'; /**
+               * Copyright (C) 2015 Bonitasoft S.A.
+               * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+               * This program is free software: you can redistribute it and/or modify
+               * it under the terms of the GNU General Public License as published by
+               * the Free Software Foundation, either version 2.0 of the License, or
+               * (at your option) any later version.
+               * This program is distributed in the hope that it will be useful,
+               * but WITHOUT ANY WARRANTY; without even the implied warranty of
+               * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+               * GNU General Public License for more details.
+               * You should have received a copy of the GNU General Public License
+               * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+               */
+angular.module('bonitasoft.designer.editor.data-panel').
+controller('DataPopupController', function ($scope, dataTypeService, $uibModalInstance, mode, pageData, data, apiExamples) {
+&nbsp;
+  'use strict';
+&nbsp;
+  $scope.apiExamples = apiExamples.get();
+  $scope.example = $scope.apiExamples[0];
+  $scope.examplesCollapsed = true;
+&nbsp;
+  $scope.dataTypes = dataTypeService.getDataTypes();
+  $scope.getLabel = dataTypeService.getDataLabel;
+&nbsp;
+  $scope.pageData = pageData;
+  $scope.isNewData = data === undefined;
+  $scope.newData = data || dataTypeService.createData();
+  $scope.exposableData = mode !== 'page';
+&nbsp;
+  $scope.isDataNameUnique = function (dataName) {
+    return !dataName || !pageData[dataName];};
+&nbsp;
+&nbsp;
+  $scope.updateValue = function (dataType) {
+    $scope.newData.value = dataTypeService.getDataDefaultValue(dataType);};
+&nbsp;
+&nbsp;
+  $scope.save = function (data) {
+    $uibModalInstance.close(data);};
+&nbsp;
+&nbsp;
+  $scope.cancel = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >    $uibModalInstance.dismiss();}</span>;});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRhdGEtcG9wdXAuY29udHJvbGxlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7OztBQWNBLFFBQVEsTUFBUixDQUFlLHVDQUFmO0FBQ0csVUFESCxDQUNjLHFCQURkLEVBQ3FDLFVBQVMsTUFBVCxFQUFpQixlQUFqQixFQUFrQyxpQkFBbEMsRUFBcUQsSUFBckQsRUFBMkQsUUFBM0QsRUFBcUUsSUFBckUsRUFBMkUsV0FBM0UsRUFBd0Y7O0FBRXpIOztBQUVBLFNBQU8sV0FBUCxHQUFxQixZQUFZLEdBQVosRUFBckI7QUFDQSxTQUFPLE9BQVAsR0FBaUIsT0FBTyxXQUFQLENBQW1CLENBQW5CLENBQWpCO0FBQ0EsU0FBTyxpQkFBUCxHQUEyQixJQUEzQjs7QUFFQSxTQUFPLFNBQVAsR0FBbUIsZ0JBQWdCLFlBQWhCLEVBQW5CO0FBQ0EsU0FBTyxRQUFQLEdBQWtCLGdCQUFnQixZQUFsQzs7QUFFQSxTQUFPLFFBQVAsR0FBa0IsUUFBbEI7QUFDQSxTQUFPLFNBQVAsR0FBbUIsU0FBUyxTQUE1QjtBQUNBLFNBQU8sT0FBUCxHQUFpQixRQUFRLGdCQUFnQixVQUFoQixFQUF6QjtBQUNBLFNBQU8sYUFBUCxHQUF1QixTQUFTLE1BQWhDOztBQUVBLFNBQU8sZ0JBQVAsR0FBMEIsVUFBUyxRQUFULEVBQW1CO0FBQzNDLFdBQU8sQ0FBQyxRQUFELElBQWEsQ0FBQyxTQUFTLFFBQVQsQ0FBckIsQ0FDRCxDQUZEOzs7QUFJQSxTQUFPLFdBQVAsR0FBcUIsVUFBUyxRQUFULEVBQW1CO0FBQ3RDLFdBQU8sT0FBUCxDQUFlLEtBQWYsR0FBdUIsZ0JBQWdCLG1CQUFoQixDQUFvQyxRQUFwQyxDQUF2QixDQUNELENBRkQ7OztBQUlBLFNBQU8sSUFBUCxHQUFjLFVBQVMsSUFBVCxFQUFlO0FBQzNCLHNCQUFrQixLQUFsQixDQUF3QixJQUF4QixFQUNELENBRkQ7OztBQUlBLFNBQU8sTUFBUCxHQUFnQixZQUFXO0FBQ3pCLHNCQUFrQixPQUFsQixHQUNELENBRkQsQ0FHRCxDQWhDSCIsImZpbGUiOiJkYXRhLXBvcHVwLmNvbnRyb2xsZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIENvcHlyaWdodCAoQykgMjAxNSBCb25pdGFzb2Z0IFMuQS5cbiAqIEJvbml0YXNvZnQsIDMyIHJ1ZSBHdXN0YXZlIEVpZmZlbCAtIDM4MDAwIEdyZW5vYmxlXG4gKiBUaGlzIHByb2dyYW0gaXMgZnJlZSBzb2Z0d2FyZTogeW91IGNhbiByZWRpc3RyaWJ1dGUgaXQgYW5kL29yIG1vZGlmeVxuICogaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBhcyBwdWJsaXNoZWQgYnlcbiAqIHRoZSBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb24sIGVpdGhlciB2ZXJzaW9uIDIuMCBvZiB0aGUgTGljZW5zZSwgb3JcbiAqIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uXG4gKiBUaGlzIHByb2dyYW0gaXMgZGlzdHJpYnV0ZWQgaW4gdGhlIGhvcGUgdGhhdCBpdCB3aWxsIGJlIHVzZWZ1bCxcbiAqIGJ1dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBpbXBsaWVkIHdhcnJhbnR5IG9mXG4gKiBNRVJDSEFOVEFCSUxJVFkgb3IgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UuIFNlZSB0aGVcbiAqIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGZvciBtb3JlIGRldGFpbHMuXG4gKiBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZVxuICogYWxvbmcgd2l0aCB0aGlzIHByb2dyYW0uIElmIG5vdCwgc2VlIDxodHRwOi8vd3d3LmdudS5vcmcvbGljZW5zZXMvPi5cbiAqL1xuYW5ndWxhci5tb2R1bGUoJ2Jvbml0YXNvZnQuZGVzaWduZXIuZWRpdG9yLmRhdGEtcGFuZWwnKVxuICAuY29udHJvbGxlcignRGF0YVBvcHVwQ29udHJvbGxlcicsIGZ1bmN0aW9uKCRzY29wZSwgZGF0YVR5cGVTZXJ2aWNlLCAkdWliTW9kYWxJbnN0YW5jZSwgbW9kZSwgcGFnZURhdGEsIGRhdGEsIGFwaUV4YW1wbGVzKSB7XG5cbiAgICAndXNlIHN0cmljdCc7XG5cbiAgICAkc2NvcGUuYXBpRXhhbXBsZXMgPSBhcGlFeGFtcGxlcy5nZXQoKTtcbiAgICAkc2NvcGUuZXhhbXBsZSA9ICRzY29wZS5hcGlFeGFtcGxlc1swXTtcbiAgICAkc2NvcGUuZXhhbXBsZXNDb2xsYXBzZWQgPSB0cnVlO1xuXG4gICAgJHNjb3BlLmRhdGFUeXBlcyA9IGRhdGFUeXBlU2VydmljZS5nZXREYXRhVHlwZXMoKTtcbiAgICAkc2NvcGUuZ2V0TGFiZWwgPSBkYXRhVHlwZVNlcnZpY2UuZ2V0RGF0YUxhYmVsO1xuXG4gICAgJHNjb3BlLnBhZ2VEYXRhID0gcGFnZURhdGE7XG4gICAgJHNjb3BlLmlzTmV3RGF0YSA9IGRhdGEgPT09IHVuZGVmaW5lZDtcbiAgICAkc2NvcGUubmV3RGF0YSA9IGRhdGEgfHwgZGF0YVR5cGVTZXJ2aWNlLmNyZWF0ZURhdGEoKTtcbiAgICAkc2NvcGUuZXhwb3NhYmxlRGF0YSA9IG1vZGUgIT09ICdwYWdlJztcblxuICAgICRzY29wZS5pc0RhdGFOYW1lVW5pcXVlID0gZnVuY3Rpb24oZGF0YU5hbWUpIHtcbiAgICAgIHJldHVybiAhZGF0YU5hbWUgfHwgIXBhZ2VEYXRhW2RhdGFOYW1lXTtcbiAgICB9O1xuXG4gICAgJHNjb3BlLnVwZGF0ZVZhbHVlID0gZnVuY3Rpb24oZGF0YVR5cGUpIHtcbiAgICAgICRzY29wZS5uZXdEYXRhLnZhbHVlID0gZGF0YVR5cGVTZXJ2aWNlLmdldERhdGFEZWZhdWx0VmFsdWUoZGF0YVR5cGUpO1xuICAgIH07XG5cbiAgICAkc2NvcGUuc2F2ZSA9IGZ1bmN0aW9uKGRhdGEpIHtcbiAgICAgICR1aWJNb2RhbEluc3RhbmNlLmNsb3NlKGRhdGEpO1xuICAgIH07XG5cbiAgICAkc2NvcGUuY2FuY2VsID0gZnVuY3Rpb24oKSB7XG4gICAgICAkdWliTW9kYWxJbnN0YW5jZS5kaXNtaXNzKCk7XG4gICAgfTtcbiAgfSk7XG4iXX0=</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

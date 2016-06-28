@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/editor/whiteboard/whiteboard.service.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">js/editor/whiteboard/whiteboard.service.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(36 / 36)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(17 / 17)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(36 / 36)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/editor/whiteboard/</a> &#187; whiteboard.service.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">77</span>
+<span class="cline-any cline-yes">77</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">77</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">77</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">48</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">48</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">11</span>
+<span class="cline-any cline-yes">15</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';(function () {
+&nbsp;
+  'use strict';
+&nbsp;
+  angular.
+  module('bonitasoft.designer.editor.whiteboard').
+  service('whiteboardService', whiteboardService);
+&nbsp;
+  function whiteboardService($timeout, arrays) {
+    var onWidgetRemoveFunctions = [];
+    var onWidgetAddFunctions = [];
+&nbsp;
+    var widgetIds = [];
+&nbsp;
+    return { 
+      registerOnWidgetRemoveFunction: registerOnWidgetRemoveFunction, 
+      registerOnWidgetAddFunction: registerOnWidgetAddFunction, 
+      triggerRowRemoved: onRemoveRow, 
+      triggerInitWidget: onInitWidget, 
+      onAddWidget: onAddWidget, 
+      onRemoveWidget: onRemoveWidget, 
+      onRemoveContainer: onRemoveContainer, 
+      onRemoveTabsContainer: onRemoveTabsContainer, 
+      onRemoveTab: onRemoveTab, 
+      onRemoveFormContainer: onRemoveFormContainer, 
+      contains: contains, 
+      reset: reset };
+&nbsp;
+&nbsp;
+    function reset() {
+      widgetIds = [];}
+&nbsp;
+&nbsp;
+    function contains(widget) {
+      return widgetIds.indexOf(widget.id) &gt; -1;}
+&nbsp;
+&nbsp;
+    function registerOnWidgetRemoveFunction(fn) {
+      onWidgetRemoveFunctions.push(fn);}
+&nbsp;
+&nbsp;
+    function registerOnWidgetAddFunction(fn) {
+      onWidgetAddFunctions.push(fn);}
+&nbsp;
+&nbsp;
+    function onRemoveWidget(widget) {
+      arrays.removeFirst(widget.id, widgetIds);
+      executeFunctionsForComponent(onWidgetRemoveFunctions, widget);}
+&nbsp;
+&nbsp;
+    function onAddWidget(widget) {
+      executeFunctionsForComponent(onWidgetAddFunctions, widget);}
+&nbsp;
+&nbsp;
+    function onInitWidget(widget) {
+      widgetIds.push(widget.id);}
+&nbsp;
+&nbsp;
+    /**
+     * Execute each function of functions array for component.
+     * Functions are executed in $timeout to be non blocking for UI
+     */
+    function executeFunctionsForComponent(functions, component) {
+      functions.forEach(function (fn) {
+        $timeout(fn.bind(null, component), 0);});}
+&nbsp;
+&nbsp;
+&nbsp;
+    function onRemoveRow(row) {
+      angular.forEach(row, function (component) {
+        component.triggerRemoved();});}
+&nbsp;
+&nbsp;
+&nbsp;
+    function onRemoveContainer(container) {
+      container.rows.forEach(onRemoveRow);}
+&nbsp;
+&nbsp;
+    function onRemoveTabsContainer(tabsContainer) {
+      tabsContainer.tabs.forEach(onRemoveTab);}
+&nbsp;
+&nbsp;
+    function onRemoveTab(tab) {
+      onRemoveContainer(tab.container);}
+&nbsp;
+&nbsp;
+    function onRemoveFormContainer(formContainer) {
+      onRemoveContainer(formContainer.container);}}})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndoaXRlYm9hcmQuc2VydmljZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiYUFBQSxDQUFDLFlBQVc7O0FBRVY7O0FBRUE7QUFDSyxRQURMLENBQ1ksdUNBRFo7QUFFSyxTQUZMLENBRWEsbUJBRmIsRUFFa0MsaUJBRmxDOztBQUlBLFdBQVMsaUJBQVQsQ0FBMkIsUUFBM0IsRUFBcUMsTUFBckMsRUFBNkM7QUFDM0MsUUFBSSwwQkFBMEIsRUFBOUI7QUFDQSxRQUFJLHVCQUF1QixFQUEzQjs7QUFFQSxRQUFJLFlBQVksRUFBaEI7O0FBRUEsV0FBTztBQUNMLHNDQUFnQyw4QkFEM0I7QUFFTCxtQ0FBNkIsMkJBRnhCO0FBR0wseUJBQW1CLFdBSGQ7QUFJTCx5QkFBbUIsWUFKZDtBQUtMLG1CQUFhLFdBTFI7QUFNTCxzQkFBZ0IsY0FOWDtBQU9MLHlCQUFtQixpQkFQZDtBQVFMLDZCQUF1QixxQkFSbEI7QUFTTCxtQkFBYSxXQVRSO0FBVUwsNkJBQXVCLHFCQVZsQjtBQVdMLHdCQVhLO0FBWUwsa0JBWkssRUFBUDs7O0FBZUEsYUFBUyxLQUFULEdBQWlCO0FBQ2Ysa0JBQVksRUFBWixDQUNEOzs7QUFFRCxhQUFTLFFBQVQsQ0FBa0IsTUFBbEIsRUFBMEI7QUFDeEIsYUFBTyxVQUFVLE9BQVYsQ0FBa0IsT0FBTyxFQUF6QixJQUErQixDQUFDLENBQXZDLENBQ0Q7OztBQUVELGFBQVMsOEJBQVQsQ0FBd0MsRUFBeEMsRUFBNEM7QUFDMUMsOEJBQXdCLElBQXhCLENBQTZCLEVBQTdCLEVBQ0Q7OztBQUVELGFBQVMsMkJBQVQsQ0FBcUMsRUFBckMsRUFBeUM7QUFDdkMsMkJBQXFCLElBQXJCLENBQTBCLEVBQTFCLEVBQ0Q7OztBQUVELGFBQVMsY0FBVCxDQUF3QixNQUF4QixFQUFnQztBQUM5QixhQUFPLFdBQVAsQ0FBbUIsT0FBTyxFQUExQixFQUE4QixTQUE5QjtBQUNBLG1DQUE2Qix1QkFBN0IsRUFBc0QsTUFBdEQsRUFDRDs7O0FBRUQsYUFBUyxXQUFULENBQXFCLE1BQXJCLEVBQTZCO0FBQzNCLG1DQUE2QixvQkFBN0IsRUFBbUQsTUFBbkQsRUFDRDs7O0FBRUQsYUFBUyxZQUFULENBQXNCLE1BQXRCLEVBQThCO0FBQzVCLGdCQUFVLElBQVYsQ0FBZSxPQUFPLEVBQXRCLEVBQ0Q7Ozs7Ozs7QUFNRCxhQUFTLDRCQUFULENBQXNDLFNBQXRDLEVBQWlELFNBQWpELEVBQTREO0FBQzFELGdCQUFVLE9BQVYsQ0FBa0IsVUFBUyxFQUFULEVBQWE7QUFDN0IsaUJBQVMsR0FBRyxJQUFILENBQVEsSUFBUixFQUFjLFNBQWQsQ0FBVCxFQUFtQyxDQUFuQyxFQUNELENBRkQsRUFHRDs7OztBQUVELGFBQVMsV0FBVCxDQUFxQixHQUFyQixFQUEwQjtBQUN4QixjQUFRLE9BQVIsQ0FBZ0IsR0FBaEIsRUFBcUIsVUFBUyxTQUFULEVBQW9CO0FBQ3ZDLGtCQUFVLGNBQVYsR0FDRCxDQUZELEVBR0Q7Ozs7QUFFRCxhQUFTLGlCQUFULENBQTJCLFNBQTNCLEVBQXNDO0FBQ3BDLGdCQUFVLElBQVYsQ0FBZSxPQUFmLENBQXVCLFdBQXZCLEVBQ0Q7OztBQUVELGFBQVMscUJBQVQsQ0FBK0IsYUFBL0IsRUFBOEM7QUFDNUMsb0JBQWMsSUFBZCxDQUFtQixPQUFuQixDQUEyQixXQUEzQixFQUNEOzs7QUFFRCxhQUFTLFdBQVQsQ0FBcUIsR0FBckIsRUFBMEI7QUFDeEIsd0JBQWtCLElBQUksU0FBdEIsRUFDRDs7O0FBRUQsYUFBUyxxQkFBVCxDQUErQixhQUEvQixFQUE4QztBQUM1Qyx3QkFBa0IsY0FBYyxTQUFoQyxFQUNELENBQ0YsQ0FDRixDQTFGRCIsImZpbGUiOiJ3aGl0ZWJvYXJkLnNlcnZpY2UuanMiLCJzb3VyY2VzQ29udGVudCI6WyIoZnVuY3Rpb24oKSB7XG5cbiAgJ3VzZSBzdHJpY3QnO1xuXG4gIGFuZ3VsYXJcbiAgICAgIC5tb2R1bGUoJ2Jvbml0YXNvZnQuZGVzaWduZXIuZWRpdG9yLndoaXRlYm9hcmQnKVxuICAgICAgLnNlcnZpY2UoJ3doaXRlYm9hcmRTZXJ2aWNlJywgd2hpdGVib2FyZFNlcnZpY2UpO1xuXG4gIGZ1bmN0aW9uIHdoaXRlYm9hcmRTZXJ2aWNlKCR0aW1lb3V0LCBhcnJheXMpIHtcbiAgICB2YXIgb25XaWRnZXRSZW1vdmVGdW5jdGlvbnMgPSBbXTtcbiAgICB2YXIgb25XaWRnZXRBZGRGdW5jdGlvbnMgPSBbXTtcblxuICAgIHZhciB3aWRnZXRJZHMgPSBbXTtcblxuICAgIHJldHVybiB7XG4gICAgICByZWdpc3Rlck9uV2lkZ2V0UmVtb3ZlRnVuY3Rpb246IHJlZ2lzdGVyT25XaWRnZXRSZW1vdmVGdW5jdGlvbixcbiAgICAgIHJlZ2lzdGVyT25XaWRnZXRBZGRGdW5jdGlvbjogcmVnaXN0ZXJPbldpZGdldEFkZEZ1bmN0aW9uLFxuICAgICAgdHJpZ2dlclJvd1JlbW92ZWQ6IG9uUmVtb3ZlUm93LFxuICAgICAgdHJpZ2dlckluaXRXaWRnZXQ6IG9uSW5pdFdpZGdldCxcbiAgICAgIG9uQWRkV2lkZ2V0OiBvbkFkZFdpZGdldCxcbiAgICAgIG9uUmVtb3ZlV2lkZ2V0OiBvblJlbW92ZVdpZGdldCxcbiAgICAgIG9uUmVtb3ZlQ29udGFpbmVyOiBvblJlbW92ZUNvbnRhaW5lcixcbiAgICAgIG9uUmVtb3ZlVGFic0NvbnRhaW5lcjogb25SZW1vdmVUYWJzQ29udGFpbmVyLFxuICAgICAgb25SZW1vdmVUYWI6IG9uUmVtb3ZlVGFiLFxuICAgICAgb25SZW1vdmVGb3JtQ29udGFpbmVyOiBvblJlbW92ZUZvcm1Db250YWluZXIsXG4gICAgICBjb250YWlucyxcbiAgICAgIHJlc2V0XG4gICAgfTtcblxuICAgIGZ1bmN0aW9uIHJlc2V0KCkge1xuICAgICAgd2lkZ2V0SWRzID0gW107XG4gICAgfVxuXG4gICAgZnVuY3Rpb24gY29udGFpbnMod2lkZ2V0KSB7XG4gICAgICByZXR1cm4gd2lkZ2V0SWRzLmluZGV4T2Yod2lkZ2V0LmlkKSA+IC0xO1xuICAgIH1cblxuICAgIGZ1bmN0aW9uIHJlZ2lzdGVyT25XaWRnZXRSZW1vdmVGdW5jdGlvbihmbikge1xuICAgICAgb25XaWRnZXRSZW1vdmVGdW5jdGlvbnMucHVzaChmbik7XG4gICAgfVxuXG4gICAgZnVuY3Rpb24gcmVnaXN0ZXJPbldpZGdldEFkZEZ1bmN0aW9uKGZuKSB7XG4gICAgICBvbldpZGdldEFkZEZ1bmN0aW9ucy5wdXNoKGZuKTtcbiAgICB9XG5cbiAgICBmdW5jdGlvbiBvblJlbW92ZVdpZGdldCh3aWRnZXQpIHtcbiAgICAgIGFycmF5cy5yZW1vdmVGaXJzdCh3aWRnZXQuaWQsIHdpZGdldElkcyk7XG4gICAgICBleGVjdXRlRnVuY3Rpb25zRm9yQ29tcG9uZW50KG9uV2lkZ2V0UmVtb3ZlRnVuY3Rpb25zLCB3aWRnZXQpO1xuICAgIH1cblxuICAgIGZ1bmN0aW9uIG9uQWRkV2lkZ2V0KHdpZGdldCkge1xuICAgICAgZXhlY3V0ZUZ1bmN0aW9uc0ZvckNvbXBvbmVudChvbldpZGdldEFkZEZ1bmN0aW9ucywgd2lkZ2V0KTtcbiAgICB9XG5cbiAgICBmdW5jdGlvbiBvbkluaXRXaWRnZXQod2lkZ2V0KSB7XG4gICAgICB3aWRnZXRJZHMucHVzaCh3aWRnZXQuaWQpO1xuICAgIH1cblxuICAgIC8qKlxuICAgICAqIEV4ZWN1dGUgZWFjaCBmdW5jdGlvbiBvZiBmdW5jdGlvbnMgYXJyYXkgZm9yIGNvbXBvbmVudC5cbiAgICAgKiBGdW5jdGlvbnMgYXJlIGV4ZWN1dGVkIGluICR0aW1lb3V0IHRvIGJlIG5vbiBibG9ja2luZyBmb3IgVUlcbiAgICAgKi9cbiAgICBmdW5jdGlvbiBleGVjdXRlRnVuY3Rpb25zRm9yQ29tcG9uZW50KGZ1bmN0aW9ucywgY29tcG9uZW50KSB7XG4gICAgICBmdW5jdGlvbnMuZm9yRWFjaChmdW5jdGlvbihmbikge1xuICAgICAgICAkdGltZW91dChmbi5iaW5kKG51bGwsIGNvbXBvbmVudCksIDApO1xuICAgICAgfSk7XG4gICAgfVxuXG4gICAgZnVuY3Rpb24gb25SZW1vdmVSb3cocm93KSB7XG4gICAgICBhbmd1bGFyLmZvckVhY2gocm93LCBmdW5jdGlvbihjb21wb25lbnQpIHtcbiAgICAgICAgY29tcG9uZW50LnRyaWdnZXJSZW1vdmVkKCk7XG4gICAgICB9KTtcbiAgICB9XG5cbiAgICBmdW5jdGlvbiBvblJlbW92ZUNvbnRhaW5lcihjb250YWluZXIpIHtcbiAgICAgIGNvbnRhaW5lci5yb3dzLmZvckVhY2gob25SZW1vdmVSb3cpO1xuICAgIH1cblxuICAgIGZ1bmN0aW9uIG9uUmVtb3ZlVGFic0NvbnRhaW5lcih0YWJzQ29udGFpbmVyKSB7XG4gICAgICB0YWJzQ29udGFpbmVyLnRhYnMuZm9yRWFjaChvblJlbW92ZVRhYik7XG4gICAgfVxuXG4gICAgZnVuY3Rpb24gb25SZW1vdmVUYWIodGFiKSB7XG4gICAgICBvblJlbW92ZUNvbnRhaW5lcih0YWIuY29udGFpbmVyKTtcbiAgICB9XG5cbiAgICBmdW5jdGlvbiBvblJlbW92ZUZvcm1Db250YWluZXIoZm9ybUNvbnRhaW5lcikge1xuICAgICAgb25SZW1vdmVDb250YWluZXIoZm9ybUNvbnRhaW5lci5jb250YWluZXIpO1xuICAgIH1cbiAgfVxufSkoKTtcbiJdfQ==</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

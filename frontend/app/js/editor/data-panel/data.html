@@ -1,0 +1,44 @@
+<div class="DataHeader">
+    <div class="DataHeader-action">
+        <button class="btn btn-default" ng-click="openDataPopup()" translate>Create a new variable</button>
+        <button class="btn btn-default btn-data--help" ng-click="openHelp()" title="{{'Open help' | translate}}"><i class="fa fa-question-circle"></i></button>
+    </div>
+    <div class="DataHeader-filter">
+        <label class="sr-only" translate> filter: </label>
+        <search value="searchedData" placeholder="{{ 'Search' | translate }}"></search>
+    </div>
+</div>
+
+<table class="table table-condensed table-ui-designer table-striped table-text-ellipsis">
+    <thead>
+    <th translate>Name</th>
+    <th ng-if="exposableData" translate>Exposed</th>
+    <th translate>Value</th>
+    <th translate>Type</th>
+    <th></th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="(key, data) in pageData as results track by key">
+        <td class="col-xs-2">{{key}}</td>
+        <td class="col-xs-1" ng-if="exposableData">
+            <i class="fa" ng-class="{'fa-check': data.exposed}"></i>
+        </td>
+        <td class="col-xs-5"> {{data.value}}
+        </td>
+        <td class="col-xs-1">{{getLabel(data.type)}}</td>
+        <td class="col-xs-1">
+            <div class="btn-group link-group btn-group-sm pull-right">
+                <button class="btn update-data" ng-click="openDataPopup(key)" title="{{ 'Edit variable' | translate }}">
+                    <i class="fa fa-pencil"></i>
+                </button>
+                <button class="btn delete-data" ng-click="delete(key)" title="{{ 'Delete variable' | translate }}">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </td>
+    </tr>
+    <tr ng-if="keys(results).length===0">
+        <td colspan="{{exposableData ? 5 : 4}}" translate>No variable</td>
+    </tr>
+    </tbody>
+</table>

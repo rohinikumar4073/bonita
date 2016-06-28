@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/common/directives/confirm-on-exit.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">js/common/directives/confirm-on-exit.js</span></h1>
+    <h2>
+        Statements: <span class="metric">10% <small>(2 / 20)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">10% <small>(2 / 20)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">js/common/directives/</a> &#187; confirm-on-exit.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict'; /**
+               * Copyright (C) 2015 Bonitasoft S.A.
+               * Bonitasoft, 32 rue Gustave Eiffel - 38000 Grenoble
+               * This program is free software: you can redistribute it and/or modify
+               * it under the terms of the GNU General Public License as published by
+               * the Free Software Foundation, either version 2.0 of the License, or
+               * (at your option) any later version.
+               * This program is distributed in the hope that it will be useful,
+               * but WITHOUT ANY WARRANTY; without even the implied warranty of
+               * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+               * GNU General Public License for more details.
+               * You should have received a copy of the GNU General Public License
+               * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+               */
+angular.module('bonitasoft.designer.common.directives').
+directive('confirmOnExit', <span class="fstat-no" title="function not covered" >function ($rootScope, $stateParams, $state, $injector, $window, gettextCatalog) {</span>
+&nbsp;
+  'use strict';
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  var message = gettextCatalog.getString('You have unsaved changes. Do you really want to leave ?');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return { </span>
+    scope: { 
+      'confirmData': '=' }, 
+&nbsp;
+    link: <span class="fstat-no" title="function not covered" >function ($scope) {</span>
+      // get the service from resolve parameter
+<span class="cstat-no" title="statement not covered" >      if (!$state.current.resolve || !$state.current.resolve.artifactRepo) {</span>
+<span class="cstat-no" title="statement not covered" >        return;}</span>
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      var repository = $injector.get($state.current.resolve.artifactRepo[0]);</span>
+<span class="cstat-no" title="statement not covered" >      var stateName = $state.current.name;</span>
+<span class="cstat-no" title="statement not covered" >      repository.initLastSavedState($scope.confirmData);</span>
+<span class="cstat-no" title="statement not covered" >      var onRouteChangeOff = $rootScope.$on('$stateChangeStart', routeChangeHandler);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      $window.onbeforeunload = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        if (repository.needSave($scope.confirmData)) {</span>
+<span class="cstat-no" title="statement not covered" >          return message;}</span>};
+&nbsp;
+&nbsp;
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function routeChangeHandler(event, newState) {</span>
+<span class="cstat-no" title="statement not covered" >        if (newState.name.indexOf(stateName) !== -1) {</span>
+          // we don't care about internal state change
+<span class="cstat-no" title="statement not covered" >          return;}</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (repository.needSave($scope.confirmData) &amp;&amp; !window.confirm(message)) {</span>
+<span class="cstat-no" title="statement not covered" >          event.preventDefault();}</span>}
+&nbsp;
+&nbsp;
+&nbsp;
+      // remove route event listener
+<span class="cstat-no" title="statement not covered" >      $scope.$on('$destroy', <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        $window.onbeforeunload = undefined;</span>
+<span class="cstat-no" title="statement not covered" >        onRouteChangeOff();}</span>);} };});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbmZpcm0tb24tZXhpdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7OztBQWNBLFFBQVEsTUFBUixDQUFlLHVDQUFmO0FBQ0csU0FESCxDQUNhLGVBRGIsRUFDOEIsVUFBUyxVQUFULEVBQXFCLFlBQXJCLEVBQW1DLE1BQW5DLEVBQTJDLFNBQTNDLEVBQXNELE9BQXRELEVBQStELGNBQS9ELEVBQStFOztBQUV6Rzs7QUFFQSxNQUFJLFVBQVUsZUFBZSxTQUFmLENBQXlCLHlEQUF6QixDQUFkOztBQUVBLFNBQU87QUFDTCxXQUFPO0FBQ0wscUJBQWUsR0FEVixFQURGOztBQUlMLFVBQU0sVUFBUyxNQUFULEVBQWlCOztBQUVyQixVQUFJLENBQUMsT0FBTyxPQUFQLENBQWUsT0FBaEIsSUFBMkIsQ0FBQyxPQUFPLE9BQVAsQ0FBZSxPQUFmLENBQXVCLFlBQXZELEVBQXFFO0FBQ25FLGVBQ0Q7OztBQUVELFVBQUksYUFBYSxVQUFVLEdBQVYsQ0FBYyxPQUFPLE9BQVAsQ0FBZSxPQUFmLENBQXVCLFlBQXZCLENBQW9DLENBQXBDLENBQWQsQ0FBakI7QUFDQSxVQUFJLFlBQVksT0FBTyxPQUFQLENBQWUsSUFBL0I7QUFDQSxpQkFBVyxrQkFBWCxDQUE4QixPQUFPLFdBQXJDO0FBQ0EsVUFBSSxtQkFBbUIsV0FBVyxHQUFYLENBQWUsbUJBQWYsRUFBb0Msa0JBQXBDLENBQXZCOztBQUVBLGNBQVEsY0FBUixHQUF5QixZQUFXO0FBQ2xDLFlBQUksV0FBVyxRQUFYLENBQW9CLE9BQU8sV0FBM0IsQ0FBSixFQUE2QztBQUMzQyxpQkFBTyxPQUFQLENBQ0QsQ0FDRixDQUpEOzs7O0FBTUEsZUFBUyxrQkFBVCxDQUE0QixLQUE1QixFQUFtQyxRQUFuQyxFQUE2QztBQUMzQyxZQUFJLFNBQVMsSUFBVCxDQUFjLE9BQWQsQ0FBc0IsU0FBdEIsTUFBcUMsQ0FBQyxDQUExQyxFQUE2Qzs7QUFFM0MsaUJBQ0Q7O0FBQ0QsWUFBSSxXQUFXLFFBQVgsQ0FBb0IsT0FBTyxXQUEzQixLQUEyQyxDQUFDLE9BQU8sT0FBUCxDQUFlLE9BQWYsQ0FBaEQsRUFBeUU7QUFDdkUsZ0JBQU0sY0FBTixHQUNELENBQ0Y7Ozs7O0FBR0QsYUFBTyxHQUFQLENBQVcsVUFBWCxFQUF1QixZQUFXO0FBQ2hDLGdCQUFRLGNBQVIsR0FBeUIsU0FBekI7QUFDQSwyQkFDRCxDQUhELEVBSUQsQ0FwQ0ksRUFBUCxDQXNDRCxDQTdDSCIsImZpbGUiOiJjb25maXJtLW9uLWV4aXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIENvcHlyaWdodCAoQykgMjAxNSBCb25pdGFzb2Z0IFMuQS5cbiAqIEJvbml0YXNvZnQsIDMyIHJ1ZSBHdXN0YXZlIEVpZmZlbCAtIDM4MDAwIEdyZW5vYmxlXG4gKiBUaGlzIHByb2dyYW0gaXMgZnJlZSBzb2Z0d2FyZTogeW91IGNhbiByZWRpc3RyaWJ1dGUgaXQgYW5kL29yIG1vZGlmeVxuICogaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBhcyBwdWJsaXNoZWQgYnlcbiAqIHRoZSBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb24sIGVpdGhlciB2ZXJzaW9uIDIuMCBvZiB0aGUgTGljZW5zZSwgb3JcbiAqIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uXG4gKiBUaGlzIHByb2dyYW0gaXMgZGlzdHJpYnV0ZWQgaW4gdGhlIGhvcGUgdGhhdCBpdCB3aWxsIGJlIHVzZWZ1bCxcbiAqIGJ1dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBpbXBsaWVkIHdhcnJhbnR5IG9mXG4gKiBNRVJDSEFOVEFCSUxJVFkgb3IgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UuIFNlZSB0aGVcbiAqIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGZvciBtb3JlIGRldGFpbHMuXG4gKiBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZVxuICogYWxvbmcgd2l0aCB0aGlzIHByb2dyYW0uIElmIG5vdCwgc2VlIDxodHRwOi8vd3d3LmdudS5vcmcvbGljZW5zZXMvPi5cbiAqL1xuYW5ndWxhci5tb2R1bGUoJ2Jvbml0YXNvZnQuZGVzaWduZXIuY29tbW9uLmRpcmVjdGl2ZXMnKVxuICAuZGlyZWN0aXZlKCdjb25maXJtT25FeGl0JywgZnVuY3Rpb24oJHJvb3RTY29wZSwgJHN0YXRlUGFyYW1zLCAkc3RhdGUsICRpbmplY3RvciwgJHdpbmRvdywgZ2V0dGV4dENhdGFsb2cpIHtcblxuICAgICd1c2Ugc3RyaWN0JztcblxuICAgIHZhciBtZXNzYWdlID0gZ2V0dGV4dENhdGFsb2cuZ2V0U3RyaW5nKCdZb3UgaGF2ZSB1bnNhdmVkIGNoYW5nZXMuIERvIHlvdSByZWFsbHkgd2FudCB0byBsZWF2ZSA/Jyk7XG5cbiAgICByZXR1cm4ge1xuICAgICAgc2NvcGU6IHtcbiAgICAgICAgJ2NvbmZpcm1EYXRhJzogJz0nXG4gICAgICB9LFxuICAgICAgbGluazogZnVuY3Rpb24oJHNjb3BlKSB7XG4gICAgICAgIC8vIGdldCB0aGUgc2VydmljZSBmcm9tIHJlc29sdmUgcGFyYW1ldGVyXG4gICAgICAgIGlmICghJHN0YXRlLmN1cnJlbnQucmVzb2x2ZSB8fCAhJHN0YXRlLmN1cnJlbnQucmVzb2x2ZS5hcnRpZmFjdFJlcG8pIHtcbiAgICAgICAgICByZXR1cm47XG4gICAgICAgIH1cblxuICAgICAgICB2YXIgcmVwb3NpdG9yeSA9ICRpbmplY3Rvci5nZXQoJHN0YXRlLmN1cnJlbnQucmVzb2x2ZS5hcnRpZmFjdFJlcG9bMF0pO1xuICAgICAgICB2YXIgc3RhdGVOYW1lID0gJHN0YXRlLmN1cnJlbnQubmFtZTtcbiAgICAgICAgcmVwb3NpdG9yeS5pbml0TGFzdFNhdmVkU3RhdGUoJHNjb3BlLmNvbmZpcm1EYXRhKTtcbiAgICAgICAgdmFyIG9uUm91dGVDaGFuZ2VPZmYgPSAkcm9vdFNjb3BlLiRvbignJHN0YXRlQ2hhbmdlU3RhcnQnLCByb3V0ZUNoYW5nZUhhbmRsZXIpO1xuXG4gICAgICAgICR3aW5kb3cub25iZWZvcmV1bmxvYWQgPSBmdW5jdGlvbigpIHtcbiAgICAgICAgICBpZiAocmVwb3NpdG9yeS5uZWVkU2F2ZSgkc2NvcGUuY29uZmlybURhdGEpKSB7XG4gICAgICAgICAgICByZXR1cm4gbWVzc2FnZTtcbiAgICAgICAgICB9XG4gICAgICAgIH07XG5cbiAgICAgICAgZnVuY3Rpb24gcm91dGVDaGFuZ2VIYW5kbGVyKGV2ZW50LCBuZXdTdGF0ZSkge1xuICAgICAgICAgIGlmIChuZXdTdGF0ZS5uYW1lLmluZGV4T2Yoc3RhdGVOYW1lKSAhPT0gLTEpIHtcbiAgICAgICAgICAgIC8vIHdlIGRvbid0IGNhcmUgYWJvdXQgaW50ZXJuYWwgc3RhdGUgY2hhbmdlXG4gICAgICAgICAgICByZXR1cm47XG4gICAgICAgICAgfVxuICAgICAgICAgIGlmIChyZXBvc2l0b3J5Lm5lZWRTYXZlKCRzY29wZS5jb25maXJtRGF0YSkgJiYgIXdpbmRvdy5jb25maXJtKG1lc3NhZ2UpKSB7XG4gICAgICAgICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpO1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuXG4gICAgICAgIC8vIHJlbW92ZSByb3V0ZSBldmVudCBsaXN0ZW5lclxuICAgICAgICAkc2NvcGUuJG9uKCckZGVzdHJveScsIGZ1bmN0aW9uKCkge1xuICAgICAgICAgICR3aW5kb3cub25iZWZvcmV1bmxvYWQgPSB1bmRlZmluZWQ7XG4gICAgICAgICAgb25Sb3V0ZUNoYW5nZU9mZigpO1xuICAgICAgICB9KTtcbiAgICAgIH1cbiAgICB9O1xuICB9KTtcbiJdfQ==</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 07:45:53 GMT+0530 (IST)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
