@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/directives/pbPropertyValues.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">js/directives/</a> pbPropertyValues.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>3/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>3/9</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+(function () {
+  'use strict';
+&nbsp;
+  angular.module('bonitasoft.ui.directives').directive('pbPropertyValues', <span class="fstat-no" title="function not covered" >function ($parse, $q, $timeout, $log, bindingsFactory, propertyValuesFactory, bindingContextFactory) {</span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function pbPropertyValuesCompile(tElement, tAttributes) {</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
+        pre: <span class="fstat-no" title="function not covered" >function ($scope, elem, attr, pbModelCtrl) {</span>
+<span class="cstat-no" title="statement not covered" >          var pbPropertyValues = propertyValuesFactory.get(tAttributes.pbPropertyValues);</span>
+<span class="cstat-no" title="statement not covered" >          bindingsFactory.create(pbPropertyValues, bindingContextFactory.create(pbModelCtrl, $scope), $scope.properties = {});</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          $scope.properties.isBound = <span class="fstat-no" title="function not covered" >function (propertyName) {</span></span>
+<span class="cstat-no" title="statement not covered" >            return !!pbPropertyValues[propertyName] &amp;&amp; pbPropertyValues[propertyName].type === 'variable' &amp;&amp; !!pbPropertyValues[propertyName].value;</span>
+          };
+        }
+      };
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      restrict: 'A',
+      scope: true,
+      require: '^pbModel',
+      compile: pbPropertyValuesCompile
+    };
+  });
+})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBiUHJvcGVydHlWYWx1ZXMuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxDQUFDLFlBQVc7QUFDVjs7QUFFQSxVQUFRLE1BQVIsQ0FBZSwwQkFBZixFQUNHLFNBREgsQ0FDYSxrQkFEYixFQUNpQyxVQUFTLE1BQVQsRUFBaUIsRUFBakIsRUFBcUIsUUFBckIsRUFBK0IsSUFBL0IsRUFBcUMsZUFBckMsRUFBc0QscUJBQXRELEVBQTZFLHFCQUE3RSxFQUFvRzs7QUFFakksYUFBUyx1QkFBVCxDQUFpQyxRQUFqQyxFQUEyQyxXQUEzQyxFQUF3RDtBQUN0RCxhQUFPO0FBQ0wsYUFBSyxVQUFTLE1BQVQsRUFBaUIsSUFBakIsRUFBdUIsSUFBdkIsRUFBNkIsV0FBN0IsRUFBMEM7QUFDN0MsY0FBSSxtQkFBbUIsc0JBQXNCLEdBQXRCLENBQTBCLFlBQVksZ0JBQXRDLENBQXZCO0FBQ0EsMEJBQWdCLE1BQWhCLENBQ0UsZ0JBREYsRUFFRSxzQkFBc0IsTUFBdEIsQ0FBNkIsV0FBN0IsRUFBMEMsTUFBMUMsQ0FGRixFQUdFLE9BQU8sVUFBUCxHQUFvQixFQUh0Qjs7QUFLQSxpQkFBTyxVQUFQLENBQWtCLE9BQWxCLEdBQTRCLFVBQVMsWUFBVCxFQUF1QjtBQUNqRCxtQkFBTyxDQUFDLENBQUMsaUJBQWlCLFlBQWpCLENBQUYsSUFDTCxpQkFBaUIsWUFBakIsRUFBK0IsSUFBL0IsS0FBd0MsVUFEbkMsSUFFTCxDQUFDLENBQUMsaUJBQWlCLFlBQWpCLEVBQStCLEtBRm5DO0FBR0QsV0FKRDtBQUtEO0FBYkksT0FBUDtBQWVEOztBQUVELFdBQU87QUFDTCxnQkFBVSxHQURMO0FBRUwsYUFBTyxJQUZGO0FBR0wsZUFBUyxVQUhKO0FBSUwsZUFBUztBQUpKLEtBQVA7QUFNRCxHQTNCSDtBQTRCRCxDQS9CRCIsImZpbGUiOiJwYlByb3BlcnR5VmFsdWVzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiKGZ1bmN0aW9uKCkge1xuICAndXNlIHN0cmljdCc7XG5cbiAgYW5ndWxhci5tb2R1bGUoJ2Jvbml0YXNvZnQudWkuZGlyZWN0aXZlcycpXG4gICAgLmRpcmVjdGl2ZSgncGJQcm9wZXJ0eVZhbHVlcycsIGZ1bmN0aW9uKCRwYXJzZSwgJHEsICR0aW1lb3V0LCAkbG9nLCBiaW5kaW5nc0ZhY3RvcnksIHByb3BlcnR5VmFsdWVzRmFjdG9yeSwgYmluZGluZ0NvbnRleHRGYWN0b3J5KSB7XG5cbiAgICAgIGZ1bmN0aW9uIHBiUHJvcGVydHlWYWx1ZXNDb21waWxlKHRFbGVtZW50LCB0QXR0cmlidXRlcykge1xuICAgICAgICByZXR1cm4ge1xuICAgICAgICAgIHByZTogZnVuY3Rpb24oJHNjb3BlLCBlbGVtLCBhdHRyLCBwYk1vZGVsQ3RybCkge1xuICAgICAgICAgICAgdmFyIHBiUHJvcGVydHlWYWx1ZXMgPSBwcm9wZXJ0eVZhbHVlc0ZhY3RvcnkuZ2V0KHRBdHRyaWJ1dGVzLnBiUHJvcGVydHlWYWx1ZXMpO1xuICAgICAgICAgICAgYmluZGluZ3NGYWN0b3J5LmNyZWF0ZShcbiAgICAgICAgICAgICAgcGJQcm9wZXJ0eVZhbHVlcyxcbiAgICAgICAgICAgICAgYmluZGluZ0NvbnRleHRGYWN0b3J5LmNyZWF0ZShwYk1vZGVsQ3RybCwgJHNjb3BlKSxcbiAgICAgICAgICAgICAgJHNjb3BlLnByb3BlcnRpZXMgPSB7fSk7XG5cbiAgICAgICAgICAgICRzY29wZS5wcm9wZXJ0aWVzLmlzQm91bmQgPSBmdW5jdGlvbihwcm9wZXJ0eU5hbWUpIHtcbiAgICAgICAgICAgICAgcmV0dXJuICEhcGJQcm9wZXJ0eVZhbHVlc1twcm9wZXJ0eU5hbWVdICYmXG4gICAgICAgICAgICAgICAgcGJQcm9wZXJ0eVZhbHVlc1twcm9wZXJ0eU5hbWVdLnR5cGUgPT09ICd2YXJpYWJsZScgJiZcbiAgICAgICAgICAgICAgICAhIXBiUHJvcGVydHlWYWx1ZXNbcHJvcGVydHlOYW1lXS52YWx1ZTtcbiAgICAgICAgICAgIH07XG4gICAgICAgICAgfVxuICAgICAgICB9O1xuICAgICAgfVxuXG4gICAgICByZXR1cm4ge1xuICAgICAgICByZXN0cmljdDogJ0EnLFxuICAgICAgICBzY29wZTogdHJ1ZSxcbiAgICAgICAgcmVxdWlyZTogJ15wYk1vZGVsJyxcbiAgICAgICAgY29tcGlsZTogcGJQcm9wZXJ0eVZhbHVlc0NvbXBpbGVcbiAgICAgIH07XG4gICAgfSk7XG59KSgpO1xuIl19</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 08:00:19 GMT+0530 (ICT)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

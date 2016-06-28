@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.bonitasoft.web.designer.repository.WidgetRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.663 sec - in org.bonitasoft.web.designer.repository.WidgetRepositoryTest

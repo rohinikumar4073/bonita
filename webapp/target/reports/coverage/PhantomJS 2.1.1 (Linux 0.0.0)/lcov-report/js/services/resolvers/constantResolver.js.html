@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/services/resolvers/constantResolver.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">js/services/resolvers/</a> constantResolver.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">37.21% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>16/43</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">30.77% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">73.68% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>14/19</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+var _createClass = function () { <span class="fstat-no" title="function not covered" >function defineProperties(target, props) {</span> <span class="cstat-no" title="statement not covered" >for (var i = 0; i &lt; props.length; i++) { <span class="cstat-no" title="statement not covered" >var descriptor = props[i]; <span class="cstat-no" title="statement not covered" ></span>descriptor.enumerable = descriptor.enumerable || false; <span class="cstat-no" title="statement not covered" ></span>descriptor.configurable = true; <span class="cstat-no" title="statement not covered" ></span>if ("value" in descriptor) <span class="cstat-no" title="statement not covered" >descriptor.writable = true; <span class="cstat-no" title="statement not covered" ></span></span>Object.defineProperty(target, descriptor.key, descriptor); </span>} </span>} return <span class="fstat-no" title="function not covered" >function (Constructor, protoProps, staticProps) {</span> <span class="cstat-no" title="statement not covered" >if (protoProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor.prototype, protoProps); <span class="cstat-no" title="statement not covered" ></span></span>if (staticProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor, staticProps); <span class="cstat-no" title="statement not covered" ></span></span>return Constructor; </span>}; }();
+&nbsp;
+<span class="fstat-no" title="function not covered" >function _classCallCheck(instance, Constructor) {</span> <span class="cstat-no" title="statement not covered" >if (!(instance instanceof Constructor)) { <span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function"); </span>} </span>}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function _possibleConstructorReturn(self, call) {</span> <span class="cstat-no" title="statement not covered" >if (!self) { <span class="cstat-no" title="statement not covered" >throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); </span>} <span class="cstat-no" title="statement not covered" ></span>return call &amp;&amp; (typeof call === "object" || typeof call === "function") ? call : self; </span>}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function _inherits(subClass, superClass) {</span> <span class="cstat-no" title="statement not covered" >if (typeof superClass !== "function" &amp;&amp; superClass !== null) { <span class="cstat-no" title="statement not covered" >throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); </span>} <span class="cstat-no" title="statement not covered" ></span>subClass.prototype = Object.create(superClass &amp;&amp; superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); <span class="cstat-no" title="statement not covered" ></span>if (superClass) <span class="cstat-no" title="statement not covered" >Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; </span></span>}
+&nbsp;
+(function () {
+  'use strict';
+&nbsp;
+  angular.module('bonitasoft.ui.services').run(createConstantResolver);
+&nbsp;
+  function createConstantResolver(Resolver, ResolverService) {
+    var ConstantResolver = function (_Resolver) {
+      _inherits(ConstantResolver, _Resolver);
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function ConstantResolver() {</span>
+<span class="cstat-no" title="statement not covered" >        _classCallCheck(this, ConstantResolver);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return _possibleConstructorReturn(this, Object.getPrototypeOf(ConstantResolver).apply(this, arguments));</span>
+      }
+&nbsp;
+      _createClass(ConstantResolver, [{
+        key: 'resolve',
+        value: <span class="fstat-no" title="function not covered" >function resolve() {</span>
+<span class="cstat-no" title="statement not covered" >          this.model[this.name] = this.content || undefined;</span>
+        }
+      }]);
+&nbsp;
+      return ConstantResolver;
+    }(Resolver);
+&nbsp;
+    ResolverService.addResolverType('constant', <span class="fstat-no" title="function not covered" >function (model, name, content) {</span>
+<span class="cstat-no" title="statement not covered" >      return new ConstantResolver(model, name, content);</span>
+    });
+    ResolverService.addResolverType('variable', <span class="fstat-no" title="function not covered" >function (model, name, content) {</span>
+<span class="cstat-no" title="statement not covered" >      return new ConstantResolver(model, name, content);</span>
+    });
+  }
+})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnN0YW50UmVzb2x2ZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFBLENBQUMsWUFBVztBQUNWOztBQUVBLFVBQ0csTUFESCxDQUNVLHdCQURWLEVBRUcsR0FGSCxDQUVPLHNCQUZQOztBQUlBLFdBQVMsc0JBQVQsQ0FBZ0MsUUFBaEMsRUFBMEMsZUFBMUMsRUFBMkQ7QUFBQSxRQUVuRCxnQkFGbUQ7QUFBQSxnQkFFbkQsZ0JBRm1EOztBQUFBLGVBRW5ELGdCQUZtRDtBQUFBLDhCQUVuRCxnQkFGbUQ7O0FBQUEsc0VBRW5ELGdCQUZtRDtBQUFBOztBQUFBLG1CQUVuRCxnQkFGbUQ7QUFBQTtBQUFBLGtDQUc3QztBQUNSLGVBQUssS0FBTCxDQUFXLEtBQUssSUFBaEIsSUFBd0IsS0FBSyxPQUFMLElBQWdCLFNBQXhDO0FBQ0Q7QUFMc0Q7O0FBQUEsYUFFbkQsZ0JBRm1EO0FBQUEsTUFFMUIsUUFGMEI7O0FBUXpELG9CQUFnQixlQUFoQixDQUFnQyxVQUFoQyxFQUE0QyxVQUFDLEtBQUQsRUFBUSxJQUFSLEVBQWMsT0FBZDtBQUFBLGFBQTBCLElBQUksZ0JBQUosQ0FBcUIsS0FBckIsRUFBNEIsSUFBNUIsRUFBa0MsT0FBbEMsQ0FBMUI7QUFBQSxLQUE1QztBQUNBLG9CQUFnQixlQUFoQixDQUFnQyxVQUFoQyxFQUE0QyxVQUFDLEtBQUQsRUFBUSxJQUFSLEVBQWMsT0FBZDtBQUFBLGFBQTBCLElBQUksZ0JBQUosQ0FBcUIsS0FBckIsRUFBNEIsSUFBNUIsRUFBa0MsT0FBbEMsQ0FBMUI7QUFBQSxLQUE1QztBQUNEO0FBQ0YsQ0FsQkQiLCJmaWxlIjoiY29uc3RhbnRSZXNvbHZlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIihmdW5jdGlvbigpIHtcbiAgJ3VzZSBzdHJpY3QnO1xuXG4gIGFuZ3VsYXJcbiAgICAubW9kdWxlKCdib25pdGFzb2Z0LnVpLnNlcnZpY2VzJylcbiAgICAucnVuKGNyZWF0ZUNvbnN0YW50UmVzb2x2ZXIpO1xuXG4gIGZ1bmN0aW9uIGNyZWF0ZUNvbnN0YW50UmVzb2x2ZXIoUmVzb2x2ZXIsIFJlc29sdmVyU2VydmljZSkge1xuXG4gICAgY2xhc3MgQ29uc3RhbnRSZXNvbHZlciBleHRlbmRzIFJlc29sdmVyIHtcbiAgICAgIHJlc29sdmUoKSB7XG4gICAgICAgIHRoaXMubW9kZWxbdGhpcy5uYW1lXSA9IHRoaXMuY29udGVudCB8fCB1bmRlZmluZWQ7XG4gICAgICB9XG4gICAgfVxuXG4gICAgUmVzb2x2ZXJTZXJ2aWNlLmFkZFJlc29sdmVyVHlwZSgnY29uc3RhbnQnLCAobW9kZWwsIG5hbWUsIGNvbnRlbnQpID0+IG5ldyBDb25zdGFudFJlc29sdmVyKG1vZGVsLCBuYW1lLCBjb250ZW50KSk7XG4gICAgUmVzb2x2ZXJTZXJ2aWNlLmFkZFJlc29sdmVyVHlwZSgndmFyaWFibGUnLCAobW9kZWwsIG5hbWUsIGNvbnRlbnQpID0+IG5ldyBDb25zdGFudFJlc29sdmVyKG1vZGVsLCBuYW1lLCBjb250ZW50KSk7XG4gIH1cbn0pKCk7XG4iXX0=</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 28 2016 08:00:19 GMT+0530 (ICT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

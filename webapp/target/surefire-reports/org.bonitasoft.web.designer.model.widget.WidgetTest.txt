@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.bonitasoft.web.designer.model.widget.WidgetTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.209 sec - in org.bonitasoft.web.designer.model.widget.WidgetTest
