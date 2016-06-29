@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.bonitasoft.web.designer.workspace.WorkspaceMigrationTest
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.426 sec - in org.bonitasoft.web.designer.workspace.WorkspaceMigrationTest
